@@ -1,162 +1,97 @@
 # StylePanel  
-### Powered by UCP (Universe Control Panel)
-#### Structured Prompt Architecture for Forge  
-**SD 1.x • SDXL • Flux**
+### Structured prompt control layer for Forge — *powered by UCP*
 
-StylePanel is a workflow-oriented extension for Forge (Neo) that introduces structured, repeatable prompt composition through a controlled injection system.
+StylePanel is a workflow-centric extension for **Forge (Neo)**  
+that introduces structured, repeatable prompt composition using a controlled injection system called **UCP (Universe Control Panel)**.
 
-It is not a tag list.
+This extension is designed for:
 
-It is a prompt control layer.
+- **Stable Diffusion 1.x**
+- **SDXL**
+- **Flux**
 
----
-
-# Philosophy
-
-Prompting often becomes inconsistent over time.
-
-StylePanel enforces structure without removing creative flexibility.
-
-It separates:
-
-- Style components
-- User intent
-- Injection behavior
-- Generation execution
-
-You decide how structured your workflow should be.
+StylePanel is not just a tag list — it’s a prompt orchestration layer built for clarity, consistency, and modular control.
 
 ---
 
-# Core Architecture
+## 🚀 Why StylePanel Exists
 
-StylePanel operates around a Unified Control Panel (UCP) system.
+Prompting without structure can easily become inconsistent and messy.  
+StylePanel’s goal is to:
 
-The UCP governs how style data moves from dropdown selections into Forge’s generation pipeline.
+- Enforce structured visual elements
+- Reduce repeated typing
+- Prevent prompt drift
+- Improve prompt reproducibility
 
-It introduces three operational modes designed for different workflow philosophies.
+UCP (Universe Control Panel) is the core — the mechanism that controls how style components are *injected* into the generation pipeline.
 
 ---
 
-# UCP Modes
+## 🧠 UCP Modes (How it Works)
 
-## 1. Manual Mode — Inject Only
+StylePanel introduces three operational modes that govern how style data moves from dropdowns into Forge’s prompt pipeline.
 
-Full user control.
-
-- Style selections populate locked preview fields.
-- Press **Inject** to transfer tags into the positive/negative prompt boxes.
+### **1. Manual Mode — Inject Only**
+- Styles populate locked preview fields.
+- You must click **Inject** to transfer tags into the prompt.
 - No automatic generation.
-- Nothing is sent to Forge without explicit action.
-
-Best suited for:
-- Precision workflows
-- Prompt purists
-- Controlled iterative editing
+- Best for prompt purists and controlled editing.
 
 ---
 
-## 2. Semi-Auto Mode — Assisted Composition
-
-Structured prompting with manual refinement.
-
-- Style selections populate preview fields.
-- Preview becomes editable.
-- **Inject** transforms into **Generate (UCP Mode)**.
-- When pressed:
-  - Prompt field content
-  - Preview content
-  - Manual edits
-  are merged and sent to Forge's generate function.
-
-Best suited for:
-- Power users
-- Hybrid control workflows
-- Live stream environments
+### **2. Semi-Auto Mode — Assisted Composition**
+- Styles populate preview, and preview becomes editable.
+- The **Inject** button becomes **Generate (UCP Mode)**.
+- When pressed, all prompt + preview + edits merge and generate.
+- Great for hybrid workflows and live tweaking.
 
 ---
 
-## 3. Auto Mode — Locked Pipeline
-
-Fully structured generation.
-
-- Style selections inject automatically.
-- Preview fields remain locked.
-- Content is sent directly to **Generate (raw)**.
-- No manual interference.
-
-Best suited for:
-- Preset pipelines
-- Stream automation
-- Consistent visual identity workflows
-- Environments where prompt drift must be avoided
+### **3. Auto Mode — Locked Pipeline**
+- Styles inject automatically.
+- Preview is locked.
+- Everything goes straight to **Generate (raw)**.
+- Useful for automated pipelines and consistent, no-drift workflows (e.g., streaming).
 
 ---
 
-# Feature Set
+## 🔧 Features
 
-- Structured style categories  
-  (Image Type, Framing, Camera, Atmosphere, Expression, Lighting, Stability)
+- Structured style categories:  
+  - Image Type  
+  - Framing  
+  - Camera  
+  - Atmosphere  
+  - Expression  
+  - Lighting  
+  - Stability
 
 - JSON-driven configuration  
-  All styles are defined externally. No code modification required.
+  (No core code changes required)
 
 - Cross-model compatibility  
-  Designed to function across:
+  Works with:
   - Stable Diffusion 1.x
   - SDXL
   - Flux
 
 - Optional negative tag handling  
-  When supported by the active model.
-
-  Note: Negative tag injection is disabled in Flux mode, as Forge does not utilize negative prompts for Flux models.
+  (Where supported by the model)
 
 - Live preview system  
-  Clear visibility of injected prompt components.
-
-- Stability tagging control  
-  Prevents accidental prompt degradation in automated modes.
+  (See injected prompt components before generate)
 
 ---
 
-# Configuration
+## ⚠️ Flux Note
 
-All styles are defined in JSON files.
-
-You can:
-
-- Add new categories
-- Remove existing ones
-- Modify tag behavior
-- Create model-specific presets
-- Build structured style ecosystems
-
-The UI dynamically reflects the JSON structure.
-
-No recompilation or core modification required.
+Negative tag injection is intentionally disabled in Flux mode  
+because Forge does not utilize negative prompts with Flux-based models.
 
 ---
 
-# Design Intent
-
-StylePanel does not replace prompting.
-
-It:
-
-- Reduces repetition
-- Enforces structural clarity
-- Prevents prompt drift
-- Enables reproducible visual identity
-- Supports both manual and automated workflows
-
-Manual users retain precision.  
-Auto users gain consistency.  
-Stream users gain control.
-
----
-
-# Installation
+## 📁 Installation
 
 1. Clone or download this repository.
 2. Place the `StylePanel` directory inside your Forge extensions folder.
@@ -170,35 +105,29 @@ If dropdowns appear empty:
 
 ---
 
-# Compatibility
+## 🧾 Compatibility
 
 Tested with:
 
 - Forge Neo
-- Stable Diffusion 1.x
+- SD 1.x
 - SDXL
 - Flux
 
-Expected to function with most SD-based setups running under Forge.
+Expected to work with most SD-based Forge setups.
 
 ---
 
-# Project Status
+## ❗ Notes
 
-This is a hobby project.
-
-It is stable for personal and workflow use.
-
-No guaranteed support is provided.
-
-Issues and forks are welcome.
+- Hobby project
+- No guaranteed support
+- Contributions, forks, and improvements are welcome
 
 ---
 
-# License
+## 📜 License
 
-MIT License.
-
+MIT License
 
 Use freely. Modify freely. Attribute appropriately.
-
