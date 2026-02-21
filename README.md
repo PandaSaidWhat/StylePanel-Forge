@@ -16,7 +16,7 @@ It is a prompt control layer.
 
 ---
 
-## Why StylePanel Exists
+## 🚀 Why StylePanel Exists
 
 Prompting without structure eventually becomes inconsistent.
 
@@ -33,13 +33,13 @@ UCP (Universe Control Panel) is the engine that governs how style components mov
 
 ---
 
-## UCP Mode Configuration
+## ⚙️ UCP Mode Configuration
 
 UCP execution mode is configured globally in the Forge Settings panel.
 
 Upon first installation, StylePanel defaults to:
 
-Manual Mode (Inject Only)
+**Manual Mode (Inject Only)**
 
 Only the **Inject** button is available by default.
 
@@ -57,11 +57,11 @@ The selected mode persists across sessions.
 
 ---
 
-## UCP Modes (Behavior)
+## 🧠 UCP Modes (Behavior)
 
 Once configured, UCP controls how style components are injected into the generation pipeline.
 
-### 1. Manual — Inject Only
+### 1️⃣ Manual — Inject Only
 
 - Styles populate locked preview fields  
 - You must click **Inject** to transfer tags into the prompt  
@@ -70,7 +70,7 @@ Once configured, UCP controls how style components are injected into the generat
 
 ---
 
-### 2. Semi-Automatic — Editable Preview
+### 2️⃣ Semi-Automatic — Editable Preview
 
 - Preview fields become editable  
 - **Inject** becomes **Generate (UCP Mode)**  
@@ -79,7 +79,7 @@ Once configured, UCP controls how style components are injected into the generat
 
 ---
 
-### 3. Automatic — Locked Pipeline
+### 3️⃣ Automatic — Locked Pipeline
 
 - Injection happens automatically  
 - Preview fields are locked  
@@ -88,7 +88,7 @@ Once configured, UCP controls how style components are injected into the generat
 
 ---
 
-## Feature Set
+## 🧩 Feature Set
 
 - Structured style categories  
   - Image Type  
@@ -106,13 +106,13 @@ Once configured, UCP controls how style components are injected into the generat
 
 ---
 
-## Flux Compatibility Note
+## 🔥 Flux Compatibility Note
 
 Negative prompt injection is intentionally disabled in **Flux mode**, as Forge does not utilize negative prompts with Flux models.
 
 ---
 
-## Installation
+## 📦 Installation
 
 1. Clone or download this repository  
 2. Place the `StylePanel` directory inside your Forge extensions folder  
@@ -126,7 +126,7 @@ If dropdowns appear empty:
 
 ---
 
-## Compatibility
+## 🧪 Compatibility
 
 Tested with:
 
@@ -137,7 +137,7 @@ Tested with:
 
 ---
 
-## Philosophy
+## 🎯 Philosophy
 
 Structure does not remove creativity.
 
@@ -145,6 +145,6 @@ It enables consistency.
 
 ---
 
-## License
+## 📜 License
 
 MIT
