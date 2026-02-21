@@ -1,133 +1,150 @@
-# StylePanel  
-### Structured prompt control layer for Forge — *powered by UCP*
+# StylePanel
+### Structured Prompt Architecture for Forge  
+#### Powered by UCP (Universe Control Panel)
 
-StylePanel is a workflow-centric extension for **Forge (Neo)**  
-that introduces structured, repeatable prompt composition using a controlled injection system called **UCP (Universe Control Panel)**.
+StylePanel is a workflow-centric extension for **Forge (Neo)** that introduces structured, repeatable prompt composition through a controlled injection architecture called **UCP**.
 
-This extension is designed for:
+Designed for:
 
-- **Stable Diffusion 1.x**
-- **SDXL**
-- **Flux**
+- Stable Diffusion 1.x  
+- SDXL  
+- Flux  
 
-StylePanel is not just a tag list — it’s a prompt orchestration layer built for clarity, consistency, and modular control.
+StylePanel is not a tag list.
 
----
-
-## 🚀 Why StylePanel Exists
-
-Prompting without structure can easily become inconsistent and messy.  
-StylePanel’s goal is to:
-
-- Enforce structured visual elements
-- Reduce repeated typing
-- Prevent prompt drift
-- Improve prompt reproducibility
-
-UCP (Universe Control Panel) is the core — the mechanism that controls how style components are *injected* into the generation pipeline.
+It is a prompt control layer.
 
 ---
 
-## 🧠 UCP Modes (How it Works)
+## Why StylePanel Exists
 
-StylePanel introduces three operational modes that govern how style data moves from dropdowns into Forge’s prompt pipeline.
+Prompting without structure eventually becomes inconsistent.
 
-### **1. Manual Mode — Inject Only**
-- Styles populate locked preview fields.
-- You must click **Inject** to transfer tags into the prompt.
-- No automatic generation.
-- Best for prompt purists and controlled editing.
+StylePanel enforces clarity without limiting creativity.
 
----
+It provides:
 
-### **2. Semi-Auto Mode — Assisted Composition**
-- Styles populate preview, and preview becomes editable.
-- The **Inject** button becomes **Generate (UCP Mode)**.
-- When pressed, all prompt + preview + edits merge and generate.
-- Great for hybrid workflows and live tweaking.
+- Structured visual components  
+- Reduced repetition  
+- Controlled injection behavior  
+- Reproducible generation workflows  
+
+UCP (Universe Control Panel) is the engine that governs how style components move into Forge’s generation pipeline.
 
 ---
 
-### **3. Auto Mode — Locked Pipeline**
-- Styles inject automatically.
-- Preview is locked.
-- Everything goes straight to **Generate (raw)**.
-- Useful for automated pipelines and consistent, no-drift workflows (e.g., streaming).
+## UCP Mode Configuration
+
+UCP execution mode is configured globally in the Forge Settings panel.
+
+Upon first installation, StylePanel defaults to:
+
+Manual Mode (Inject Only)
+
+Only the **Inject** button is available by default.
+
+To enable other modes, navigate to:
+
+Forge → Settings → StylePanel (UCP Mode)
+
+Available options:
+
+- Manual (Inject Only)
+- Semi-Automatic (Editable)
+- Automatic (Locked)
+
+The selected mode persists across sessions.
 
 ---
 
-## 🔧 Features
+## UCP Modes (Behavior)
 
-- Structured style categories:  
+Once configured, UCP controls how style components are injected into the generation pipeline.
+
+### 1. Manual — Inject Only
+
+- Styles populate locked preview fields  
+- You must click **Inject** to transfer tags into the prompt  
+- No automatic generation occurs  
+- Safest and most controlled workflow  
+
+---
+
+### 2. Semi-Automatic — Editable Preview
+
+- Preview fields become editable  
+- **Inject** becomes **Generate (UCP Mode)**  
+- Preview + prompt merge before generation  
+- Ideal for hybrid workflows and live tweaking  
+
+---
+
+### 3. Automatic — Locked Pipeline
+
+- Injection happens automatically  
+- Preview fields are locked  
+- Generation executes immediately  
+- Designed for automation and consistent output workflows  
+
+---
+
+## Feature Set
+
+- Structured style categories  
   - Image Type  
   - Framing  
   - Camera  
   - Atmosphere  
   - Expression  
   - Lighting  
-  - Stability
+  - Stability  
 
 - JSON-driven configuration  
-  (No core code changes required)
-
 - Cross-model compatibility  
-  Works with:
-  - Stable Diffusion 1.x
-  - SDXL
-  - Flux
-
-- Optional negative tag handling  
-  (Where supported by the model)
-
-- Live preview system  
-  (See injected prompt components before generate)
+- Live preview injection system  
+- Clean separation between style logic and generation execution  
 
 ---
 
-## ⚠️ Flux Note
+## Flux Compatibility Note
 
-Negative tag injection is intentionally disabled in Flux mode  
-because Forge does not utilize negative prompts with Flux-based models.
+Negative prompt injection is intentionally disabled in **Flux mode**, as Forge does not utilize negative prompts with Flux models.
 
 ---
 
-## 📁 Installation
+## Installation
 
-1. Clone or download this repository.
-2. Place the `StylePanel` directory inside your Forge extensions folder.
-3. Restart Forge.
-4. Reload the UI.
+1. Clone or download this repository  
+2. Place the `StylePanel` directory inside your Forge extensions folder  
+3. Restart Forge  
+4. Reload the UI  
 
 If dropdowns appear empty:
-- Verify JSON placement
-- Confirm correct directory structure
-- Restart Forge
+- Verify JSON structure  
+- Confirm correct folder placement  
+- Restart Forge  
 
 ---
 
-## 🧾 Compatibility
+## Compatibility
 
 Tested with:
 
-- Forge Neo
-- SD 1.x
-- SDXL
-- Flux
-
-Expected to work with most SD-based Forge setups.
+- Forge Neo  
+- Stable Diffusion 1.x  
+- SDXL  
+- Flux  
 
 ---
 
-## ❗ Notes
+## Philosophy
 
-- Hobby project
-- No guaranteed support
-- Contributions, forks, and improvements are welcome
+Structure does not remove creativity.
+
+It enables consistency.
 
 ---
 
-## 📜 License
+## License
 
-MIT License
-
-Use freely. Modify freely. Attribute appropriately.
+MIT
