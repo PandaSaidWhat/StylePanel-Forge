@@ -1,5 +1,6 @@
 # StylePanel  
-### Structured Prompt Architecture for Forge  
+### Powered by UCP (Universe Control Panel)
+#### Structured Prompt Architecture for Forge  
 **SD 1.x • SDXL • Flux**
 
 StylePanel is a workflow-oriented extension for Forge (Neo) that introduces structured, repeatable prompt composition through a controlled injection system.
@@ -200,3 +201,4 @@ MIT License.
 
 
 Use freely. Modify freely. Attribute appropriately.
+
