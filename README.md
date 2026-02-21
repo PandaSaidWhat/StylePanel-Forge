@@ -88,6 +88,15 @@ Once configured, UCP controls how style components are injected into the generat
 
 ---
 
+## 🔥 New Feature: Pro-Weighting Shortcuts
+When using **Semi-Automatic Mode**, you can use industry-standard keyboard shortcuts directly within the **Positive Preview** box:
+
+- **CTRL + Arrow Up**: Increase weight of selected text by 0.1.
+- **CTRL + Arrow Down**: Decrease weight of selected text by 0.1.
+- **Smart Cleanup**: Parentheses and weights are automatically removed if the value reaches 1.0, keeping your prompts clean.
+
+---
+
 ## 🧩 Feature Set
 
 - Structured style categories  
@@ -148,3 +157,4 @@ It enables consistency.
 ## 📜 License
 
 MIT
+
