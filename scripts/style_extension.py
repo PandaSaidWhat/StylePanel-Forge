@@ -57,7 +57,7 @@ class UCP_Engine(scripts.Script):
             with gr.Column():
                 with gr.Row():
                     arch = gr.Radio(choices=["SD", "SDXL", "Flux"], value="Flux", label="Architecture Mode")
-                    reload_btn = gr.Button("🔄 Reload", variant="secondary")
+                    reload_btn = gr.Button("🔄 Reload JSON Files", variant="secondary")
                 
                 with gr.Row():
                     it = gr.Dropdown(label="Image Type", choices=get_choices("Flux", "ImageType"), value=NONE)
@@ -185,5 +185,6 @@ class UCP_Engine(scripts.Script):
             
             if nt and arch != "Flux" and np.strip():
                 p.negative_prompt = f"{p.negative_prompt}, {np.strip()}" if p.negative_prompt.strip() else np.strip()
+
 
 script_callbacks.on_ui_settings(on_ui_settings)
