@@ -1,0 +1,119 @@
+{
+  "--- CASUAL & BASIC ---": { "prompt": "", "conflicts": [] },
+  "Happy": { 
+    "prompt": "genuine happy expression, relaxed cheeks, natural smile, slightly raised eyebrows, soft eye contact, subtle crow's feet", 
+    "conflicts": ["Dark & Gritty", "Ominous / Foreboding", "Melancholic Blue"] 
+  },
+  "Sad": { 
+    "prompt": "sad expression, drooping eyelids, downturned mouth corners, slightly glossy eyes, relaxed jaw, subtle frown", 
+    "conflicts": ["Warm & Sunny", "Vibrant & Energetic"] 
+  },
+  "Angry": { 
+    "prompt": "angry expression, deeply furrowed brow, narrowed eyes, clenched jaw, tight lips, visible tension in facial muscles", 
+    "conflicts": ["Warm & Sunny", "Romantic Softness"] 
+  },
+  "Surprised": { 
+    "prompt": "surprised expression, raised eyebrows, widened eyes, slightly open mouth, visible upper teeth, forehead tension", 
+    "conflicts": ["Deep Sleep"] 
+  },
+  "Scared": { 
+    "prompt": "fearful expression, wide pupils, raised upper eyelids, parted lips, pale face, tense jawline", 
+    "conflicts": [] 
+  },
+  "Bored": { 
+    "prompt": "bored expression, half-lidded eyes, relaxed eyebrows, neutral mouth, slack facial muscles", 
+    "conflicts": ["Vibrant & Energetic"] 
+  },
+  "Disgusted": { 
+    "prompt": "disgusted expression, wrinkled nose, curled upper lip, squinted eyes, pulled-back chin", 
+    "conflicts": ["Romantic Softness"] 
+  },
+  "Furious": { 
+    "prompt": "furious expression, bared teeth, extreme brow compression, flared nostrils, visible neck tension, strained facial muscles", 
+    "conflicts": ["Warm & Sunny", "Romantic Softness"] 
+  },
+  "--- PRIMARY EMOTIONS ---": { "prompt": "", "conflicts": [] },
+  "Genuine Joy": { 
+    "prompt": "radiant genuine smile, lifted cheeks, deep eye crinkles, teeth visible naturally, relaxed brow, bright expressive eyes", 
+    "conflicts": ["Dark & Gritty", "Ominous / Foreboding"] 
+  },
+  "Deep Sorrow": { 
+    "prompt": "intense sorrowful expression, wet teary eyes, trembling lower lip, tightened brow center, damp eyelashes, soft jaw tension", 
+    "conflicts": ["Warm & Sunny", "Vibrant & Energetic"] 
+  },
+  "Burning Rage": { 
+    "prompt": "burning rage expression, clenched teeth, heavy brow tension, flared nostrils, tight jaw, visible facial strain", 
+    "conflicts": ["Warm & Sunny"] 
+  },
+  "Pure Terror": { 
+    "prompt": "terrified expression, extremely dilated pupils, raised eyebrows, gasping open mouth, visible throat tension, pale skin", 
+    "conflicts": [] 
+  },
+  "--- NUANCED & CHARACTER ---": { "prompt": "", "conflicts": [] },
+  "Seductive Smirk": { 
+    "prompt": "subtle seductive smirk, heavy-lidded eyes, slight asymmetrical smile, relaxed lips, slow eye contact", 
+    "conflicts": [] 
+  },
+  "Smug Arrogance": { 
+    "prompt": "smug expression, one eyebrow raised, slight corner smirk, narrowed eyes, relaxed jaw", 
+    "conflicts": [] 
+  },
+  "Determined Heroism": { 
+    "prompt": "determined expression, focused gaze, tightened jawline, slight brow tension, lips pressed together", 
+    "conflicts": [] 
+  },
+  "Stoic / Cold": { 
+    "prompt": "emotionless expression, neutral brow, straight lips, steady gaze, no visible muscle tension", 
+    "conflicts": [] 
+  },
+  "Pensive / Thoughtful": { 
+    "prompt": "thoughtful expression, slight brow pinch, eyes looking upward or sideways, relaxed lips, subtle chin tilt", 
+    "conflicts": [] 
+  },
+  "Bashful / Blushing": { 
+    "prompt": "shy expression, downward gaze, soft smile, faint blush on cheeks, relaxed brow", 
+    "conflicts": ["Contemptuous Coldness"] 
+  },
+  "Exhausted / Weary": { 
+    "prompt": "exhausted expression, heavy eyelids, dark under-eye shadows, parted lips, slack facial muscles", 
+    "conflicts": ["Vibrant & Energetic"] 
+  },
+  "--- INTENSE & PSYCHOLOGICAL ---": { "prompt": "", "conflicts": [] },
+  "Insane / Psychotic": { 
+    "prompt": "manic expression, wide unblinking eyes, exaggerated grin, raised brows, tense cheek muscles", 
+    "conflicts": ["Deep Sleep"] 
+  },
+  "Dying / Final Breath": { 
+    "prompt": "fading expression, half-open eyes, slack jaw, pale lips, hollow gaze", 
+    "conflicts": ["Vibrant & Energetic"] 
+  },
+  "Agony / Pain": { 
+    "prompt": "intense pain expression, tightly closed eyes, clenched teeth, strained neck muscles, wrinkled brow", 
+    "conflicts": [] 
+  },
+  "Hollow / Shell-Shocked": { 
+    "prompt": "blank thousand-yard stare, pale skin, slightly parted lips, empty gaze, minimal facial movement", 
+    "conflicts": [] 
+  },
+  "--- ADVANCED EXPRESSIONS ---": { "prompt": "", "conflicts": [] },
+  "Tearful Smile": { 
+    "prompt": "smiling while crying, wet eyelashes, lifted cheeks, trembling lips, emotional contradiction", 
+    "conflicts": [] 
+  },
+  "Cold Fury": { 
+    "prompt": "controlled anger, tight lips, piercing eyes, calm brow compression, restrained facial tension", 
+    "conflicts": ["Warm & Sunny"] 
+  },
+  "Anxious Tension": { 
+    "prompt": "anxious expression, furrowed brow center, slightly parted lips, wide alert eyes", 
+    "conflicts": ["Deep Sleep"] 
+  },
+  "Romantic Softness": { 
+    "prompt": "soft romantic expression, relaxed eyelids, gentle smile, warm gaze", 
+    "conflicts": ["Dark & Gritty", "Contemptuous Coldness"] 
+  },
+  "Confident Smirk": { 
+    "prompt": "confident smirk, slight lip curl, relaxed brow, steady eye contact", 
+    "conflicts": [] 
+  }
+}

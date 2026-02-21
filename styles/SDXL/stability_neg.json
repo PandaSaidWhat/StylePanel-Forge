@@ -1,0 +1,13 @@
+{
+  "Perfect Anatomy": "extra fingers, mutated hands, deformed limbs, fused fingers, missing limbs, extra legs, bad anatomy, malformed, bones",
+  "Natural Anatomy": "broken anatomy, dislocated joints, twisted limbs, impossible posture, malformed proportions",
+  "Symmetrical Face": "asymmetric eyes, wandering eye, deformed face, melting features, crossed eyes, drooping face, lazy eye",
+  "Natural Face": "perfectly symmetrical face, perfectly aligned pupils, mannequin face, doll-like face",
+  "Detailed Extremities": "six fingers, four fingers, webbed hands, claw hands, missing toes, extra thumb, nub limbs",
+  "Stable Pose": "floating limbs, impossible body twist, broken neck, unnatural pose, hovering subject, dislocated shoulder",
+  "Geometric Precision": "warped walls, melting architecture, liquid metal, distorted perspective, broken geometry, shaky lines",
+  "Clean Lines": "blurry edges, ghosting, double outlines, chromatic aberration, smudged details, artifacts",
+  "Consistent Textures": "muddled textures, repetitive patterns, noise, grain, flat skin, plastic look, uncanny valley",
+  "Organic Skin Texture": "waxy skin, plastic skin, over-smoothed skin, airbrushed body, uniform skin tone",
+  "Fixed Grounding": "floating, flying, no shadows, disconnected feet, air-walking, cut off feet"
+}

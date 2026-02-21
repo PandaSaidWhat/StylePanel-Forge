@@ -1,0 +1,151 @@
+{
+  "--- PHOTOGRAPHY & REALISM ---": { "prompt": "", "conflicts": [] },
+  "8K Raw Photo": {
+    "prompt": "ultra high-resolution RAW photography, (full dynamic range:1.2), natural skin texture, realistic color science, 35mm full-frame sensor, sharp micro-contrast, DSLR realism",
+    "conflicts": []
+  },
+  "Studio Portrait": {
+    "prompt": "professional studio photography, (controlled lighting setup:1.2), full-frame camera, sharp eye detail, high-end commercial portrait realism",
+    "conflicts": []
+  },
+  "Street & Candid": {
+    "prompt": "documentary street photography, natural light, (handheld realism:1.2), imperfect framing, authentic urban atmosphere",
+    "conflicts": []
+  },
+  "Cinematic Movie Still": {
+    "prompt": "cinematic film still, (anamorphic lens rendering:1.2), realistic film color grading, shallow depth of field, theatrical production quality",
+    "conflicts": []
+  },
+  "Vintage Film": {
+    "prompt": "analog film photography, (soft halation:1.1), organic grain structure, realistic film emulsion response, Kodak-style color palette",
+    "conflicts": []
+  },
+  "Macro Detail": {
+    "prompt": "true macro photography, (1:1 magnification:1.3), shallow depth of field, high micro-detail, visible surface texture",
+    "conflicts": ["Wide Shot", "Full Photo", "Aerial Drone Shot"]
+  },
+  "Documentary Photojournalism": {
+    "prompt": "(real-world reportage photography:1.2), natural lighting conditions, unscripted realism, journalistic authenticity",
+    "conflicts": []
+  },
+  "Black & White Film": {
+    "prompt": "monochrome photography, (high tonal contrast:1.2), analog grain structure, classic 35mm aesthetic",
+    "conflicts": []
+  },
+  "Fashion Editorial": {
+    "prompt": "high-end fashion photography, (professional retouching:1.1), controlled lighting, magazine-quality output",
+    "conflicts": []
+  },
+  "Polaroid Instant": {
+    "prompt": "instant camera aesthetic, (soft focus:1.2), square frame, faded tones, light vignetting",
+    "conflicts": []
+  },
+  "--- DIGITAL ART & GAME ENGINE ---": { "prompt": "", "conflicts": [] },
+  "Digital Illustration": {
+    "prompt": "clean digital illustration, (layered brushwork:1.1), stylized shading, professional concept-art workflow",
+    "conflicts": []
+  },
+  "Unreal Engine 5 Render": {
+    "prompt": "real-time engine render, (physically based rendering:1.2), ray-traced lighting, volumetric shadows, high-poly environment",
+    "conflicts": []
+  },
+  "Blender Cycles Render": {
+    "prompt": "physically accurate path-traced render, (global illumination:1.2), high-detail materials, realistic light bounce",
+    "conflicts": []
+  },
+  "Octane Render": {
+    "prompt": "cinematic path-traced 3D render, (subsurface scattering:1.2), studio HDRI lighting, hyper-real shading",
+    "conflicts": []
+  },
+  "Concept Art": {
+    "prompt": "(production concept art:1.2), painterly digital brush strokes, cinematic atmosphere design",
+    "conflicts": []
+  },
+  "Anime / Manga (Modern)": {
+    "prompt": "modern anime rendering, (clean cel shading:1.2), sharp lineart, vibrant color blocking",
+    "conflicts": []
+  },
+  "Semi-Realistic Anime": {
+    "prompt": "anime-inspired rendering with (semi-realistic shading:1.2), hybrid lighting, detailed hair highlights",
+    "conflicts": []
+  },
+  "Western Comic Style": {
+    "prompt": "western comic-book inking, (bold outlines:1.2), dynamic shadow blocks, halftone shading",
+    "conflicts": []
+  },
+  "Isometric Game Art": {
+    "prompt": "isometric orthographic rendering, (game-asset clarity:1.2), stylized geometry, diorama-like composition",
+    "conflicts": ["Wide Shot", "Close-Up"]
+  },
+  "Retro Pixel Art": {
+    "prompt": "pixel-perfect sprite art, (limited palette:1.2), dithering, retro 16-bit aesthetic",
+    "conflicts": []
+  },
+  "Low-Poly 3D": {
+    "prompt": "low-poly 3D render, (flat shading:1.2), stylized geometry, simplified materials",
+    "conflicts": []
+  },
+  "--- TRADITIONAL MEDIA ---": { "prompt": "", "conflicts": [] },
+  "Oil on Canvas": {
+    "prompt": "traditional oil painting, (visible brush strokes:1.2), heavy paint texture, classical museum lighting",
+    "conflicts": []
+  },
+  "Watercolor & Ink": {
+    "prompt": "watercolor wash, (soft pigment bleeding:1.2), paper texture, hand-drawn ink outlines",
+    "conflicts": []
+  },
+  "Charcoal / Pencil Sketch": {
+    "prompt": "graphite sketch, (cross-hatching:1.2), visible paper grain, monochrome shading",
+    "conflicts": []
+  },
+  "Acrylic Painting": {
+    "prompt": "bold acrylic brush strokes, (high pigment opacity:1.2), textured canvas",
+    "conflicts": []
+  },
+  "Pastel Drawing": {
+    "prompt": "soft pastel strokes, (powdery texture:1.2), blended color gradients",
+    "conflicts": []
+  },
+  "--- ADULT & GLAMOUR ---": { "prompt": "", "conflicts": [] },
+  "High-End Boudoir": {
+    "prompt": "fine art boudoir photography, (soft diffused light:1.2), intimate framing, realistic skin texture",
+    "conflicts": []
+  },
+  "Studio Glamour": {
+    "prompt": "fashion glamour photography, (flawless retouching:1.2), high-key lighting, commercial aesthetic",
+    "conflicts": []
+  },
+  "3D Adult Render": {
+    "prompt": "high-detail 3D character render, (subsurface scattering skin:1.2), ray-traced shadows, physically accurate shading",
+    "conflicts": []
+  },
+  "Hentai / Doujin (2D)": {
+    "prompt": "clean 2D anime lineart, (flat cel shading:1.2), sharp highlights, manga-style rendering",
+    "conflicts": []
+  },
+  "--- CINEMATIC HYBRIDS ---": { "prompt": "", "conflicts": [] },
+  "CGI Cinematic Hybrid (Alita Style)": {
+    "prompt": "high-budget CGI film look, (stylized realism:1.2), subsurface skin shading, cinematic lighting",
+    "conflicts": []
+  },
+  "Cyberpunk Glitch Art": {
+    "prompt": "digital glitch distortion, (chromatic aberration:1.2), neon saturation, cyberpunk aesthetic",
+    "conflicts": ["Natural Lighting"]
+  },
+  "Dark Fantasy Illustration": {
+    "prompt": "dark fantasy digital painting, (gothic atmosphere:1.2), high-detail armor, dramatic shadow rendering",
+    "conflicts": ["Bright Minimalist"]
+  },
+  "Hyperreal CGI": {
+    "prompt": "ultra-detailed CGI realism, (near-photographic rendering:1.2), advanced light simulation",
+    "conflicts": []
+  },
+  "Matte Painting": {
+    "prompt": "cinematic matte painting style, (large-scale environment rendering:1.2), dramatic sky composition",
+    "conflicts": ["Close-Up"]
+  },
+  "AI Surrealism": {
+    "prompt": "dreamlike surreal composition, (reality distortion:1.2), impossible geometry",
+    "conflicts": []
+  }
+}

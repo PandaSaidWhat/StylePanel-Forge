@@ -1,0 +1,78 @@
+{
+  "--- ANATOMICAL INTEGRITY ---": {
+    "prompt": "",
+    "conflicts": []
+  },
+  "Perfect Anatomy": {
+    "prompt": "perfect human anatomy, correct structure, (natural joint positions:1.2), realistic muscle attachment points, medically accurate body structure",
+    "conflicts": []
+  },
+  "Natural Anatomy": {
+    "prompt": "realistic human anatomy, natural body variation, subtle asymmetry, slight posture imperfections, organic muscle distribution, realistic proportions",
+    "conflicts": [
+      "Perfect Anatomy"
+    ]
+  },
+  "Symmetrical Face": {
+    "prompt": "highly symmetrical facial features, perfectly aligned pupils, balanced facial proportions, realistic cranial structure",
+    "conflicts": [
+      "Dutch Angle",
+      "Dutch Tilt Action"
+    ]
+  },
+  "Natural Face": {
+    "prompt": "natural facial asymmetry, slight eyebrow variation, subtle eye alignment differences, organic facial proportions",
+    "conflicts": [
+      "Symmetrical Face"
+    ]
+  },
+  "Detailed Extremities": {
+    "prompt": "highly detailed hands and feet, individual fingers and toes, (5 fingers:1.2), (5 toes:1.2), realistic nails and cuticles",
+    "conflicts": [
+      "Macro Detail"
+    ]
+  },
+  "Stable Pose": {
+    "prompt": "stable and natural posture, realistic weight distribution, grounded stance, center of gravity alignment",
+    "conflicts": [
+      "Drunken / Blurred"
+    ]
+  },
+  "--- STRUCTURAL STABILITY ---": {
+    "prompt": "",
+    "conflicts": []
+  },
+  "Geometric Precision": {
+    "prompt": "straight lines, perfect geometric architecture, stable structures, rectilinear alignment, vanishing point accuracy",
+    "conflicts": [
+      "Dutch Angle",
+      "Drunken / Blurred",
+      "Dutch Tilt Action",
+      "Handheld / Unstable"
+    ]
+  },
+  "Clean Lines": {
+    "prompt": "crisp and clean outlines, well-defined borders, zero color bleeding, sharp separation of elements",
+    "conflicts": [
+      "Watercolor & Ink",
+      "Oil on Canvas",
+      "Pastel Drawing"
+    ]
+  },
+  "Consistent Textures": {
+    "prompt": "uniform material textures, realistic surface consistency, (physically based rendering:1.1), high-detail skin pores",
+    "conflicts": []
+  },
+  "Organic Skin Texture": {
+    "prompt": "organic skin texture, uneven pigmentation, subtle surface variation, natural oil distribution, realistic skin micro-detail",
+    "conflicts": [
+      "Consistent Textures"
+    ]
+  },
+  "Fixed Grounding": {
+    "prompt": "subject standing on solid ground, realistic shadows under feet, contact shadows, floor contact",
+    "conflicts": [
+      "Aerial Drone Shot"
+    ]
+  }
+}

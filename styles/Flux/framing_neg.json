@@ -1,0 +1,18 @@
+{
+  "--- MACRO & PORTRAIT OPTICS ---": "",
+  "Extreme Macro": "wide shot, full body, distant, blurry, landscape, environment",
+  "Face Portrait": "full body, legs, feet, wide angle, fisheye, cropped head",
+  "Bust Shot": "full body, feet, macro, extreme close up, legs, distorted face",
+  "--- MEDIUM & BODY DYNAMICS ---": "",
+  "Upper Body": "full body, feet, macro, portrait, headshot",
+  "Knee Shot / American": "close up, headshot, full body, cropped waist, feet visible",
+  "Full Body (Standard)": "close up, headshot, bust shot, cropped feet, cut off head, torso only, no shoes, floating subject",
+  "Wide Full Body": "close up, macro, portrait, cramped, zoomed in, no floor, no ground",
+  "--- EXTREME DISTANCE & SPACE ---": "",
+  "Long Shot": "close up, portrait, macro, detailed face, zoomed in, large subject",
+  "Extreme Wide / Vista": "close up, indoor, tight space, portrait, macro",
+  "--- VOYEUR & SURVEILLANCE ---": "",
+  "CCTV / Wide Angle": "cinematic lighting, professional portrait, eye-level, clean focus",
+  "Spyhole / Keyhole": "wide open view, no vignette, professional studio framing",
+  "Paparazzi Distance": "posed, studio lighting, looking at camera, sharp focus, close-up"
+}

@@ -1,0 +1,56 @@
+{
+  "--- IDEALIZED ANATOMICAL INTEGRITY (THE POLISHED) ---": "",
+  "Perfect Anatomy": "perfect human anatomy, correct bone structure, five fingers on each hand, accurately proportioned limbs, natural joint positions, symmetrical build",
+  "Symmetrical Face": "highly symmetrical facial features, perfectly aligned eyes, balanced facial proportions, realistic facial structure, idealized beauty standards",
+  "Detailed Extremities": "highly detailed hands and feet, individual fingers and toes, realistic nails, correct limb placement, clean digital definition",
+  "Stable Pose": "stable and natural posture, realistic weight distribution, grounded stance, anatomically plausible positioning, zero limb clipping",
+
+  "--- BIOLOGICAL REALISM & IMPERFECTIONS (THE NATURAL) ---": "",
+  "Hyper-Realistic Skin Texture": "visible skin pores, natural skin micro-relief, subtle downy hair (vellus hair), realistic epidermal layering, high-fidelity dermis detail",
+  "Natural Skin Imperfections": "subtle moles, faint freckles, minor skin redness, realistic variations in skin tone, non-uniform pigmentation, authentic human dermis",
+  "Ocular Realism / Catchlights": "realistic moisture on the cornea, complex iris patterns, wetness on the lower eyelid, sharp catchlights from environmental light sources",
+  "Subsurface Scattering (Skin)": "realistic light penetration through skin tissue, soft red/pink glow in ears and fingers when backlit, biological translucency, organic warmth",
+  "Micro-Expression Wrinkles": "fine lines around eyes (crow's feet) and mouth, realistic forehead creases during expression, skin folding at joints, natural movement lines",
+  "Unpolished Realism": "non-symmetrical features, slightly uneven eyelids, natural dental imperfections, realistic skin shine/oil, raw and unretouched photographic look",
+
+  "--- PHYSICAL INTERACTION & WEIGHT (THE GROUNDED) ---": "",
+  "Physics-Based Weight Distribution": "realistic muscle compression under pressure, fat displacement when sitting or leaning, skin contact deformation, natural gravity effects on body and clothes",
+  "Grounded Surface Contact": "perfect foot-to-ground contact, weight-based footprint in soft surfaces, realistic shadows at contact points (ambient occlusion), zero floating",
+  "Fabric Dynamics": "realistic cloth folding and draping based on body posture, tension lines at joints, gravitational pull on heavy fabrics, material-specific wrinkle patterns",
+  "Environmental Interaction": "hair reacting to wind or moisture, clothes getting wet or dirty based on surroundings, realistic interaction with held objects, physical logic",
+  "Muscular Tension / Definition": "anatomically correct muscle activation, tensed tendons in hands and neck, realistic veins under skin during exertion, athletic structural integrity",
+  
+  "--- OPTICAL FIDELITY & LENS LOGIC (THE CAMERA) ---": "",
+  "Realistic Depth of Field": "physically accurate bokeh, natural focus fall-off, progressive background blur based on lens aperture, sharp subject isolation, zero edge bleeding",
+  "Chromatic Aberration (Natural)": "subtle optical fringing at high-contrast edges, realistic lens refraction, non-perfect digital edges, authentic camera lens artifacting",
+  "Lens Grain & Texture": "organic film grain or digital ISO noise, consistent texture across shadow areas, zero smooth plastic surfaces, authentic photographic grit",
+  "Anamorphic Distortion": "subtle horizontal lens squeeze, authentic cinematic edge warping, realistic optical artifacts, wide-screen film-stock aesthetic",
+  "Accurate Motion Blur": "physically plausible movement streaks, shutter-speed based blur, directional consistency, sharp central core with blurred extremities",
+
+  "--- STRUCTURAL LOGIC & PERSPECTIVE (THE BUILD) ---": "",
+  "Vanishing Point Accuracy": "perfect linear perspective, all architectural lines converging toward logical vanishing points, zero warped geometry, structural stability",
+  "Scale & Proportional Consistency": "realistic size relationships between objects and characters, accurate spatial volume, consistent depth cues, believable environment scale",
+  "Architectural Alignment": "perfectly vertical pillars and walls, straight horizontal levels, zero structural sagging, realistic construction physics, stable building geometry",
+  "Geometric Rigidity": "sharp well-defined corners, non-wobbly edges on hard surfaces, stable industrial shapes, zero AI-hallucinated curves on straight objects",
+
+  "--- MATERIAL SCIENCE & SURFACE LOGIC (THE TEXTURE) ---": "",
+  "Refractive Material Physics": "accurate light bending through glass and water, realistic caustics, physically based transparency, consistent distortion of background through lens",
+  "Specular Highlight Consistency": "sharp and accurate light reflections on metallic and wet surfaces, highlight placement dictated by light source position, zero ghost-lights",
+  "Material-Specific Friction": "tactile surface textures, realistic roughness maps, non-uniform reflections on worn materials, authentic fabric weave and leather grain",
+  "Fresnel Effect": "reflectivity increasing at glancing angles, realistic surface sheen based on viewing position, accurate material-to-light interaction",
+  "Weathering & Surface Wear": "subtle scratches on metal, dust in crevices, realistic edge-wear on objects, authentic signs of use and age, non-perfect surfaces",
+  
+  "--- LIGHTING CONSISTENCY & PHOTON PHYSICS (THE LIGHT) ---": "",
+  "Global Illumination Logic": "consistent light bounce across all surfaces, physically accurate light distribution, zero isolated glowing areas, unified scene lighting",
+  "Shadow Integrity & Penumbra": "realistic shadow softness based on light source distance, accurate contact shadows (ambient occlusion), zero detached or floating shadows, physically plausible shadow directions",
+  "Accurate Light Fall-off": "inverse-square law light decay, realistic illumination intensity based on distance from source, zero infinite light reach, natural dark-to-light transitions",
+  "Consistent Specular Logic": "reflections and highlights perfectly aligned with light source positions, zero contradictory light hits, realistic material-based glare",
+  "Atmospheric Light Interaction": "light reacting to air density and particles, realistic volumetric scattering, consistent color temperature across the entire scene",
+
+  "--- DIGITAL DE-NOISING & ANTI-ARTIFACT (THE POLISH) ---": "",
+  "Anti-Hallucination Structure": "coherent image logic, zero floating objects, physically possible composition, stable background elements, elimination of repeating texture patterns",
+  "High-Fidelity Edge Definition": "clean and stable borders between elements, zero pixel-smearing, sharp transition between foreground and background, elimination of ghosting artifacts",
+  "Neural Noise Suppression": "removal of unwanted digital grain while preserving organic skin texture, zero checkerboard artifacts, smooth color gradients, clean highlight roll-off",
+  "Temporal & Spatial Stability": "consistent detail density across the entire frame, no localized blurring or over-sharpening, unified render quality, zero AI-generated artifacts",
+  "Stable Micro-Detail Rendering": "consistent iris patterns, realistic hair strand distribution, stable skin pore geometry, high-resolution clarity without artificial over-sharpening"
+}

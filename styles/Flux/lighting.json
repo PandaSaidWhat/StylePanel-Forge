@@ -1,0 +1,79 @@
+{
+  "--- STUDIO & PROFESSIONAL RIGGING (THE SETUP) ---": "",
+  "Three-Point Lighting": "key light at 45-degrees, fill light at 50% intensity, back light for depth, professional studio setup, balanced facial shadows",
+  "Butterfly / Paramount": "top-down key light positioned above lens axis, symmetrical sub-nasal shadow, high-fashion aesthetic, emphasized cheekbones",
+  "Rembrandt Lighting": "side-angled key light, 45-degree facial rotation, distinct triangular light patch on the shaded cheek, cinematic chiaroscuro",
+  "Softbox Diffused": "large area light source, 4000K neutral white, wrap-around illumination, near-zero shadow density, commercial skin glow",
+  "Split / Side Lighting": "key light at 90-degrees to the subject, one half of face in total shadow, dramatic texture emphasis, high-contrast character study",
+  "Clamshell Lighting": "two large light sources from above and below the lens, zero shadow on neck, hyper-smooth skin texture, beauty and cosmetic photography style",
+  "Broad Lighting": "key light illuminating the side of the face turned toward the camera, widening facial features, bright and open commercial look",
+
+  "--- NATURAL LIGHT & SOLAR STATES (THE SUN) ---": "",
+  "Golden Hour": {
+    "prompt": "low-angle sun at 2500K, long shadows, warm amber photon scattering, soft directional light, atmospheric glow, horizontal light rays",
+    "conflicts": ["Blue Hour / Twilight", "Moonlit / Nocturnal", "Fluorescent / Neon", "Harsh Noon"]
+  },
+  "Blue Hour / Twilight": "diffused 10000K skylight, deep blue ambient illumination, zero direct sunlight, soft shadows, cool temperature aesthetic, quiet atmosphere",
+  "Harsh Noon": {
+    "prompt": "zenith sun position, vertical 90-degree shadows, high-contrast 5500K light, obliterated midtones, realistic outdoor heat, punishing sunlight",
+    "conflicts": ["Candlelight / Fire", "Moonlit / Nocturnal", "Blue Hour / Twilight", "Cinematic Rim"]
+  },
+  "Volumetric Godrays": "Tyndall effect, visible light beams through atmospheric haze, 3200K warm dust particles, high-intensity point source, heavenly light shafts",
+  "Dappled Sunlight": "light filtered through tree canopy, rhythmic leaf shadows (gobos), organic light patterns, soft forest-floor illumination",
+  "Overcast / Flat Light": "thick cloud cover acting as a massive diffuser, zero visible shadows, 6500K cool grey light, neutral and clinical outdoor mood",
+  "Alpenglow": "indirect pink and purple light hitting high peaks or structures before sunrise, soft mountain-top radiance, ethereal high-altitude light",
+
+  "--- CINEMATIC & NARRATIVE DRAMA (THE STAGE) ---": "",
+  "Cinematic Rim": "extreme backlighting, high-contrast rim light, 5500K daylight balance, glowing subject silhouette, sharp edge separation, heroic aura",
+  "Low-Key Drama": "minimal light, dominant deep shadows, high-contrast ratio, selective illumination, intense psychological atmosphere, noir-inspired",
+  "High-Key Brilliance": "overwhelmingly bright scene, minimal shadows, white-on-white aesthetic, optimistic and clean, commercial or dream-sequence style",
+  "Motivated Light": "light source appearing to come from a visible prop (window, lamp, screen), realistic fall-off, directional consistency, immersive storytelling",
+  "Chiaroscuro / Caravaggio": "extreme transition from brilliant light to deep obsidian black, painterly theatricality, spotlight on central action, hidden backgrounds",
+  "Top-Down God-Light": "single intense point source directly above the subject, heavy shadows in eye sockets, dramatic isolation, religious or interrogative mood",
+  "Anamorphic Lens Flare": "horizontal blue or gold light streaks, cinematic optical artifacts, wide-screen sci-fi aesthetic, high-intensity light hits",
+  
+  "--- INTERIOR & PRACTICAL AMBIANCE (THE ROOM) ---": "",
+  "Candlelight / Fire": {
+    "prompt": "flickering 1800K orange point source, extreme proximity falloff, deep warm shadows, organic light movement, intimate heat",
+    "conflicts": ["Harsh Noon", "Strobe / Flash", "Searchlight / CCTV", "8K Raw Photo"]
+  },
+  "Warm Incandescent Lamp": "3000K tungsten light, soft localized glow, domestic atmosphere, warm orange-tinted shadows, cozy interior mood",
+  "Computer Monitor Glow": "cool blue-toned screen light (6500K), sharp facial highlights, dark ambient room, digital work atmosphere, tech-centered illumination",
+  "Fireplace Hearth Light": "low-angle orange flickering light, dancing shadows, intense warm glow from one side, rustic and cozy atmosphere",
+  "TV Static Flicker": "unstable shifting blue and grey light, high-frequency shadow movement, eerie living-room mood, cinematic domestic tension",
+  "Dim Night-light": "minimal intensity light source, deep shadows, soft localized visibility, sleepy and quiet atmosphere, low-photon environment",
+
+  "--- URBAN & ARTIFICIAL GLOW (THE CITY) ---": "",
+  "Fluorescent / Neon": "6500K flickering gas-discharge light, cyan and magenta color cast, harsh digital shadows, cyberpunk nocturnal aesthetic, artificial vibrancy",
+  "Sodium Vapor Streetlights": "monochromatic orange-yellow glow, deep obsidian shadows, urban nighttime grit, nostalgic city street lighting, high-contrast warmth",
+  "Traffic Light Spill": "saturated red or green directional light, localized color wash on wet surfaces, urban transition mood, rhythmic city lighting",
+  "Wet Asphalt Neon Reflection": "high-gloss ground reflections, blurred light-blooms on dark pavement, high-contrast rainy night, vibrant color-pools",
+  "Distant City Glow": "low-intensity amber horizon light, light pollution haze, silhouetted foreground, quiet suburban or rural edge atmosphere",
+  "Construction Site Floodlights": "intense high-mounted white halogen light, massive shadow casting, industrial grit, overexposed highlights, high-visibility work zone",
+
+  "--- TECHNICAL, SURVEILLANCE & OPTICS (THE SENSOR) ---": "",
+  "Strobe / Flash": "instantaneous high-intensity xenon flash, 6000K, flattened facial features, harsh drop shadow on background, paparazzi or fashion aesthetic",
+  "Searchlight / CCTV": "harsh overhead spotlight, circular beam projection, high-contrast digital noise, surveillance camera exposure, overexposed highlights, cold clinical mood",
+  "Laser Beam Projection": "concentrated coherent light lines, vibrant red or green streaks, volumetric geometric patterns through haze, high-tech security or concert mood",
+  "Night Vision (Green Phosphor)": "monochromatic green illumination, digital sensor noise, brightened shadows, military or surveillance nocturnal aesthetic",
+  "Police Siren Flash": "rapidly alternating red and blue light pulses, high-tension atmosphere, emergency response mood, sharp rhythmic color shifts",
+  "UV / Blacklight Glow": "fluorescent purple and violet ambient light, glowing white surfaces, psychedelic party mood, high-contrast neon reactive textures",
+  
+  "--- ABSTRACT & OPTICAL PHENOMENA (THE LENS) ---": "",
+  "Prism Refraction": "white light split into spectral colors, rainbow edges on surfaces, crystalline light-bending, sharp geometric color shifts, optical beauty",
+  "Vintage Lens Flare": "warm circular artifacts, orange and red light-rings, organic optical flaws, nostalgic anamorphic flares, soft contrast reduction aesthetic",
+  "Analog Light Leaks": "soft orange or red light bleeding from frame edges, vintage film-burn aesthetic, unintentional light exposure, nostalgic warmth and grit",
+  "Rainbow Caustics": "light reflected or refracted through water or glass, intricate shimmering light-patterns, dancing prismatic highlights, realistic fluid light physics",
+  "Chromatic Aberration Halo": "slight color-fringing on high-contrast edges, red/cyan offset, high-tech or hallucinogenic visual distortion, intentional optical imperfection",
+  "Soft Bokeh Highlights": "out-of-focus light sources rendered as soft glowing circles, creamy background blur, high-quality lens aesthetic, romantic shallow depth",
+  "Motion Streak Light": "long-exposure light-trails, horizontal speed-lines, blurred luminous paths, dynamic energy and movement, vibrant light painting effect",
+
+  "--- ETHEREAL & SUPERNATURAL LIGHT (THE BEYOND) ---": "",
+  "Divine Golden Aura": "soft glowing radiance emanating from the subject, heavenly golden light, zero harsh shadows, transcendent and holy atmosphere, divine presence",
+  "Ghostly Ectoplasm Glow": "low-intensity spectral green or white light, semi-transparent illumination, ethereal and cold, unsettling supernatural presence, phantom aesthetic",
+  "Magical Wisp Light": "floating points of concentrated light, dancing particles, enchanted atmosphere, soft bluish-white glow, mystical forest or fantasy mood",
+  "Cosmic Stardust Radiance": "multicolored shimmering particles, nebula-like light clouds, stellar background glow, vast astronomical scale, purple and indigo light-pools",
+  "Underworld Ember Glow": "low-angle red and orange light from below, smoldering heat aesthetic, volcanic sparks, dark and oppressive supernatural heat, hellish illumination",
+  "Holy Celestial Beam": "single pillar of brilliant white light from above, piercing darkness, divine intervention aesthetic, high-contrast spiritual focus, majestic rays",
+  "Dark Energy Pulse": "void-like black light with purple or magenta edges, negative-space illumination, chaotic supernatural power, unstable reality-tearing light"
+}

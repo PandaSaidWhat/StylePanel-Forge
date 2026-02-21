@@ -1,0 +1,20 @@
+{
+  "--- STUDIO & ARCHITECTURAL ---": "",
+  "Soft Studio Light": "harsh shadows, direct sunlight, amateur lighting, grainy, volumetric dust",
+  "High-Key Lighting": "dark, moody, shadowy, low-key, black background, cinematic moonlight",
+  "Low-Key / Dramatic": "bright, flat lighting, high-key, sun-drenched, soft studio light",
+  "Rembrandt Lighting": "flat lighting, no shadows, overhead light, high-key",
+  "--- NATURAL & ATMOSPHERIC ---": "",
+  "Golden Hour": "cool tones, blue hour, mid-day sun, harsh shadows, cinematic moonlight, cold & frosty",
+  "Cinematic Moonlight": "warm lighting, sunlight, bright colors, day-time, golden hour, firelight",
+  "God Rays": "flat lighting, indoor lighting, no atmosphere, shadowless",
+  "Bioluminescent Glow": "daylight, natural sun, bright environment, sun-drenched",
+  "--- ATMOSPHERIC DETAILS (NEW) ---": "",
+  "Volumetric Dust": "clean air, sterile, vacuum, sharp shadows, clinical, soft studio light",
+  "Anamorphic Lens Flare": "round lens flare, natural light, no flare, soft lighting, vintage",
+  "Bioluminescent Spores": "daylight, sun-drenched, clinical, sharp shadows, non-glowing",
+  "--- TECHNICAL & STYLIZED ---": "",
+  "Hard Rim Light": "flat lighting, no backlight, soft edges, shadowless",
+  "Cyberpunk Neon": "natural lighting, sunlight, monochrome, dull colors, earthy tones, vintage sepia",
+  "Raytraced Global Illumination": "flat shading, 2d, low quality, bad shadows, lowres"
+}

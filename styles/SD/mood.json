@@ -1,0 +1,42 @@
+{
+  "--- ATMOSPHERIC & EMOTIONAL ---": "",
+  "Somber & Moody": {
+    "prompt": "somber atmosphere, muted colors, melancholic, low saturation, heavy shadows",
+    "conflicts": ["Joyful & Vibrant", "Warm & Cozy", "Golden Hour"]
+  },
+  "Ethereal & Dreamy": "ethereal, dreamy, soft glow, hazy, pastel tones, surreal atmosphere",
+  "Epic & Heroic": "epic scale, heroic atmosphere, dramatic, high contrast, legendary feel",
+  "Horror & Eerie": {
+    "prompt": "eerie, unsettling, creepy, dark shadows, horror aesthetic, sinister vibe",
+    "conflicts": ["Joyful & Vibrant", "Warm & Cozy", "High-Key Lighting"]
+  },
+  "Joyful & Vibrant": {
+    "prompt": "vibrant colors, joyful, bright, sunny, high saturation, cheerful mood",
+    "conflicts": ["Somber & Moody", "Horror & Eerie", "Cold & Frosty", "Bleach Bypass"]
+  },
+  "--- TECHNICAL FILTERS (NEW) ---": "",
+  "Cross Processing": "cross processing film, unpredictable colors, unique color shift, analog aesthetic, high contrast",
+  "Infrared Aesthetic": {
+    "prompt": "infrared photography, white foliage, black sky, surreal colors, otherworldly heat map look",
+    "conflicts": ["Vintage Sepia", "Natural Colors", "Cinematic Teal & Orange"]
+  },
+  "Bleach Bypass": {
+    "prompt": "bleach bypass effect, low saturation, high contrast, gritty silver look, cinematic harshness",
+    "conflicts": ["Joyful & Vibrant", "Ethereal & Dreamy", "High-Key Lighting"]
+  },
+  "--- COLOR GRADING ---": "",
+  "Cinematic Teal & Orange": "teal and orange color grading, hollywood blockbuster look, complementary colors",
+  "Cyberpunk (Pink/Teal)": "cyberpunk colors, neon pink and teal, synthwave aesthetic, futuristic palette",
+  "Vintage Sepia": {
+    "prompt": "sepia tone, aged paper, old photo, brown tint, historical atmosphere",
+    "conflicts": ["Cyberpunk (Pink/Teal)", "Cold & Frosty", "Infrared Aesthetic", "Cinematic Teal & Orange"]
+  },
+  "Cold & Frosty": {
+    "prompt": "cold blue tones, icy atmosphere, winter colors, chilly vibe",
+    "conflicts": ["Warm & Cozy", "Vintage Sepia", "Joyful & Vibrant", "Golden Hour"]
+  },
+  "Warm & Cozy": {
+    "prompt": "warm amber tones, cozy atmosphere, inviting light, soft interior feel",
+    "conflicts": ["Cold & Frosty", "Somber & Moody", "Horror & Eerie"]
+  }
+}

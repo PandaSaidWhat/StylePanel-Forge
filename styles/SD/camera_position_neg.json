@@ -1,0 +1,10 @@
+{
+  "Front View": "side view, back view, profile, rotated",
+  "Three-Quarter View": "front view, side profile, flat, 2d",
+  "Side Profile": "front view, back view, three-quarter view",
+  "View from Behind": "face, eyes, front view, looking at camera",
+  "Low Angle (Hero)": "high angle, looking down, bird's eye view, flat",
+  "High Angle (Bird's Eye)": "low angle, looking up, eye-level, heroic shot",
+  "Dutch Angle": "straight horizon, level, balanced, vertical",
+  "Drone / Aerial": "ground level, eye-level, close-up"
+}

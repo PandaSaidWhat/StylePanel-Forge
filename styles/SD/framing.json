@@ -1,0 +1,57 @@
+{
+  "Extreme Close-Up": {
+    "prompt": "extreme close-up, macro shot, focus on eyes, hyper-detailed features",
+    "conflicts": ["Full Body", "Wide / Environment", "Telephoto Compression", "Fisheye / GoPro", "Long Shot", "Drone / Aerial"]
+  },
+  "Portrait (Bust)": {
+    "prompt": "portrait, upper body shot, medium close-up, head and shoulders",
+    "conflicts": ["Full Body", "Wide / Environment", "Drone / Aerial", "Bird's Eye View"]
+  },
+  "Half Body": {
+    "prompt": "medium shot, waist-up shot, relaxed framing, arm positioning visible",
+    "conflicts": ["Extreme Close-Up", "Bird's Eye View"]
+  },
+  "Full Body": {
+    "prompt": "full-length shot, head-to-toe, standing on ground, showing shoes and feet",
+    "conflicts": ["Extreme Close-Up", "Portrait (Bust)", "Macro Detail", "Over-the-Shoulder"]
+  },
+  "Wide / Environment": {
+    "prompt": "wide angle lens, environmental shot, distant perspective, establishing shot",
+    "conflicts": ["Extreme Close-Up", "Portrait (Bust)", "Macro Detail"]
+  },
+  "--- KINEMATOGRAFISKE VINKLER (NY) ---": "",
+  "Low Angle (Hero Shot)": {
+    "prompt": "low angle shot, looking up at subject, powerful aesthetic, heroic perspective, camera at knee level",
+    "conflicts": ["Bird's Eye View", "Drone / Aerial", "High Angle"]
+  },
+  "High Angle": {
+    "prompt": "high angle shot, looking down at subject, vulnerable aesthetic, camera above eye level",
+    "conflicts": ["Low Angle (Hero Shot)", "Worm's Eye View"]
+  },
+  "Over-the-Shoulder": {
+    "prompt": "over-the-shoulder shot, looking at subject over someone's shoulder, cinematic conversation depth",
+    "conflicts": ["Full Body", "Extreme Close-Up", "Drone / Aerial"]
+  },
+  "Bird's Eye View / Top-Down": {
+    "prompt": "top-down view, straight down perspective, bird's eye view, map-like orientation",
+    "conflicts": ["Low Angle (Hero Shot)", "Portrait (Bust)", "Half Body"]
+  },
+  "Worm's Eye View": {
+    "prompt": "worm's eye view, extreme low angle, looking straight up from the ground, distorted power dynamic",
+    "conflicts": ["High Angle", "Drone / Aerial", "Portrait (Bust)"]
+  },
+  "--- ADVANCED OPTICS ---": "",
+  "Fisheye / GoPro": {
+    "prompt": "fisheye lens, 8mm, distorted edges, ultra-wide circular field of view, action camera aesthetic",
+    "conflicts": ["Portrait (Bust)", "Telephoto Compression", "Extreme Close-Up", "Geometric Precision"]
+  },
+  "Telephoto Compression": {
+    "prompt": "telephoto lens, 200mm, compressed perspective, subject pops from background, blurry background",
+    "conflicts": ["Fisheye / GoPro", "Extreme Close-Up", "Wide / Environment"]
+  },
+  "Tilt-Shift": {
+    "prompt": "tilt-shift photography, miniature effect, blurred top and bottom, toy-like world",
+    "conflicts": ["Extreme Close-Up", "Sharp Focus"]
+  },
+  "CCTV / Security Cam": "security camera footage, high-angle surveillance, grainy fisheye, monitor aesthetic, timestamp overlay"
+}

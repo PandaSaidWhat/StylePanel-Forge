@@ -1,0 +1,111 @@
+{
+  "--- STANDARD & STUDIO (THE FOUNDATION) ---": "",
+  "Frontal View": "direct eye-level engagement, 0-degree camera axis, perfectly centered subject, symmetrical composition, head-on orientation",
+  "Three-Quarter View": "45-degree camera angle, three-quarter portrait perspective, creating facial depth and spatial volume, professional positioning",
+  "Profile View": {
+    "prompt": "90-degree side profile, linear subject alignment, sharp silhouette definition, strict lateral camera placement",
+    "conflicts": ["suggestive ocular focus", "high-tension flirtatious expression"]
+  },
+  "Rear View": {
+    "prompt": "camera positioned directly behind the subject, back-facing perspective, focus on trailing details and silhouette",
+    "conflicts": ["Face Portrait", "suggestive ocular focus", "Iris & Pupil Geometry"]
+  },
+  "Over-the-Shoulder": "cinematic over-the-shoulder shot, shallow focus on foreground element, depth-based interaction framing",
+  "Symmetry Shot": "perfectly centered optical axis, balanced left and right composition, geometric precision, architectural alignment",
+  "Rule of Thirds": "off-center composition, subject placed on the vertical third-line, dynamic negative space, balanced visual weight",
+
+  "--- VERTICAL HEIGHTS (THE ELEVATION) ---": "",
+  "Ground-Level (Floor)": {
+    "prompt": "camera placed directly on the floor surface, 0cm elevation, extremely low horizon line, focus on ground-contact and textures",
+    "conflicts": ["Face Portrait", "Bust Shot", "Iris & Pupil Geometry"]
+  },
+  "Ankle-Level": "low-angle perspective from 15cm height, looking slightly upward, emphasizing the base and feet of the subject",
+  "Knee-Level (Hero Shot)": "cinematic low-angle, camera at 50cm height, looking up at the subject, creating a sense of dominance and scale",
+  "Hip-Level": "neutral low-angle from 90cm height, standard western-style framing, stable and balanced action perspective",
+  "Eye-Level": "natural human-eye perspective, zero vertical tilt, stable horizon, conversational camera height, 160cm elevation",
+  "Shoulder-Level": "elevated portrait height, camera at 140cm, looking slightly down or straight, intimate and personal framing",
+  "High-Angle (Overview)": "elevated perspective from 250cm height, 30-degree downward tilt, providing environmental context and floor plane visibility",
+  "Bird's Eye View": {
+    "prompt": "zenith perspective, straight 90-degree top-down view, geometric floor layout, zero horizon visibility, 5-meter elevation",
+    "conflicts": ["Extreme Close-Up", "Face Portrait", "Iris & Pupil Geometry", "Micro-Texture"]
+  },
+  "Drone-Level": {
+    "prompt": "high-altitude perspective from 20 meters, wide-angle lens, capturing vast surroundings, modern aerial photography aesthetic",
+    "conflicts": ["Extreme Close-Up", "Face Portrait", "Bust Shot", "Micro-Texture", "8K Raw Photo"]
+  },
+  "Oblique Aerial": "high-altitude 45-degree downward perspective, showing both top and side of subjects, drone-style survey framing, expansive scale",
+  "Satellite View": {
+    "prompt": "extreme high-altitude orthographic perspective, flat topographical aesthetic, map-like rendering, no perspective distortion",
+    "conflicts": ["Extreme Close-Up", "Face Portrait", "Bust Shot", "Extreme Macro", "Studio Portrait"]
+  },
+  "Sub-Level (Crawl Space)": "camera placed below the main floor plane, looking up through gaps or grates, claustrophobic upward perspective",
+
+  "--- ACTION & VEHICLE MOUNTS (THE SPEED HUNTER) ---": "",
+  "Chase Cam": "low-angle tracking position behind a moving subject, wide-angle lens, simulating a high-speed pursuit, sense of momentum",
+  "Leading Shot": "camera positioned directly in front of a moving subject, moving backward at equal speed, focused on the front of the vehicle or character",
+  "Side-Profile Tracking": "camera moving parallel to the subject at high speed, blurred background, sharp subject focus, dynamic lateral motion",
+  "Wheel-Well Cam": "extreme low-angle mount inside a wheel arch, focusing on rotating tires, suspension movement, and flying debris or sparks",
+  "Bumper / Grille Cam": "ultra-low camera mount on the front bumper, looking inches above the road surface, emphasizing speed and incoming terrain",
+  "Hood / Bonnet Mount": "camera fixed to the vehicle hood looking toward the windshield, capturing reflections and the driver through the glass",
+  "Dashcam POV": "fixed wide-angle perspective from a vehicle dashboard, digital timestamp aesthetic, wide field of view, realistic road distortion",
+  "Handlebar Cam": "shaky first-person perspective from a bike or motorcycle handlebar, capturing hands and the path ahead, extreme action feel",
+  "Fender-Mount": "camera attached to the side panel of a vehicle, looking along the body lines toward the wheels or the road ahead",
+  "Low-Level Chase": "camera floating 10cm above the asphalt, looking upward at a trailing vehicle, emphasizing the undercarriage and road textures",
+
+  "--- CINEMATIC & OPTICAL STUNTS (THE DIRECTOR) ---": "",
+  "Dutch Angle (Tilted)": "canted camera frame, 15-degree tilted horizon, cinematic instability, psychological tension, diagonal composition",
+  "Telephoto Compression": {
+    "prompt": "200mm+ long-lens perspective, flattened spatial depth, background appearing much closer to the subject, narrow field of view",
+    "conflicts": ["Wide-Angle Spatial Expansion", "Fisheye Barrel Distortion", "Wide-Angle Lens (14mm)"]
+  },
+  "Fish-eye Distortion": {
+    "prompt": "180-degree spherical field of view, extreme barrel distortion, curved horizon, ultra-wide optical wrap-around effect",
+    "conflicts": ["Extreme Telephoto Compression", "Deep Focus (Infinite Depth)"]
+  },
+  "Wide-Angle Lens (14mm)": "rectilinear wide-angle perspective, exaggerated depth, immersive environmental framing, peripheral stretching",
+  "Dolly Zoom (Vertigo Effect)": "simulated focal length change while moving, distorted perspective where the subject stays still while the background expands or shrinks",
+  "Split-Diopter Shot": "experimental deep-focus technique, both the immediate foreground and distant background in sharp focus simultaneously",
+  "Snorricam (Body-Mount)": "camera rig attached to the subject’s torso, subject remains perfectly still in the frame while the background shakes and rotates around them",
+  "Deep Focus": "high f-stop aesthetic, sharp clarity from the foreground to the furthest background, every layer of the image in perfect focus",
+  "Soft Focus / Dreamy": "intentional optical blur on edges, glowing highlights, ethereal atmosphere, vintage romantic lens aesthetic",
+  "Anamorphic Widescreen": "cinematic 2.39:1 aspect ratio framing, oval bokeh, subtle horizontal blue lens flares, professional movie-still aesthetic",
+
+  "--- ADULT & GLAMOUR (THE INTIMATE) ---": "",
+  "Bed-Level (Supine)": "camera positioned at mattress height, looking across the surface, focus on horizontal lines and proximity",
+  "Top-Down Bed": "90-degree overhead view of the bed surface, symmetrical limb placement, capturing patterns on sheets and skin",
+  "Floor-Level Reclined": "ultra-low perspective looking up at a seated or lying subject, emphasizing curves and spatial depth",
+  "Boudoir Close-Up": "soft-focus macro on skin textures, lace, and subtle details, narrow depth of field, warm intimate lighting",
+  "Pillow-Talk POV": {
+    "prompt": "first-person perspective from a lying position, extreme proximity, slight upward tilt, simulating eye contact from a pillow",
+    "conflicts": ["Wide Full Body", "Aerial Drone View", "Satellite Survey Frame"]
+  },
+  "Curvature Highlight": "side-angle lighting from a low-hip position, emphasizing anatomical contours and silhouette against a dark background",
+  "Vanity Mirror View": "framed reflection through a dressing table mirror, double-image composition, soft vanity bulb lighting",
+
+  "--- VOYEUR & SURVEILLANCE (THE OBSERVER) ---": "",
+  "CCTV High-Corner": "extreme high-angle from a room corner, wide-angle lens, grainy digital noise, timestamp overlay, security camera aesthetic",
+  "Bodycam POV": "shaky chest-height perspective, ultra-wide field of view, fisheye lens distortion, tactical infrared or natural lighting",
+  "Through-the-Gap": "obstructed view through a door crack or hole, framing the subject with dark foreground elements, voyeuristic feel",
+  "Binocular View": "circular dual-lens mask over the frame, subtle chromatic aberration on edges, long-distance telephoto compression",
+  "Peephole Perspective": "extreme spherical distortion (fisheye), dark vignette edges, looking from inside a door to the hallway outside",
+  "Long-Lens Surveillance": "distant telephoto shot from a hidden position, grainy texture, focus through foliage or urban obstacles",
+  "Hidden Nanny-Cam": "low-shelf perspective, slightly tilted or obscured, fixed static frame, candid and unposed atmosphere",
+
+  "--- ENVIRONMENT & SCALE (THE ARCHITECT) ---": "",
+  "One-Point Perspective": "perfectly symmetrical corridor or street view, vanishing point at the center, architectural precision, Kubrick-style framing",
+  "Corner-to-Corner": "diagonal room perspective, camera placed in a high corner, maximizing spatial volume, wide-angle interior aesthetic",
+  "Floor-to-Ceiling Vertical": "90-degree upward tilt from ground level, focusing on skyscraper heights or tall trees, extreme vertical scale",
+  "Horizon-Split": "perfect 50/50 balance between sky and ground, flat horizon line, minimalist landscape composition",
+  "Vista-Wide": "extreme wide-angle from an elevated natural vantage point, capturing miles of terrain, tiny subject for scale",
+  "Framed-by-Nature": "shooting through a cave opening or thick foliage, dark natural borders, bright centered subject",
+  "Symmetrical Reflections": "camera positioned at water level, perfect mirror image between top and bottom halves, serene and balanced",
+
+  "--- ABSTRACT & CREATIVE POV (THE EXPERIMENTAL) ---": "",
+  "Through-the-Glass": "camera shooting through a rainy window or textured glass, distorted light refractions, soft bokeh overlays",
+  "Weapon-Sight POV": "first-person view through a scope or iron sights, tactical overlay, focused target center, blurred peripheral vision",
+  "Insect-Perspective": "macro-level ground view, looking through grass blades as if they were giant pillars, extreme depth-of-field blur",
+  "Keyhole-View": "classic keyhole-shaped frame, voyeuristic and restricted, dark vignette, focused light on the center subject",
+  "Inside-the-Box": "low-angle perspective from inside an object (drawer, fridge, trunk), looking out at the user, tight framing",
+  "Mirror-Fragment": "shattered glass perspective, multiple angled reflections of the same subject, chaotic and artistic composition",
+  "X-Ray / Thermal Vision": "simulated digital sensor aesthetic, high-contrast heat map colors or skeletal transparency, technical overlay"
+}

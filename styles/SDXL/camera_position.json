@@ -1,0 +1,111 @@
+{
+  "--- STANDARD VIEWS ---": { "prompt": "", "conflicts": [] },
+  "Frontal View": {
+    "prompt": "direct frontal view, camera at eye-level, (subject facing camera:1.1), symmetrical composition, detailed facial features, centered framing",
+    "conflicts": []
+  },
+  "Profile Side-View": {
+    "prompt": "side profile view, 90-degree angle, sharp silhouette, (subject looking away:1.2), side-on perspective, ear-level camera",
+    "conflicts": []
+  },
+  "Three-Quarter View": {
+    "prompt": "three-quarter view, 45-degree camera angle, dynamic depth, (angled perspective:1.1), professional portrait positioning",
+    "conflicts": []
+  },
+  "Back View": {
+    "prompt": "rear view from behind, (view of back:1.2), subject looking into the distance, camera behind subject, environmental storytelling",
+    "conflicts": ["Symmetry-Centered View"]
+  },
+  "Rear Three-Quarter View": {
+    "prompt": "(rear three-quarter view:1.2), subject viewed from behind at a 45-degree angle, showing back and side profile",
+    "conflicts": []
+  },
+  "--- HEIGHT & DEPTH ---": { "prompt": "", "conflicts": [] },
+  "Bird's Eye View": {
+    "prompt": "extreme high angle, (looking straight down:1.3), 90-degree vertical downward angle, map-like perspective, zenith viewpoint",
+    "conflicts": ["Full Photo", "Macro Detail"]
+  },
+  "Worm's Eye View": {
+    "prompt": "extreme low angle, (looking straight up from the ground:1.3), camera on floor, towering perspective, floor-level camera axis",
+    "conflicts": []
+  },
+  "High Angle": {
+    "prompt": "high camera placement looking down at subject, (diminishing perspective:1.1), camera 2 meters above subject, overhead view",
+    "conflicts": []
+  },
+  "Low Angle": {
+    "prompt": "low camera placement looking up, heroic stature, (dominant perspective:1.2), forced scale, camera at knee-level",
+    "conflicts": []
+  },
+  "Shoulder-Level": {
+    "prompt": "camera at shoulder height, natural eye-level perspective, realistic height alignment",
+    "conflicts": []
+  },
+  "Hip-Level": {
+    "prompt": "camera at hip height, street photography style, (grounded perspective:1.1)",
+    "conflicts": []
+  },
+  "Ground Level": {
+    "prompt": "camera placed directly on the ground, (low horizon line:1.2), macro-level environment detail, horizontal floor-view",
+    "conflicts": []
+  },
+  "Overhead 45°": {
+    "prompt": "(overhead 45-degree camera angle:1.2), looking down from above at a diagonal, high-angle perspective",
+    "conflicts": []
+  },
+  "--- CINEMATIC & PERSPECTIVE ---": { "prompt": "", "conflicts": [] },
+  "Over-the-Shoulder": {
+    "prompt": "cinematic over-the-shoulder shot, (blurred foreground shoulder:1.2), focus on background subject, conversational depth",
+    "conflicts": ["Extreme Close-Up"]
+  },
+  "Dutch Angle": {
+    "prompt": "tilted camera axis, (slanted horizon line:1.2), cinematic tension, (diagonal composition:1.1), off-kilter frame",
+    "conflicts": ["Geometric Precision", "Isometric Game Art"]
+  },
+  "Wide POV": {
+    "prompt": "first-person point of view, wide-angle field of vision, (subjective camera:1.2), immersive eye-level perspective",
+    "conflicts": ["Studio Portrait"]
+  },
+  "Aerial Drone Shot": {
+    "prompt": "aerial photography, high altitude, sweeping landscape perspective, (expansive top view:1.1), extreme distance",
+    "conflicts": ["Extreme Close-Up", "Intrusive Close-Up", "Macro Detail"]
+  },
+  "--- DYNAMIC & CLOSE ---": { "prompt": "", "conflicts": [] },
+  "Extreme Close-Up": {
+    "prompt": "macro camera position, (extreme proximity:1.2), focus on specific detail, tight framing, intimate textures",
+    "conflicts": ["Full Photo", "Wide Shot", "Landscape", "Panoramic"]
+  },
+  "Dutch Tilt Action": {
+    "prompt": "dynamic tilted action shot, sense of motion, (diagonal camera alignment:1.2), high energy, cinematic blur",
+    "conflicts": ["Geometric Precision"]
+  },
+  "Intrusive Close-Up": {
+    "prompt": "camera inside personal space, wide-angle lens close to face, distorted intimacy, high intensity",
+    "conflicts": ["Wide Shot"]
+  },
+  "--- CHAMPION PRO POSITIONS ---": { "prompt": "", "conflicts": [] },
+  "Low Profile (Crouching Cam)": {
+    "prompt": "camera height at 50cm, crouching perspective, intimate but grounded, focusing on body movement",
+    "conflicts": []
+  },
+  "Hero Shot (Chest Level)": {
+    "prompt": "camera at chest level, looking slightly up, powerful presence, stable heroic composition",
+    "conflicts": []
+  },
+  "Vanishing Point Perspective": {
+    "prompt": "perfectly aligned horizon, strong leading lines, symmetry, camera centered in environment",
+    "conflicts": ["Handheld / Unstable"]
+  },
+  "Symmetry-Centered View": {
+    "prompt": "(perfectly centered symmetry:1.3), balanced composition, subject in exact center of frame, geometric alignment",
+    "conflicts": ["Street & Candid"]
+  },
+  "Off-Center Perspective": {
+    "prompt": "(off-center composition:1.2), rule of thirds, subject placed to the side, dynamic asymmetrical framing",
+    "conflicts": []
+  },
+  "Handheld / Unstable": {
+    "prompt": "(handheld camera shake:1.1), slight motion blur, raw amateur photography style, authentic unstable framing",
+    "conflicts": ["Geometric Precision"]
+  }
+}

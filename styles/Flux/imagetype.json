@@ -1,0 +1,107 @@
+{
+ "--- PHOTOGRAPHY & OPTICAL REALISM (THE LENS) ---": "",
+  "8K Raw Photo": {
+    "prompt": "high-resolution raw photography, natural skin textures with visible pores, shot on 35mm lens, neutral color balance, f/8 aperture, realistic light physics",
+    "conflicts": ["Wide Full Body", "Tiny Subject (Ant-Scale)", "Satellite View", "Drone-Level", "Satellite Survey Frame", "Soft Focus / Dreamy", "Soft-Focus Glow"]
+  },
+  "Studio Portrait": {
+    "prompt": "professional studio portrait, butterfly lighting setup, sharp focus on eyes, 85mm prime lens, clean minimalist background, editorial quality",
+    "conflicts": ["Wide Full Body", "Tiny Subject (Ant-Scale)", "Satellite View", "Drone-Level", "CCTV High-Corner", "Bodycam POV"]
+  },
+  "Street & Candid": "unposed street photography, natural ambient lighting, urban atmosphere, motion freeze, high shutter speed, authentic textures, gritty realism",
+  "Cinematic Movie Still": "cinematic film frame, anamorphic widescreen, subtle lens flare, teal and orange color grading, dramatic depth of field, 35mm panavision aesthetic",
+  "Vintage Film": {
+    "prompt": "authentic analog film stock, chemical color shift, subtle halation, organic film grain, 1990s aesthetic, nostalgic atmosphere, kodak portra 400 feel",
+    "conflicts": ["Unreal Engine 5 Render", "Octane Render"]
+  },
+  "Macro Detail": {
+    "prompt": "extreme macro photography, microscopic detail, hyper-focused textures, liquid droplets, shallow depth of field, 100mm macro lens, biological intricacy",
+    "conflicts": ["Full Body Shot", "Wide Full Body", "Environmental Portrait", "Drone-Level", "Satellite View", "Satellite Survey Frame"]
+  },
+  "GoPro Action Cam": "ultra-wide fish-eye perspective, high-dynamic range, intense motion blur on edges, wearable camera aesthetic, rugged outdoor lighting, adventurous POV",
+  "Polaroid Instant Photo": "distinct square white border, soft focus, chemical color bleeding, high-contrast shadows, vintage lo-fi aesthetic, nostalgic instant-film texture",
+
+  "--- DIGITAL RENDERING & CGI (THE ENGINE) ---": "",
+  "Unreal Engine 5 Render": "physically based rendering, global illumination, lumen and nanite technology, ray-traced reflections, high poly count, volumetric shadows, tech-demo quality",
+  "Octane Render": "hyper-realistic 3D visualization, cinematic lighting, advanced subsurface scattering, crisp metallic reflections, professional product-shot aesthetic",
+  "Isometric Game Art": {
+    "prompt": "isometric orthographic projection, stylized 3d assets, soft ambient occlusion, clean diorama aesthetic, vibrant game world, low-poly charm",
+    "conflicts": ["Bird's Eye View", "Dutch Angle (Tilted)", "One-Point Perspective", "Rule of Thirds"]
+  },
+  "ZBrush Sculptural Detail": "monochromatic grey clay render, hyper-detailed anatomical mesh, sharp creases and folds, digital sculpting aesthetic, high-resolution organic textures",
+  "Cybernetic HUD Interface": "augmented reality overlays, glowing holographic text, digital wireframes, technical data visualization, sci-fi aesthetic, semi-transparent layers",
+  "Ray-Traced Interior": "perfect light bounces, realistic glass and mirror reflections, soft indirect sun-rays, architectural visualization, clean and modern digital space",
+
+  "--- TRADITIONAL MEDIA & FINE ART (THE CANVAS) ---": "",
+  "Oil on Canvas": "traditional oil painting, heavy impasto texture, visible palette knife strokes, linseed oil sheen, cracked paint details, rich pigment depth",
+  "Watercolor & Ink": "delicate watercolor wash, wet-on-dry technique, pigment pooling, fine ink outlines, cold press paper texture, artistic transparency",
+  "Charcoal / Pencil Sketch": "hand-drawn graphite sketch, cross-hatching, smudged charcoal shadows, toothy paper grain, artistic pencil pressure, raw creative energy",
+  "Renaissance Fresco": "pigment on wet plaster texture, clinical composition, historical Italian mural aesthetic, muted earth tones, weathered antique surface",
+  "Palette Knife Expressionism": "thick layers of paint, abstract bold strokes, high-texture relief, vibrant clashing colors, emotional and messy artistic execution",
+  "Japanese Ukiyo-e Woodblock": "flat color planes, bold black outlines, traditional Japanese aesthetic, stylized nature and figures, paper fiber texture",
+  "Art Nouveau Illustration": "ornate flowing lines, organic floral motifs, elegant symmetrical framing, flat decorative colors, Mucha-inspired aesthetic",
+  
+  "--- ANIMATION, MANGA & ILLUSTRATIVE (THE INK) ---": "",
+  "Anime / Manga (Modern)": "contemporary high-budget anime style, clean cel-shading, vibrant digital post-processing, expressive linework, studio quality, detailed background art",
+  "Studio Ghibli Aesthetic": "hand-painted gouache backgrounds, soft whimsical character designs, naturalistic lighting, nostalgic rural atmosphere, traditional cel-animation feel",
+  "90s Retro Anime": "saturated colors, slight chromatic aberration, hand-drawn imperfections, cel-shaded depth, iconic 1990s aesthetic, lo-fi aesthetic",
+  "Vector Pop Art": "bold flat colors, sharp geometric outlines, minimal shading, clean commercial illustration style, vibrant and high-contrast",
+  "Graphic Novel Noir": "heavy black ink-wash, high-contrast monochrome, dramatic hatching and cross-hatching, gritty urban atmosphere, stylized comic book aesthetic",
+  "Golden Age Cartoon": "1930s rubber-hose animation style, pie-cut eyes, monochromatic or muted technicolor, grain and flicker, vintage cel-texture",
+
+  "--- HISTORICAL & ANALOG PROCESSES (THE ARCHIVE) ---": "",
+  "Daguerreotype": "19th-century silver-plate photography, high-contrast monochrome, metallic sheen, heavy scratches and dust, antique historical texture, long exposure stillness",
+  "Wet Plate Collodion": "liquid emulsion on glass texture, uneven chemical edges, ethereal silver tones, haunting historical aesthetic, dark-room artifacts",
+  "Autochrome Lumière": "early color photography (1907), pointillist dye-clumping, soft painterly colors, heavy grain, vintage dreamlike atmosphere",
+  "Cyanotype (Sun Print)": "monochromatic Prussian blue tones, silhouettes and high-contrast textures, white paper fiber highlights, chemical wash aesthetic",
+  "16mm Newsreel": "shaky handheld camera, heavy film grain, flickering light, black and white or faded color, vintage documentary aesthetic, historical grit",
+  "Tintype Portrait": "dark metallic base, silver-grey highlights, shallow depth of field, chemical staining on edges, authentic 1860s photographic feel",
+
+  "--- RETRO & SPECIALIZED DIGITAL ART (THE CHIP) ---": "",
+  "Retro Pixel Art": {
+    "prompt": "meticulous pixel-perfect art, limited color palette, 16-bit console aesthetic, clean sprite work, nostalgic dithered shading, grid-based precision",
+    "conflicts": ["8K Raw Photo", "Soft-Focus Glow", "Soft Focus / Dreamy"]
+  },
+  "Voxel Art": "3D volumetric pixels, cubic geometry, vibrant colors, soft ambient occlusion, toy-like diorama aesthetic, digital block-construction style",
+  "ASCII / Text Art": "images formed entirely by alphanumeric characters and symbols, green phosphor terminal aesthetic, retro computing look, monochrome digital patterns",
+  "Early 90s CGI (Low-Poly)": "flat-shaded polygons, primitive 3D shapes, pixelated textures, nostalgic early PlayStation or N64 aesthetic, digital simplicity",
+  "Demoscene Glitch Art": "intentional data corruption, neon color bleeding, flickering scanlines, high-speed digital artifacts, abstract technological chaos",
+  "CGA Palette Graphics": "limited 4-color palette (cyan, magenta, white, black), dithered shading, 1980s PC gaming aesthetic, harsh digital contrast",
+  
+  "--- ADULT, GLAMOUR & STYLIZED REALISM (THE PRO) ---": "",
+  "High-End Boudoir": {
+    "prompt": "fine art boudoir photography, soft diffused rim lighting, focus on fabric textures like lace and silk, elegant shadows, intimate composition, high-end editorial feel",
+    "conflicts": ["CCTV High-Corner", "Bodycam POV", "Satellite Survey Frame", "Drone-Level"]
+  },
+  "Studio Glamour": {
+    "prompt": "fashion editorial photography, high-key lighting, skin retouching aesthetic, magazine cover quality, sharp professional focus, glamorous pose and styling",
+    "conflicts": ["CCTV High-Corner", "Bodycam POV", "Through-the-Gap", "Obscured View (Foliage)"]
+  },
+  "Hentai / Doujin (2D)": {
+    "prompt": "clean 2d vector art style, flat shading with sharp highlights, authentic doujinshi aesthetic, high-quality digital ink, expressive anime features",
+    "conflicts": ["8K Raw Photo", "Unreal Engine 5 Render", "Oil on Canvas"]
+  },
+  "3D Adult Render": "advanced 3d character render, subsurface scattering skin, ray-traced shadows, anatomical accuracy, high-end octane render, photorealistic lighting",
+  "Cyber-Erotica Aesthetic": "futuristic neon lighting, latex and metallic textures, high-contrast digital polish, augmented reality overlays, sleek and provocative sci-fi mood",
+  "Vintage Pin-up Gouache": "1950s airbrushed illustration style, vibrant gouache colors, idealized smooth forms, classic calendar art aesthetic, nostalgic glamour",
+  "Latex & Shine Aesthetic": "high-gloss synthetic textures, sharp specular highlights, reflective surfaces, dramatic rim lighting, tight form-fitting material focus",
+  "Boudoir Noir": "dramatic chiaroscuro lighting, deep shadows, monochromatic black and white, lace textures, smoke and atmospheric depth, mysterious and elegant",
+  "Wet Look / Oil Sheen": "glistening skin textures, water droplets, reflective oily surface, high-contrast lighting to emphasize muscle definition and curves, luxurious artistic mood",
+  "Neon-Lit Intimacy": "vibrant pink and cyan backlighting, soft shadows, futuristic boudoir mood, glowing skin tones, synthwave color palette",
+  "Selfie / Amateur Realism": {
+    "prompt": "handheld smartphone camera aesthetic, slight motion blur, natural unposed lighting, mirror reflection artifacts, authentic casual atmosphere",
+    "conflicts": ["Studio Portrait", "Anamorphic Widescreen", "Cinematic Movie Still"]
+  },
+  "Lingerie Editorial": "high-end fashion magazine style, soft focus backgrounds, emphasis on silk and embroidery details, elegant posing, soft warm color grading",
+  "Vintage 70s Erotica": "warm yellowish tint, heavy film grain, soft lens glow, nostalgic hazy atmosphere, authentic retro aesthetic",
+  "Gilded / Gold Body Paint": "metallic skin texture, shimmering gold flakes, high-contrast lighting to emphasize muscle definition and curves, luxurious artistic mood",
+
+  "--- EXPERIMENTAL & ABSTRACT MEDIA (THE VISIONARY) ---": "",
+  "Infrared Photography": "surreal color swap (foliage appears white or pink), dark high-contrast skies, ethereal dreamlike atmosphere, heat-signature aesthetic, invisible light spectrum",
+  "Double Exposure": "two distinct images overlaid, translucent layers, conceptual merging of subjects and environments, artistic silhouettes, dream-logic composition",
+  "Long Exposure Light Painting": "streaks of glowing light, motion blur, dark background, ethereal light-trails, dynamic energy, vibrant neon ribbons in space",
+  "Fractal Digital Art": "infinite geometric patterns, mathematical complexity, vibrant psychedelic colors, recursive structures, abstract digital depth",
+  "Liquid Marble / Pour Art": "swirling fluid textures, organic color mixing, high-gloss acrylic sheen, abstract marbled patterns, vibrant and chaotic flow",
+  "X-Ray / Skeletal Aesthetic": "translucent layers revealing internal structures, monochromatic blue/white glow, clinical and artistic transparency, minimalist skeletal detail",
+  "Glitch-Art Datamosh": "compressed digital artifacts, smearing pixels, corrupted video frame aesthetic, high-speed technological decay, abstract color bleeding"
+}

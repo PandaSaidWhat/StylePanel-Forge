@@ -1,0 +1,22 @@
+{
+  "--- ATMOSPHERIC MOODS ---": "",
+  "Dark & Gritty": "bright, colorful, clean, happy, soft, polished, cheerful",
+  "Dreamy & Ethereal": "sharp, harsh lighting, realistic, dark, gritty, high contrast",
+  "Nostalgic / Vintage": "modern, digital, sharp, 4k, futuristic, neon",
+  "Ominous / Foreboding": "safe, bright, happy, sunny, inviting, peaceful",
+  "Romantic / Intimate": "cold, distant, clinical, harsh lighting, angry, lonely",
+  "--- COLOR DRIVEN MOODS ---": "",
+  "Vibrant & Energetic": "dull, desaturated, grey, boring, sad, dark",
+  "Melancholic Blue": "warm, happy, sunny, orange, red, energetic",
+  "Warm & Sunny": "cold, blue, rainy, dark, gloomy, snowy",
+  "Cyberpunk / Neon": "natural, organic, sunlight, boring, pastel, old-fashioned",
+  "--- CINEMATIC & DRAMATIC ---": "",
+  "Epic / Grandiose": "small scale, intimate, simple, boring, domestic",
+  "Horror / Macabre": "happy, bright, safe, angelic, cheerful, funny",
+  "Suspenseful / Noir": "bright, sunny, open, clear, colorful, simple",
+  "Peaceful / Zen": "chaotic, loud, messy, vibrant, high energy, aggressive",
+  "--- SPECIALTY MOODS ---": "",
+  "Drunken / Blurred": "sharp, clear, sober, focused, stable, realistic",
+  "Post-Apocalyptic": "lush, green, modern, clean, populated, thriving",
+  "Magical / Fantasy": "realistic, mundane, boring, normal, everyday life"
+}

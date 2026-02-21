@@ -1,0 +1,95 @@
+{
+  "--- SHOT SIZES ---": { "prompt": "", "conflicts": [] },
+  "Full Photo": {
+    "prompt": "(full body shot:1.3), (head to toe:1.2), wide shot, complete figure visible",
+    "conflicts": ["Macro Detail"]
+  },
+  "Wide Shot": {
+    "prompt": "wide angle shot, environmental portrait, subject in landscape, distant view",
+    "conflicts": ["Macro Detail"]
+  },
+  "Medium Shot": {
+    "prompt": "medium shot, (waist up:1.1), professional framing",
+    "conflicts": []
+  },
+  "Close-Up": {
+    "prompt": "close-up shot, (head and shoulders:1.2), detailed facial features",
+    "conflicts": ["Ground Level"]
+  },
+  "--- STANDARD VIEWS ---": { "prompt": "", "conflicts": [] },
+  "Frontal View": {
+    "prompt": "direct frontal view, camera at eye-level, (subject facing camera:1.1), symmetrical composition",
+    "conflicts": ["Back View", "Profile Side-View", "Over-the-Shoulder"]
+  },
+  "Profile Side-View": {
+    "prompt": "side profile view, 90-degree angle, sharp silhouette",
+    "conflicts": ["Frontal View", "Back View", "Three-Quarter View"]
+  },
+  "Three-Quarter View": {
+    "prompt": "three-quarter view, 45-degree camera angle, dynamic depth",
+    "conflicts": ["Frontal View", "Back View", "Profile Side-View"]
+  },
+  "Back View": {
+    "prompt": "rear view from behind, (view of back:1.2), subject looking into the distance",
+    "conflicts": ["Frontal View", "Profile Side-View", "Three-Quarter View"]
+  },
+  "--- HEIGHT & DEPTH ---": { "prompt": "", "conflicts": [] },
+  "Bird's Eye View": {
+    "prompt": "extreme high angle, (looking straight down:1.3), 90-degree vertical downward angle",
+    "conflicts": ["Worm's Eye View", "Low Angle", "Ground Level"]
+  },
+  "Worm's Eye View": {
+    "prompt": "extreme low angle, (looking straight up from the ground:1.3), camera on floor",
+    "conflicts": ["Bird's Eye View", "High Angle", "Aerial Drone Shot"]
+  },
+  "High Angle": {
+    "prompt": "high camera placement looking down at subject, (diminishing perspective:1.1)",
+    "conflicts": ["Low Angle", "Worm's Eye View", "Ground Level"]
+  },
+  "Low Angle": {
+    "prompt": "low camera placement looking up, heroic stature, (dominant perspective:1.2)",
+    "conflicts": ["High Angle", "Bird's Eye View", "Aerial Drone Shot"]
+  },
+  "Ground Level": {
+    "prompt": "camera placed directly on the ground, (low horizon line:1.2)",
+    "conflicts": ["Bird's Eye View", "High Angle", "Aerial Drone Shot"]
+  },
+  "--- CINEMATIC ---": { "prompt": "", "conflicts": [] },
+  "Over-the-Shoulder": {
+    "prompt": "cinematic over-the-shoulder shot, (blurred foreground shoulder:1.2)",
+    "conflicts": ["Frontal View"]
+  },
+  "Dutch Angle": {
+    "prompt": "tilted camera axis, (slanted horizon line:1.2), cinematic tension",
+    "conflicts": ["Vanishing Point Perspective"]
+  },
+  "Wide POV": {
+    "prompt": "first-person point of view, wide-angle field of vision, (subjective camera:1.2)",
+    "conflicts": ["Back View"]
+  },
+  "Aerial Drone Shot": {
+    "prompt": "aerial photography, high altitude, sweeping landscape perspective",
+    "conflicts": ["Worm's Eye View", "Low Angle", "Ground Level"]
+  },
+  "Extreme Close-Up": {
+    "prompt": "macro camera position, (extreme proximity:1.2), focus on specific detail",
+    "conflicts": ["Aerial Drone Shot"]
+  },
+  "--- CHAMPION PRO ---": { "prompt": "", "conflicts": [] },
+  "Low Profile (Crouching Cam)": {
+    "prompt": "camera height at 50cm, crouching perspective",
+    "conflicts": ["Bird's Eye View", "High Angle"]
+  },
+  "Hero Shot (Chest Level)": {
+    "prompt": "camera at chest level, looking slightly up, powerful presence",
+    "conflicts": ["Bird's Eye View", "High Angle"]
+  },
+  "Intrusive Close-Up": {
+    "prompt": "camera inside personal space, wide-angle lens close to face",
+    "conflicts": ["Aerial Drone Shot"]
+  },
+  "Vanishing Point Perspective": {
+    "prompt": "perfectly aligned horizon, strong leading lines",
+    "conflicts": ["Dutch Angle"]
+  }
+}

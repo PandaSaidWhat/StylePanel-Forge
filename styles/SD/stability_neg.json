@@ -1,0 +1,18 @@
+{
+  "--- ESSENTIAL QUALITY ---": "",
+  "Ultra Detailed": "blurry, low quality, pixelated, grainy, lowres, compressed, smudge",
+  "Photorealistic Plus": "cartoon, 3d render, anime, plastic skin, doll-like, fake, illustration",
+  "--- ANATOMY & BODY FIXES ---": "",
+  "Perfect Anatomy": "deformed body, extra limbs, missing limbs, fused limbs, malformed, disfigured",
+  "Detailed Hands & Fingers": "extra fingers, missing fingers, mutated hands, bad anatomy, deformed hands, fused fingers",
+  "Balanced Face": "asymmetrical face, deformed eyes, lazy eye, double face, melted face, distorted features",
+  "--- SURFACE & REALISM ---": "",
+  "Hard-Surface Cybernetics": "organic, biological, soft, messy wires, blurry metal, non-reflective, skin, sketch",
+  "Subsurface Scattering": "flat skin, plastic, gray skin, dead skin look, opaque, solid surface",
+  "Wet & Glistening": "dry, matte, dusty, flat texture, non-reflective",
+  "Skin Imperfections": "smooth skin, airbrushed, plastic, anime, 2d, doll-like",
+  "--- RENDERING & TECH ---": "",
+  "High Dynamic Range (HDR)": "flat lighting, overexposed, underexposed, washed out colors, dull",
+  "Raytraced Shadows": "flat shading, no shadows, bad lighting, 2d look, glowing shadows",
+  "Sharp Focus": "motion blur, out of focus, depth of field blur, bokeh, smudge, kinetic blur"
+}

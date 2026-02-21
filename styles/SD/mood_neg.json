@@ -1,0 +1,18 @@
+{
+  "--- ATMOSPHERIC & EMOTIONAL ---": "",
+  "Somber & Moody": "bright, colorful, cheerful, high saturation, sunny, joyful",
+  "Ethereal & Dreamy": "sharp, hard lighting, realistic, dark, gritty, high contrast",
+  "Epic & Heroic": "boring, simple, small scale, flat, mundane, weak",
+  "Horror & Eerie": "peaceful, pleasant, bright, safe, colorful, joyful",
+  "Joyful & Vibrant": "depressing, dark, muted, grey, sad, somber, bleach bypass",
+  "--- TECHNICAL FILTERS (NEW) ---": "",
+  "Cross Processing": "natural colors, standard white balance, neutral, realistic, digital look",
+  "Infrared Aesthetic": "natural greens, blue sky, standard photography, realistic colors, vintage sepia",
+  "Bleach Bypass": "vibrant colors, joyful, soft, saturated, low contrast, colorful",
+  "--- COLOR GRADING (PRO) ---": "",
+  "Cinematic Teal & Orange": "natural, unedited, flat, monochrome, amateur, infrared",
+  "Cyberpunk (Pink/Teal)": "natural colors, sunlight, warm tones, earthy, vintage sepia",
+  "Vintage Sepia": "vibrant colors, modern, digital look, blue tones, cyberpunk, infrared",
+  "Cold & Frosty": "warm, hot, red, orange, tropical, golden hour, cozy",
+  "Warm & Cozy": "cold, blue, sterile, industrial, harsh, somber, icy"
+}

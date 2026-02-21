@@ -1,0 +1,16 @@
+{
+  "Extreme Close-Up": "wide shot, full body, distant, landscape, blurry face, torso, legs, shoes",
+  "Portrait (Bust)": "full body, feet, shoes, wide shot, landscape, tiny head, distant, legs",
+  "Half Body": "full body, feet, shoes, extreme close-up, macro, distant, bird's eye view",
+  "Full Body": "close-up, cropped head, cropped feet, cropped shoes, portrait, bust shot, half body, cut off, zoomed in",
+  "Wide / Environment": "close-up, macro, tight framing, zoomed in, blurred background, portrait",
+  "Low Angle (Hero Shot)": "high angle, looking down, bird's eye view, drone, top-down",
+  "High Angle": "low angle, looking up, worm's eye view, hero shot, ground level",
+  "Over-the-Shoulder": "solitary shot, isolated subject, full body, wide angle, no foreground",
+  "Bird's Eye View / Top-Down": "eye level, low angle, ground shot, horizon visible, side profile",
+  "Worm's Eye View": "top-down, drone, high angle, eye level, looking down",
+  "Fisheye / GoPro": "straight lines, flat horizon, narrow view, portrait lens",
+  "Telephoto Compression": "wide angle, distorted edges, fisheye, close-up, fisheye distortion",
+  "Tilt-Shift": "sharp background, focus on everything, wide focus, close-up",
+  "CCTV / Security Cam": "professional photography, high quality, cinematic lighting, dslr, shallow depth of field"
+}

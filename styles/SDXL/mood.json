@@ -1,0 +1,95 @@
+{
+  "--- ATMOSPHERIC MOODS ---": { "prompt": "", "conflicts": [] },
+  "Dark & Gritty": {
+    "prompt": "(dark gritty atmosphere:1.2), low-key exposure, desaturated tones, heavy texture detail, industrial decay, high contrast shadow depth",
+    "conflicts": ["Warm & Sunny", "Vibrant & Energetic", "Happy", "Genuine Joy", "Romantic Softness"]
+  },
+  "Dreamy & Ethereal": {
+    "prompt": "(dreamlike atmosphere:1.2), soft bloom highlights, pastel palette, gentle haze, low contrast, floating light particles",
+    "conflicts": ["Dark & Gritty", "Horror / Macabre", "Clinical / Laboratory", "Film Noir"]
+  },
+  "Nostalgic / Vintage": {
+    "prompt": "(faded film tones:1.2), soft contrast curve, subtle organic grain, warm nostalgic palette, gentle lens softness",
+    "conflicts": ["Cyberpunk / Neon", "Clinical / Laboratory", "Neon / Cyberpunk"]
+  },
+  "Ominous / Foreboding": {
+    "prompt": "(ominous atmosphere:1.2), oppressive shadows, cold blue-grey grading, heavy depth haze, tense spatial emptiness",
+    "conflicts": ["Warm & Sunny", "Vibrant & Energetic", "Happy", "Genuine Joy"]
+  },
+  "Romantic / Intimate": {
+    "prompt": "(intimate mood:1.2), shallow depth of field, warm skin tones, soft highlights, subtle glow, gentle ambience",
+    "conflicts": ["Clinical / Laboratory", "Dark & Gritty", "Angry", "Furious"]
+  },
+  "--- COLOR DRIVEN MOODS ---": { "prompt": "", "conflicts": [] },
+  "Vibrant & Energetic": {
+    "prompt": "(high saturation:1.2), vivid contrast, dynamic color separation, bright highlights, energetic composition",
+    "conflicts": ["Dark & Gritty", "Melancholic Blue", "Sad", "Deep Sorrow", "Bored"]
+  },
+  "Melancholic Blue": {
+    "prompt": "(cool blue color grade:1.2), desaturated highlights, soft ambient shadowing, emotional stillness",
+    "conflicts": ["Warm & Sunny", "Vibrant & Energetic", "Happy", "Golden Hour"]
+  },
+  "Warm & Sunny": {
+    "prompt": "(warm golden color tone:1.2), sunlit surfaces, soft warmth in highlights, relaxed brightness",
+    "conflicts": ["Melancholic Blue", "Dark & Gritty", "Cyberpunk / Neon", "Moonlit Night", "Ominous / Foreboding"]
+  },
+  "Cyberpunk / Neon": {
+    "prompt": "(neon glow atmosphere:1.2), saturated magenta and cyan tones, reflective surfaces, futuristic urban energy",
+    "conflicts": ["Warm & Sunny", "Nostalgic / Vintage", "Vintage Film"]
+  },
+  "--- CINEMATIC & DRAMATIC ---": { "prompt": "", "conflicts": [] },
+  "Epic / Grandiose": {
+    "prompt": "(large-scale cinematic atmosphere:1.2), volumetric depth, majestic environment, high-detail landscape scale",
+    "conflicts": ["Lonely / Isolated", "Close-Up"]
+  },
+  "Horror / Macabre": {
+    "prompt": "(macabre tension:1.3), deep shadows, unsettling textures, distorted perspective, oppressive darkness",
+    "conflicts": ["Peaceful / Zen", "Dreamy & Ethereal", "Happy", "Genuine Joy"]
+  },
+  "Suspenseful / Noir": {
+    "prompt": "(noir tension:1.2), heavy shadow geometry, minimal fill light, silhouette-driven framing",
+    "conflicts": ["Vibrant & Energetic", "Warm & Sunny", "High-Key Lighting"]
+  },
+  "Peaceful / Zen": {
+    "prompt": "(calm minimalist atmosphere:1.2), balanced composition, soft natural light, clean spatial harmony",
+    "conflicts": ["Dark & Gritty", "Horror / Macabre", "Cyberpunk / Neon"]
+  },
+  "--- SPECIALTY MOODS ---": { "prompt": "", "conflicts": [] },
+  "Post-Apocalyptic": {
+    "prompt": "(dust-filled air:1.2), muted earth tones, abandoned structures, environmental decay, bleak atmosphere",
+    "conflicts": ["Vibrant & Energetic", "Festival / Celebration"]
+  },
+  "Magical / Fantasy": {
+    "prompt": "(enchanted glow:1.2), subtle particle effects, bioluminescent accents, mystical ambience",
+    "conflicts": ["Clinical / Laboratory"]
+  },
+  "Clinical / Laboratory": {
+    "prompt": "(sterile clinical atmosphere:1.2), cold white lighting, reflective surfaces, precise geometry, minimal emotional warmth",
+    "conflicts": ["Romantic / Intimate", "Magical / Fantasy", "Cozy & Warm", "Firelight / Candle"]
+  },
+  "Liminal Space": {
+    "prompt": "(empty transitional architecture:1.2), artificial flat lighting, quiet unsettling emptiness, repetitive structure",
+    "conflicts": ["Epic / Grandiose", "Vibrant & Energetic"]
+  },
+  "--- NEW ADVANCED MOODS ---": { "prompt": "", "conflicts": [] },
+  "Cold & Frosty": {
+    "prompt": "(icy blue grading:1.2), crisp highlights, cold air ambience, winter silence",
+    "conflicts": ["Warm & Sunny", "Cozy & Warm", "Firelight / Candle"]
+  },
+  "Rainy & Reflective": {
+    "prompt": "(wet surfaces:1.2), muted palette, reflective puddles, contemplative atmosphere",
+    "conflicts": ["Warm & Sunny", "Direct Sunlight"]
+  },
+  "Festival / Celebration": {
+    "prompt": "(bright festive lighting:1.2), confetti atmosphere, joyful crowd energy, vivid colors",
+    "conflicts": ["Dark & Gritty", "Lonely / Isolated", "Ominous / Foreboding"]
+  },
+  "Lonely / Isolated": {
+    "prompt": "(isolated subject:1.2), vast empty space, low saturation, quiet stillness",
+    "conflicts": ["Festival / Celebration", "Epic / Grandiose"]
+  },
+  "Cozy & Warm": {
+    "prompt": "(soft tungsten glow:1.2), warm interior ambience, gentle shadows, intimate comfort",
+    "conflicts": ["Clinical / Laboratory", "Cold & Frosty", "Hospital Sterile"]
+  }
+}

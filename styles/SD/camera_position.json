@@ -1,0 +1,22 @@
+{
+  "Front View": "straight-on view, facing camera, symmetrical positioning, centered",
+  "Three-Quarter View": "three-quarter view, 45-degree angle, dimensional perspective, depth and form",
+  "Side Profile": "side profile view, 90-degree angle, sharp silhouette, looking away",
+  "View from Behind": {
+    "prompt": "back-facing, looking away from camera, over-the-shoulder aesthetic",
+    "conflicts": ["Front View", "Side Profile"]
+  },
+  "Low Angle (Hero)": {
+    "prompt": "low angle shot, looking up, dramatic perspective, camera at ground level, powerful aesthetic",
+    "conflicts": ["High Angle (Bird's Eye)", "Drone / Aerial"]
+  },
+  "High Angle (Bird's Eye)": {
+    "prompt": "high angle shot, looking down, overhead perspective, high viewpoint",
+    "conflicts": ["Low Angle (Hero)"]
+  },
+  "Dutch Angle": "dutch angle, tilted frame, skewed horizon, dramatic tension, cinematic lean",
+  "Drone / Aerial": {
+    "prompt": "aerial photography, top-down view, high altitude perspective",
+    "conflicts": ["Low Angle (Hero)"]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "--- PHOTOGRAPHY & REALISM ---": "",
+  "8K Raw Photo": {
+    "prompt": "raw photo, 8k uhd, dslr, high quality, film grain, Fujifilm XT4, highly detailed skin, natural lighting, sharp focus",
+    "conflicts": ["Digital Illustration", "Anime / Manga (Modern)", "Retro Pixel Art", "Oil on Canvas", "Hentai / Doujin (2D)", "CGI Cinematic Hybrid (Alita Style)"]
+  },
+  "Vintage Film (Analog)": {
+    "prompt": "analog photography, 35mm film stock, kodak portra 400, vintage grain, faded colors, nostalgic atmosphere",
+    "conflicts": ["Unreal Engine 5 Render", "8K Raw Photo", "Digital Illustration", "CGI Cinematic Hybrid (Alita Style)"]
+  },
+  "Cinematic Movie Still": "cinematic film still, anamorphic lens, movie color grading, dramatic lighting, high production value, widescreen",
+  "--- ADULT & GLAMOUR REALISM (NSFW) ---": "",
+  "High-End Boudoir": {
+    "prompt": "luxury boudoir photography, fine art aesthetic, soft rim lighting, silk and lace textures, intimate atmosphere, elegant shadows",
+    "conflicts": ["Retro Pixel Art", "Isometric Game Art", "Street & Candid"]
+  },
+  "Studio Glamour (Retouched)": {
+    "prompt": "fashion editorial, glossy skin, high-key lighting, professional retouching, magazine style, flawless anatomy",
+    "conflicts": ["Vintage Film (Analog)", "Charcoal / Pencil Sketch"]
+  },
+  "Hyper-Realistic 3D Render": {
+    "prompt": "advanced 3d character render, octane render, subsurface scattering skin, realistic anatomy, volumetric lighting, raytracing",
+    "conflicts": ["Hentai / Doujin (2D)", "Oil on Canvas", "Retro Pixel Art"]
+  },
+  "--- DIGITAL ART & GAMING ---": "",
+  "CGI Cinematic Hybrid (Alita Style)": {
+    "prompt": "high-budget CGI movie still, hyper-realistic character design, stylized large expressive eyes, subsurface scattering skin, mechanical cyborg body details, Weta Digital aesthetic, mixed realism and anime proportions, dramatic cinematic lighting",
+    "conflicts": ["8K Raw Photo", "Vintage Film (Analog)", "Retro Pixel Art", "Oil on Canvas", "Hentai / Doujin (2D)", "Charcoal / Pencil Sketch", "Isometric Game Art"]
+  },
+  "Digital Illustration": {
+    "prompt": "2d digital art, clean lines, smooth shading, vibrant colors, artstation style, professional layered composition",
+    "conflicts": ["8K Raw Photo", "Vintage Film (Analog)", "Oil on Canvas"]
+  },
+  "Unreal Engine 5 Render": "ue5 render, octane render, raytracing, cinematic lighting, 8k, volumetric shadows, high-poly assets",
+  "Isometric Game Art": {
+    "prompt": "isometric view, high-end game asset, diorama style, tilt-shift, stylized 3d render, clean orthographic perspective",
+    "conflicts": ["Macro Detail", "Cinematic Movie Still", "8K Raw Photo"]
+  },
+  "--- UNCENSORED STYLIZED ART (NSFW) ---": "",
+  "Hentai / Doujin (2D)": {
+    "prompt": "authentic 2d hentai style, uncensored, sharp ink lines, flat cel-shading, high-quality doujinshi aesthetic, expressive anatomy",
+    "conflicts": ["8K Raw Photo", "Hyper-Realistic 3D Render", "Oil on Canvas", "Vintage Film (Analog)", "CGI Cinematic Hybrid (Alita Style)"]
+  },
+  "Western Comic (Adult)": {
+    "prompt": "gritty western comic art, heavy ink shadows, vibrant colors, muscular definition, stylized realism, action-oriented",
+    "conflicts": ["8K Raw Photo", "Retro Pixel Art", "Watercolor & Ink"]
+  },
+  "Classic Pin-up (Painted)": "vintage pin-up art, 1950s aesthetic, painted look, vibrant gouache, classic americana, idealized forms",
+  "--- TRADITIONAL & CONCEPT ---": "",
+  "Oil on Canvas": {
+    "prompt": "classic oil painting, thick impasto brush strokes, canvas texture, museum lighting, rich pigments, artistic masterpiece",
+    "conflicts": ["8K Raw Photo", "Digital Illustration", "Hentai / Doujin (2D)", "Unreal Engine 5 Render"]
+  },
+  "Watercolor & Ink": "watercolor painting, wet-on-wet technique, soft edges, ink linework, paper texture",
+  "Charcoal / Pencil Sketch": "hand-drawn sketch, graphite, charcoal shading, rough paper texture",
+  "Retro Pixel Art": {
+    "prompt": "high-quality pixel art, 16-bit aesthetic, detailed sprites, clean edges, dithered shading, nostalgic gaming look",
+    "conflicts": ["8K Raw Photo", "Unreal Engine 5 Render", "High-End Boudoir", "Hyper-Realistic 3D Render", "CGI Cinematic Hybrid (Alita Style)"]
+  }
+}

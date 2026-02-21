@@ -1,0 +1,40 @@
+{
+  "--- STUDIO & ARCHITECTURAL ---": "",
+  "Soft Studio Light": {
+    "prompt": "softbox lighting, professional studio setup, even illumination, soft shadows, high-end commercial look",
+    "conflicts": ["Golden Hour", "Cinematic Moonlight", "Cyberpunk Neon", "Volumetric Dust", "Direct Sunlight"]
+  },
+  "High-Key Lighting": {
+    "prompt": "high-key lighting, bright and airy, minimalist, overexposed background, clean aesthetic",
+    "conflicts": ["Low-Key / Dramatic", "Cinematic Moonlight", "Cyberpunk Neon", "Horror & Eerie"]
+  },
+  "Low-Key / Dramatic": {
+    "prompt": "low-key lighting, moody, high contrast, deep shadows, dramatic atmosphere",
+    "conflicts": ["High-Key Lighting", "Soft Studio Light"]
+  },
+  "Rembrandt Lighting": "rembrandt lighting, cinematic triangle of light on cheek, classic portrait lighting, artistic depth",
+  "--- NATURAL & ATMOSPHERIC ---": "",
+  "Golden Hour": {
+    "prompt": "golden hour photography, warm sunlight, long shadows, soft orange glow, atmospheric haze",
+    "conflicts": ["Cinematic Moonlight", "Cyberpunk Neon", "Soft Studio Light", "Cold & Frosty"]
+  },
+  "Cinematic Moonlight": {
+    "prompt": "moonlit scene, cool blue tones, deep shadows, volumetric moonlight, nocturnal atmosphere",
+    "conflicts": ["Golden Hour", "High-Key Lighting", "Soft Studio Light", "Direct Sunlight"]
+  },
+  "God Rays": "volumetric lighting, sunbeams through dust, crepuscular rays, dramatic atmospheric lighting",
+  "--- ATMOSPHERIC DETAILS (NEW) ---": "",
+  "Volumetric Dust": {
+    "prompt": "floating dust particles, sunbeams, atmospheric haze, tiny sparkles in light, suspended motes",
+    "conflicts": ["Soft Studio Light", "High-Key Lighting", "Clean Room"]
+  },
+  "Anamorphic Lens Flare": "anamorphic lens flare, cinematic light streaks, horizontal blue lens flare, sci-fi lighting",
+  "Bioluminescent Spores": "glowing organic particles, bioluminescent spores, mystical floating lights, magical atmosphere",
+  "--- TECHNICAL & STYLIZED ---": "",
+  "Hard Rim Light": "strong rim lighting, silhouette definition, backlight, sharp edges, neon contour",
+  "Cyberpunk Neon": {
+    "prompt": "neon lighting, pink and teal palette, futuristic glow, vibrant city lights, high contrast",
+    "conflicts": ["Golden Hour", "Soft Studio Light", "High-Key Lighting", "Vintage Sepia"]
+  },
+  "Raytraced Global Illumination": "raytraced lighting, physically based rendering, realistic light bounce, global illumination, 8k render"
+}

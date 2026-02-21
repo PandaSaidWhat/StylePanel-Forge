@@ -1,0 +1,104 @@
+{
+  "--- THE SOCIAL MASK ---": "",
+  "Fake / Customer Service Smile": {
+    "prompt": "forced fake smile, cold eyes, dead stare behind a smile, insincere expression, tense facial muscles",
+    "conflicts": ["Joyful Smile", "Schadenfreude", "Deep Sadness", "Betrayed / Heartbroken", "Ahegao / Peak Euphoria"]
+  },
+  "Schadenfreude": {
+    "prompt": "wicked smirk, malicious joy, gloating expression, eyes sparkling with cruelty, watching someone fail",
+    "conflicts": ["Deep Sadness", "Serene & Calm", "Warm Grin", "Suppressed Tears", "Betrayed / Heartbroken"]
+  },
+  "Disdainful Boredom": {
+    "prompt": "haughty expression, heavy-lidded eyes, looking down nose, unimpressed, arrogant yawn, judging",
+    "conflicts": ["Joyful Smile", "Adrenaline Surge", "Ahegao / Peak Euphoria", "Inquisitive / Skeptical"]
+  },
+  "Suppressed Laughter": {
+    "prompt": "biting lip to stop laughing, puffed cheeks, twinkling eyes, trembling lips from hidden joy",
+    "conflicts": ["Stoic / Cold", "Fierce Rage", "Deep Sadness", "Battle Fatigue / Wounded"]
+  },
+  "--- COMBAT & STRAIN ---": "",
+  "Adrenaline Surge": {
+    "prompt": "wide-eyed manic intensity, flared nostrils, bared teeth, fierce combat expression, wild gaze",
+    "conflicts": ["Deep Sleep", "Stoic / Cold", "Serene & Calm", "Disdainful Boredom", "Submissive / Obedient"]
+  },
+  "Battle Fatigue / Wounded": {
+    "prompt": "exhausted expression, glazed eyes, dirt and sweat on face, grimacing in pain, heavy breathing, slumped features",
+    "conflicts": ["Joyful Smile", "Smug & Arrogant", "Wink & Playful", "Dominant / Predatory Smirk", "Seductive Bedroom Eyes"]
+  },
+  "Berserker Rage": {
+    "prompt": "veins popping in forehead, screaming, bloodshot eyes, uncontrollable fury, aggressive jaw, bared teeth",
+    "conflicts": ["Stoic / Cold", "Serene & Calm", "Thinking / Pensive", "Submissive / Obedient", "Seductive Bedroom Eyes"]
+  },
+  "Grimacing in Pain": {
+    "prompt": "tightly shut eyes, bared teeth, facial distortion from physical agony, tensed neck muscles",
+    "conflicts": ["Joyful Smile", "Serene & Calm", "Seductive Bedroom Eyes", "Wink & Playful"]
+  },
+  "--- DARK & SUPERNATURAL ---": "",
+  "Predatory Hunger": {
+    "prompt": "hungry gaze, focused stalking expression, dilated pupils, subtle tongue on lip, dangerous intensity, lethal look",
+    "conflicts": ["Terrified & Scared", "Joyful Smile", "Confused / Curious", "Submissive / Obedient", "Betrayed / Heartbroken"]
+  },
+  "Mind-Controlled / Vacant": {
+    "prompt": "vacant stare, thousand-yard stare, puppet-like expression, unresponsive eyes, slack jaw, eerily calm",
+    "conflicts": ["Determined / Heroic", "Fierce Rage", "Wink & Playful", "Calculating / Scheming", "Inquisitive / Skeptical"]
+  },
+  "Possessed / Sinister": {
+    "prompt": "unnatural smile, rolled back eyes, shadowed face, malicious grin, unsettling facial symmetry",
+    "conflicts": ["Warm Grin", "Serene & Calm", "Thinking / Pensive", "Inquisitive / Skeptical"]
+  },
+  "Hollow-Eyed / Shell-Shocked": {
+    "prompt": "traumatized expression, sunken eyes, pale face, emotionally dead, haunted look",
+    "conflicts": ["Joyful Smile", "Wink & Playful", "Flirty Pout", "Dominant / Predatory Smirk", "Schadenfreude"]
+  },
+  "--- INTENSITY & LIBIDO (NSFW) ---": "",
+  "Seductive Bedroom Eyes": {
+    "prompt": "heavy-lidded eyes, bedroom eyes, half-closed gaze, alluring look, intense sexual tension",
+    "conflicts": ["Determined / Heroic", "Fierce Rage", "Stoic / Cold", "Battle Fatigue / Wounded", "Berserker Rage"]
+  },
+  "Ahegao / Peak Euphoria": {
+    "prompt": "overwhelmed expression, crossed eyes, tongue out, intense pleasure, ecstatic look, flushed face",
+    "conflicts": ["Stoic / Cold", "Fierce Rage", "Determined / Heroic", "Disdainful Boredom", "Calculating / Scheming", "Fake / Customer Service Smile"]
+  },
+  "Lustful Anticipation": {
+    "prompt": "biting lower lip, dilated pupils, heavy breathing expression, flushed cheeks, intense desire",
+    "conflicts": ["Stoic / Cold", "Fierce Rage", "Deep Sadness", "Horror & Eerie"]
+  },
+  "Submissive / Obedient": {
+    "prompt": "downcast eyes, blushing, slight pout, vulnerable expression, waiting for command",
+    "conflicts": ["Dominant / Predatory Smirk", "Smug & Arrogant", "Berserker Rage", "Adrenaline Surge", "Predatory Hunger"]
+  },
+  "Dominant / Predatory Smirk": {
+    "prompt": "dark smirk, command in the eyes, predatory gaze, superior posture, intense eye contact",
+    "conflicts": ["Submissive / Obedient", "Terrified & Scared", "Battle Fatigue / Wounded", "Suppressed Tears"]
+  },
+  "Euphoric Trance": {
+    "prompt": "eyes rolled back, open mouth, head tilted back, expression of pure overwhelming pleasure",
+    "conflicts": ["Stoic / Cold", "Fierce Rage", "Thinking / Pensive", "Calculating / Scheming"]
+  },
+  "--- VULNERABILITY & INTIMACY ---": "",
+  "Biting Lip / Flirty": {
+    "prompt": "biting lower lip, flirty intensity, focused gaze, subtle blushing, anticipation",
+    "conflicts": ["Fierce Rage", "Stoic / Cold", "Disdainful Boredom"]
+  },
+  "Suppressed Tears": {
+    "prompt": "glassy teary eyes, trembling chin, looking away, holding back a sob, emotional tension",
+    "conflicts": ["Joyful Smile", "Schadenfreude", "Dominant / Predatory Smirk", "Wink & Playful"]
+  },
+  "Betrayed / Heartbroken": {
+    "prompt": "shattered expression, trembling lips, wide shocked eyes, face falling, disbelief",
+    "conflicts": ["Smug & Arrogant", "Schadenfreude", "Fake / Customer Service Smile", "Predatory Hunger"]
+  },
+  "--- COGNITIVE & NEUTRAL ---": "",
+  "Stoic / Cold": {
+    "prompt": "emotionless face, cold gaze, robotic, unreadable features, clinical detachment",
+    "conflicts": ["Joyful Smile", "Fierce Rage", "Suppressed Laughter", "Ahegao / Peak Euphoria", "Lustful Anticipation", "Euphoric Trance", "Berserker Rage"]
+  },
+  "Calculating / Scheming": {
+    "prompt": "narrowed eyes, subtle smirk, calculating gaze, focused thinking, plotting expression",
+    "conflicts": ["Mind-Controlled / Vacant", "Ahegao / Peak Euphoria", "Euphoric Trance", "Confused / Curious"]
+  },
+  "Inquisitive / Skeptical": {
+    "prompt": "one raised eyebrow, narrowed eyes, head tilted, judgmental look, questioning everything",
+    "conflicts": ["Mind-Controlled / Vacant", "Possessed / Sinister", "Disdainful Boredom"]
+  }
+}

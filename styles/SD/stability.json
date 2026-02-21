@@ -1,0 +1,36 @@
+{
+  "--- ESSENTIAL QUALITY ---": "",
+  "Ultra Detailed": "8k resolution, highly detailed, masterpiece, sharp focus, intricate textures",
+  "Photorealistic Plus": {
+    "prompt": "highly realistic, raw photo, dslr quality, soft skin textures, natural lighting",
+    "conflicts": ["Retro Pixel Art", "Digital Illustration", "Anime / Manga (Modern)", "Oil on Canvas"]
+  },
+  "--- ANATOMY & BODY FIXES ---": "",
+  "Perfect Anatomy": "well-proportioned body, correct limb placement, anatomically correct, natural pose",
+  "Detailed Hands & Fingers": "perfect hands, five fingers on each hand, detailed fingernails, anatomically correct hands",
+  "Balanced Face": "symmetrical facial features, detailed eyes, realistic iris, perfect lips",
+  "--- PHYSICAL DYNAMICS ---": "",
+  "Kinetic Motion": {
+    "prompt": "dynamic pose, motion blur, action shot, flowing hair, particles in the air, high energy",
+    "conflicts": ["Sharp Focus", "Stable Pose"]
+  },
+  "Weight & Gravity": "heavy fabric, realistic folds, leaning against wall, floor contact, physical interaction with environment",
+  "--- SURFACE & REALISM ---": "",
+  "Hard-Surface Cybernetics": {
+    "prompt": "intricate mechanical joints, polished chrome and carbon fiber textures, internal machinery visible, hydraulic pistons, high-tech prosthetic design, realistic metal reflections, hard-surface modeling aesthetic",
+    "conflicts": ["Watercolor & Ink", "Oil on Canvas", "Charcoal / Pencil Sketch", "Anime / Manga (Modern)"]
+  },
+  "Subsurface Scattering": "subsurface scattering, realistic skin glow, translucent skin, depth of light in skin, lifelike textures",
+  "Wet & Glistening": "wet skin, glistening, droplets, sweat beads, damp hair, reflective skin",
+  "Skin Imperfections": {
+    "prompt": "goosebumps, skin pores, moles, subtle scars, realistic skin texture, peach fuzz",
+    "conflicts": ["Anime / Manga (Modern)", "Retro Pixel Art", "Digital Illustration"]
+  },
+  "--- RENDERING & TECH ---": "",
+  "High Dynamic Range (HDR)": "HDR, high dynamic range, deep shadows, bright highlights, rich colors",
+  "Raytraced Shadows": "physically based rendering, soft shadows, ambient occlusion, realistic light bounce",
+  "Sharp Focus": {
+    "prompt": "sharp focus, depth of field, focused on subject, no blur",
+    "conflicts": ["Vintage Film", "Ethereal & Dreamy", "Cinematic Movie Still", "Kinetic Motion"]
+  }
+}
