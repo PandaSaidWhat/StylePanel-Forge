@@ -109,6 +109,8 @@ Best suited for:
 - Optional negative tag handling  
   When supported by the active model.
 
+  Note: Negative tag injection is disabled in Flux mode, as Forge does not utilize negative prompts for Flux models.
+
 - Live preview system  
   Clear visibility of injected prompt components.
 
@@ -195,5 +197,6 @@ Issues and forks are welcome.
 # License
 
 MIT License.
+
 
 Use freely. Modify freely. Attribute appropriately.
