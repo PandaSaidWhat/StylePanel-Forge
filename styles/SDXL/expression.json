@@ -1,119 +1,275 @@
 {
   "--- CASUAL & BASIC ---": { "prompt": "", "conflicts": [] },
-  "Happy": { 
-    "prompt": "genuine happy expression, relaxed cheeks, natural smile, slightly raised eyebrows, soft eye contact, subtle crow's feet", 
-    "conflicts": ["Dark & Gritty", "Ominous / Foreboding", "Melancholic Blue"] 
+  "Happy / Radiant": {
+    "prompt": "(genuine duchenne smile:1.2), upward mouth corner elevation, (radiant happy expression:1.1), relaxed forehead, sparkling eyes, cheek puffing",
+    "conflicts": []
   },
-  "Sad": { 
-    "prompt": "sad expression, drooping eyelids, downturned mouth corners, slightly glossy eyes, relaxed jaw, subtle frown", 
-    "conflicts": ["Warm & Sunny", "Vibrant & Energetic"] 
+  "Sad / Despondent": {
+    "prompt": "downturned mouth corners, (inner brow elevation:1.2), drooping upper eyelids, (despondent sad expression:1.3), heavy emotional weight, melancholy gaze",
+    "conflicts": []
   },
-  "Angry": { 
-    "prompt": "angry expression, deeply furrowed brow, narrowed eyes, clenched jaw, tight lips, visible tension in facial muscles", 
-    "conflicts": ["Warm & Sunny", "Romantic Softness"] 
+  "Angry / Incensed": {
+    "prompt": "(lowered medial eyebrows:1.3), vertical glabellar lines, (tensed jaw muscles:1.2), focused aggressive gaze, incensed facial expression, stern look",
+    "conflicts": []
   },
-  "Surprised": { 
-    "prompt": "surprised expression, raised eyebrows, widened eyes, slightly open mouth, visible upper teeth, forehead tension", 
-    "conflicts": ["Deep Sleep"] 
+  "Surprised / Aghast": {
+    "prompt": "(maximal frontalis contraction:1.2), horizontal forehead furrows, (wide palpebral fissures:1.2), dropped mandible, aghast facial expression, gasping",
+    "conflicts": ["Sleeping"]
   },
-  "Scared": { 
-    "prompt": "fearful expression, wide pupils, raised upper eyelids, parted lips, pale face, tense jawline", 
-    "conflicts": [] 
+  "Scared / Terrified": {
+    "prompt": "(maximal eyelid retraction:1.3), visible superior sclera, tensed platysma neck muscles, (flared nostrils:1.1), frantic ocular tracking, terrified look",
+    "conflicts": []
   },
-  "Bored": { 
-    "prompt": "bored expression, half-lidded eyes, relaxed eyebrows, neutral mouth, slack facial muscles", 
-    "conflicts": ["Vibrant & Energetic"] 
+  "Bored / Listless": {
+    "prompt": "partial ptosis of upper eyelids, (relaxed facial musculature:1.1), neutral mouth position, (vacant ocular focus:1.2), slumped facial posture, apathy",
+    "conflicts": []
   },
-  "Disgusted": { 
-    "prompt": "disgusted expression, wrinkled nose, curled upper lip, squinted eyes, pulled-back chin", 
-    "conflicts": ["Romantic Softness"] 
+  "Disgusted / Repulsed": {
+    "prompt": "(wrinkled nasal bridge:1.2), elevated nasal wings, nasolabial fold deepening, (squinted eyes:1.1), curled upper lip, repulsed expression",
+    "conflicts": ["Hungry"]
   },
-  "Furious": { 
-    "prompt": "furious expression, bared teeth, extreme brow compression, flared nostrils, visible neck tension, strained facial muscles", 
-    "conflicts": ["Warm & Sunny", "Romantic Softness"] 
+  "Furious / Enraged": {
+    "prompt": "(intense masseter clench:1.3), bared teeth with facial tension, (narrowed eyes:1.2), tensed nasal bridge, visible vein on temple, extreme rage",
+    "conflicts": ["Sleeping"]
   },
-  "--- PRIMARY EMOTIONS ---": { "prompt": "", "conflicts": [] },
-  "Genuine Joy": { 
-    "prompt": "radiant genuine smile, lifted cheeks, deep eye crinkles, teeth visible naturally, relaxed brow, bright expressive eyes", 
-    "conflicts": ["Dark & Gritty", "Ominous / Foreboding"] 
+
+  "--- PRIMARY BIOLOGICAL RESPONSES (THE FOUNDATION) ---": { "prompt": "", "conflicts": [] },
+  "Hyper-Dilated Pupil Response": {
+    "prompt": "(maximal mydriasis:1.4), expanded pupillary diameter, (huge black pupils:1.3), autonomic nervous system arousal, dark ocular depth",
+    "conflicts": ["Bright Sunlight", "Closed Eyes"]
   },
-  "Deep Sorrow": { 
-    "prompt": "intense sorrowful expression, wet teary eyes, trembling lower lip, tightened brow center, damp eyelashes, soft jaw tension", 
-    "conflicts": ["Warm & Sunny", "Vibrant & Energetic"] 
+  "Alar Flare (Physical Strain)": {
+    "prompt": "(lateral expansion of nasal wings:1.2), flared nostrils, deep inhalation posture, (increased respiratory effort:1.1), sympathetic arousal",
+    "conflicts": []
   },
-  "Burning Rage": { 
-    "prompt": "burning rage expression, clenched teeth, heavy brow tension, flared nostrils, tight jaw, visible facial strain", 
-    "conflicts": ["Warm & Sunny"] 
+  "Primal Snarl": {
+    "prompt": "(bilateral levator labii superioris alaeque nasi contraction:1.3), exposed canine teeth, wrinkled nasal bridge, (aggressive ocular focus:1.2)",
+    "conflicts": []
   },
-  "Pure Terror": { 
-    "prompt": "terrified expression, extremely dilated pupils, raised eyebrows, gasping open mouth, visible throat tension, pale skin", 
-    "conflicts": [] 
+  "Lip Compression (Determination)": {
+    "prompt": "(tightened orbicularis oris:1.3), flattened labial profile, zero mucosal visibility, (firm horizontal mouth line:1.2), intense resolve",
+    "conflicts": ["Screaming"]
   },
-  "--- NUANCED & CHARACTER ---": { "prompt": "", "conflicts": [] },
-  "Seductive Smirk": { 
-    "prompt": "subtle seductive smirk, heavy-lidded eyes, slight asymmetrical smile, relaxed lips, slow eye contact", 
-    "conflicts": [] 
+  "Gaze Fixation": {
+    "prompt": "(locked ocular axis:1.3), intense pupillary focus, unblinking palpebral state, (predatory or analytical concentration:1.2), staring focus",
+    "conflicts": ["Sleeping"]
   },
-  "Smug Arrogance": { 
-    "prompt": "smug expression, one eyebrow raised, slight corner smirk, narrowed eyes, relaxed jaw", 
-    "conflicts": [] 
+  "Subtle Micro-Tremor": {
+    "prompt": "minute muscular quivering in the mentalis, (high-tension state:1.1), nearly imperceptible vibration of the skin surface, nervous micro-expression",
+    "conflicts": ["Sleeping"]
   },
-  "Determined Heroism": { 
-    "prompt": "determined expression, focused gaze, tightened jawline, slight brow tension, lips pressed together", 
-    "conflicts": [] 
+  "Rapid Eye Movement (REM) State": {
+    "prompt": "(eyelids closed but trembling:1.3), visible ocular globe motion beneath dermis, (relaxed facial mask:1.1), dreaming brain-wave aesthetic",
+    "conflicts": ["Eye Contact", "Wide Awake"]
   },
-  "Stoic / Cold": { 
-    "prompt": "emotionless expression, neutral brow, straight lips, steady gaze, no visible muscle tension", 
-    "conflicts": [] 
+  
+  "--- SUBTLE SOCIAL & INTELLECTUAL CUES (THE SOPHISTICATE) ---": { "prompt": "", "conflicts": [] },
+  "Analytical Scrutiny": {
+    "prompt": "(unilateral eyebrow depression:1.2), narrowed palpebral fissure, (tilted cranium:1.1), subtle mouth corner compression, deep cognitive processing, analytical gaze",
+    "conflicts": ["Action Shot"]
   },
-  "Pensive / Thoughtful": { 
-    "prompt": "thoughtful expression, slight brow pinch, eyes looking upward or sideways, relaxed lips, subtle chin tilt", 
-    "conflicts": [] 
+  "Sardonic Half-Smile": {
+    "prompt": "(asymmetrical mouth corner lift:1.3), unilateral buccinator activation, mocking ocular gaze, (subtle crow's feet on one side:1.1), smirking",
+    "conflicts": []
   },
-  "Bashful / Blushing": { 
-    "prompt": "shy expression, downward gaze, soft smile, faint blush on cheeks, relaxed brow", 
-    "conflicts": ["Contemptuous Coldness"] 
+  "Enigmatic / Mona Lisa Look": {
+    "prompt": "minimal muscular engagement, (ambiguous mouth corner tension:1.2), smize, calm forehead, (mysterious facial symmetry:1.1), subtle expression",
+    "conflicts": []
   },
-  "Exhausted / Weary": { 
-    "prompt": "exhausted expression, heavy eyelids, dark under-eye shadows, parted lips, slack facial muscles", 
-    "conflicts": ["Vibrant & Energetic"] 
+  "Calculated Stoicism": {
+    "prompt": "clinical neutral mask, zero micro-expression leakage, (fixed jaw alignment:1.1), detached ocular reflection, (professional emotional void:1.2)",
+    "conflicts": ["Happy / Radiant", "Furious / Enraged"]
   },
-  "--- INTENSE & PSYCHOLOGICAL ---": { "prompt": "", "conflicts": [] },
-  "Insane / Psychotic": { 
-    "prompt": "manic expression, wide unblinking eyes, exaggerated grin, raised brows, tense cheek muscles", 
-    "conflicts": ["Deep Sleep"] 
+  "Intellectual Hubris": {
+    "prompt": "elevated chin posture, (downward ocular gaze:1.2), looking down the nose, unilateral brow lift, (smug facial stillness:1.2)",
+    "conflicts": ["Worm's Eye View"]
   },
-  "Dying / Final Breath": { 
-    "prompt": "fading expression, half-open eyes, slack jaw, pale lips, hollow gaze", 
-    "conflicts": ["Vibrant & Energetic"] 
+  "Feigned Interest": {
+    "prompt": "exaggerated eyebrow elevation, (static frozen smile:1.3), vacant ocular focus, slightly tilted head, performing social politeness",
+    "conflicts": []
   },
-  "Agony / Pain": { 
-    "prompt": "intense pain expression, tightly closed eyes, clenched teeth, strained neck muscles, wrinkled brow", 
-    "conflicts": [] 
+  "Nostalgic Melancholy": {
+    "prompt": "(softened ocular focus:1.2), looking into distance, subtle downturned mouth corners, relaxed brow, (reflective and quiet facial state:1.1)",
+    "conflicts": ["Direct Eye Contact"]
   },
-  "Hollow / Shell-Shocked": { 
-    "prompt": "blank thousand-yard stare, pale skin, slightly parted lips, empty gaze, minimal facial movement", 
-    "conflicts": [] 
+
+  "--- EXTREME PSYCHOLOGICAL & DARK INTENSITY (THE ABYSS) ---": { "prompt": "", "conflicts": [] },
+  "Total Ego Dissolution": {
+    "prompt": "maximal ocular expansion, (vacant stare into the void:1.3), slack facial musculature, disconnected consciousness, (transcendent or broken state:1.2)",
+    "conflicts": ["Gaze Fixation", "Eye Contact"]
   },
-  "--- ADVANCED EXPRESSIONS ---": { "prompt": "", "conflicts": [] },
-  "Tearful Smile": { 
-    "prompt": "smiling while crying, wet eyelashes, lifted cheeks, trembling lips, emotional contradiction", 
-    "conflicts": [] 
+  "Visceral Agony": {
+    "prompt": "(maximal contraction of all facial muscles:1.3), deep glabellar furrows, wide open mouth in silent scream, (tensed neck platysma cords:1.2)",
+    "conflicts": ["Bored / Listless", "Sleeping"]
   },
-  "Cold Fury": { 
-    "prompt": "controlled anger, tight lips, piercing eyes, calm brow compression, restrained facial tension", 
-    "conflicts": ["Warm & Sunny"] 
+  "Manic Euphoria": {
+    "prompt": "(wide-eyed frantic joy:1.3), asymmetrical facial tension, hyper-active ocular movement, (unnerving wide grin:1.2), sweat-sheen on skin",
+    "conflicts": ["Calculated Stoicism"]
   },
-  "Anxious Tension": { 
-    "prompt": "anxious expression, furrowed brow center, slightly parted lips, wide alert eyes", 
-    "conflicts": ["Deep Sleep"] 
+  "Catatonic Stare": {
+    "prompt": "complete lack of ocular tracking, (fixed statue-like mask:1.3), waxy skin texture, (zero response to external stimuli:1.2), dead eyes",
+    "conflicts": ["Action Shot", "Eye Contact"]
   },
-  "Romantic Softness": { 
-    "prompt": "soft romantic expression, relaxed eyelids, gentle smile, warm gaze", 
-    "conflicts": ["Dark & Gritty", "Contemptuous Coldness"] 
+  "Possessed / Ocular Inversion": {
+    "prompt": "(retroverted ocular globes:1.4), maximal sclera exposure, unnatural jaw dislocation, (rigid and twisted facial architecture:1.2)",
+    "conflicts": ["Eye Contact", "Portrait"]
   },
-  "Confident Smirk": { 
-    "prompt": "confident smirk, slight lip curl, relaxed brow, steady eye contact", 
-    "conflicts": [] 
+  "Predatory Hunger": {
+    "prompt": "lowered medial brows, (focused pupillary constriction:1.3), salivating oral posture, (forward-leaning head tilt:1.1), high-alert facial state",
+    "conflicts": ["Nostalgic Melancholy"]
+  },
+  "The Thousand-Yard Stare": {
+    "prompt": "(focused on a point miles away:1.3), detached ocular depth, (emotionally hollow mask:1.2), trauma-induced facial stillness",
+    "conflicts": ["Direct Eye Contact", "Happy / Radiant"]
+  },
+  
+  "--- PHYSICAL TOLL & PHYSIOLOGICAL STATES (THE BODY) ---": { "prompt": "", "conflicts": [] },
+  "Deep Narcotic Sleep": {
+    "prompt": "complete muscle atonia, (partial mouth opening:1.2), rhythmic slow breathing, zero ocular response, pale skin undertones, (total facial relaxation:1.3)",
+    "conflicts": ["Gaze Fixation", "Eye Contact"]
+  },
+  "Hypothermic Shiver": {
+    "prompt": "spasmodic contraction of facial muscles, (blue-tinted labial mucosa:1.3), pale skin, (shivering jaw:1.2), tightened brow, frosted eyelashes, cold-stricken",
+    "conflicts": ["Heat-Stroke Exhaustion"]
+  },
+  "Heat-Stroke Exhaustion": {
+    "prompt": "(pronounced flushed malar region:1.2), sweat-beaded dermis, (drooping eyelids:1.2), dry cracked lips, unfocused ocular gaze, labored oral breathing",
+    "conflicts": ["Hypothermic Shiver", "Deep Narcotic Sleep"]
+  },
+  "High-G Force Strain": {
+    "prompt": "(facial skin pulled back toward ears:1.4), sagging cheeks, intense jaw pressure, (narrowed eyes:1.2), visible skin-stretching, distorted anatomy, gravitational pull",
+    "conflicts": ["Happy / Radiant", "Profile View"]
+  },
+  "Oxygen Deprivation (Cyanosis)": {
+    "prompt": "(blue-tinted lips and skin:1.3), flared nostrils, panic-stricken eyes, (tensed neck platysma muscles:1.2), gasping oral posture, high-stress state",
+    "conflicts": ["Deep Narcotic Sleep"]
+  },
+  "Feverish Delirium": {
+    "prompt": "(glazed ocular surface:1.3), flushed cheeks, sweat-slicked forehead, slight asymmetrical mouth twitching, (unfocused erratic gaze:1.2), sickly skin sheen",
+    "conflicts": ["Calculated Stoicism"]
+  },
+  "Complete Physical Burnout": {
+    "prompt": "(pronounced sunken infraorbital hollows:1.3), slack mandibular hinge, dull ocular reflection, zero facial tension, gray skin tone aesthetic, exhaustion",
+    "conflicts": ["Happy / Radiant", "Manic Euphoria"]
+  },
+
+  "--- BESTIAL & PREDATORY INSTINCTS (THE CREATURE) ---": { "prompt": "", "conflicts": [] },
+  "Serrated Grin": {
+    "prompt": "(maximal retraction of lips:1.3), exposure of elongated canine teeth, (wrinkled nasal bridge:1.2), focused predatory eyes, aggressive muzzle-tension",
+    "conflicts": ["Happy / Radiant"]
+  },
+  "Feral Hiss": {
+    "prompt": "tensed facial mask, narrowed eyes, (arched tongue visible:1.2), bared gums, aggressive forward head tilt, (displaying territorial dominance:1.1)",
+    "conflicts": ["Smiling", "Bored / Listless"]
+  },
+  "Blood-Lust Trance": {
+    "prompt": "(hyper-dilated pupils:1.3), blood-stained labial area, twitching nasal wings, (intense tunnel-vision focus:1.2), animalistic facial urgency",
+    "conflicts": ["Analytical Scrutiny"]
+  },
+  "Gleaming Alpha Stare": {
+    "prompt": "(golden or colored ocular reflection:1.3), steady unblinking gaze, low-centered head position, (subtle growling mouth posture:1.1), predatory stillness",
+    "conflicts": ["Nostalgic Melancholy"]
+  },
+  "Eldritch Distortion": {
+    "prompt": "(unnatural facial stretching:1.3), multiple pupil-like ocular artifacts, (shifting skin textures:1.2), void-like oral aperture, uncanny biological horror",
+    "conflicts": ["8K Raw Photo", "Realistic Anatomy"]
+  },
+  "Submerged Predator": {
+    "prompt": "(eyes positioned just above water surface:1.3), ripples around orbital sockets, focused steady gaze, (hidden lower facial features:1.2), aquatic stealth",
+    "conflicts": ["Full Photo", "Bust Shot"]
+  },
+  "Shadow-Stalker Focus": {
+    "prompt": "(eyes glowing in deep shadow:1.3), obscured facial features, (sharp rim-light on teeth or eyes:1.2), predatory silhouette, high-contrast dark aesthetic",
+    "conflicts": ["Bright Sunlight", "High-Key Lighting"]
+  },
+  
+  "--- STATUESQUE, DIVINE & INANIMATE (THE ETERNAL) ---": { "prompt": "", "conflicts": [] },
+  "Marble-Carved Stoicism": {
+    "prompt": "(white marble stone surface:1.3), zero skin texture, (smooth carved stone:1.2), fixed unmoving gaze, perfectly symmetrical classical features, museum statue aesthetic",
+    "conflicts": ["Sweat-Sheen on Skin", "Flushed Cheeks"]
+  },
+  "Porcelain Doll Vacancy": {
+    "prompt": "(hyper-smooth painted porcelain skin:1.3), oversized glass ocular globes, frozen fixed smile, (joint-lines visible at neck:1.2), uncanny valley inanimate look",
+    "conflicts": ["8K Raw Photo", "Realistic Skin Texture"]
+  },
+  "Divine Serenity (Zenith)": {
+    "prompt": "completely closed eyes, (faint upward mouth corner tilt:1.1), glowing skin aura, zero stress lines, (transcendent facial peace:1.2), holy illumination",
+    "conflicts": ["Angry / Incensed", "Visceral Agony"]
+  },
+  "Ancient Deity Wrath": {
+    "prompt": "(wide stone eyes:1.2), furrowed rock-textured brow, open mouth in eternal shout, (dramatic chiaroscuro lighting on hard surfaces:1.3), mythological anger",
+    "conflicts": ["Soft Focus / Dreamy"]
+  },
+  "Gilded Icon Mask": {
+    "prompt": "(metallic gold skin surface:1.3), etched facial details, unblinking jewel-toned eyes, (rigid ceremonial posture:1.2), ritualistic mask aesthetic",
+    "conflicts": ["Realistic Skin Texture"]
+  },
+  "Weathered Bronze Decay": {
+    "prompt": "(oxidized green bronze patina:1.3), cracked facial surface, missing eye-filler, stoic aged expression, (ancient metallic corrosion:1.2)",
+    "conflicts": ["Radiant Skin"]
+  },
+  "Angelic Compassion": {
+    "prompt": "soft-focus features, (tear-welled eyes:1.2), glowing highlights, slight head tilt, (warm benevolent atmosphere:1.2), divine empathy",
+    "conflicts": ["Angry / Incensed", "Feral Hiss"]
+  },
+
+  "--- THEATRICAL, CINEMATIC & INTIMATE (THE PERFORMANCE) ---": { "prompt": "", "conflicts": [] },
+  "Ahegao / Sensory Overload": {
+    "prompt": "(extreme facial ecstasy:1.3), crossed ocular axis, protruded tongue, (rolled-back eyes showing sclera:1.3), flushed skin, maximal sensory peak",
+    "conflicts": ["Calculated Stoicism", "Bored / Listless"]
+  },
+  "Bedroom Eyes (Heavy-Lidded)": {
+    "prompt": "(partial palpebral closure:1.2), relaxed brow, seductive gaze, (dilated pupils:1.2), subtle smirk, intimate and inviting facial state",
+    "conflicts": ["Surprised / Aghast"]
+  },
+  "Silent Film Anguish": {
+    "prompt": "(exaggerated facial sorrow:1.3), wide eyes, hand-to-forehead gesture, (high-contrast emotional mask:1.2), dramatic theatrical lighting",
+    "conflicts": ["Happy / Radiant"]
+  },
+  "Pin-up Surprise": {
+    "prompt": "(perfectly round O-shaped mouth:1.3), arched eyebrows, wide eyes, (playful and exaggerated shock:1.2), vintage 1950s aesthetic",
+    "conflicts": ["Bored / Listless"]
+  },
+  "Femme Fatale Smirk": {
+    "prompt": "(asymmetrical lip corner lift:1.3), narrowed bedroom eyes, tilted chin, (mysterious and dangerous confidence:1.2), noir-lighting focus",
+    "conflicts": ["Surprised / Aghast"]
+  },
+  "Ecstatic Bliss": {
+    "prompt": "head tilted back, (closed eyes with soft tension:1.2), parted lips, (flushed cheeks:1.2), expression of pure sensory pleasure",
+    "conflicts": ["Angry / Incensed"]
+  },
+  "Lip-Bite / Tease": {
+    "prompt": "(lower labial mucosa compressed by upper incisors:1.3), suggestive ocular focus, one raised eyebrow, (high-tension flirtatious expression:1.2)",
+    "conflicts": ["Deep Narcotic Sleep"]
+  },
+
+  "--- ABSTRACT, ERODED & ELEMENTAL (THE ARTIST) ---": { "prompt": "", "conflicts": [] },
+  "Glitch-Face / Digital Corruption": {
+    "prompt": "(fragmented facial features:1.3), pixelated skin textures, offset ocular alignment, (chromatic aberration on facial edges:1.2), cybernetic breakdown",
+    "conflicts": ["8K Raw Photo", "Studio Portrait"]
+  },
+  "Pareidolia (Stone Face)": {
+    "prompt": "(facial features emerging from rock textures:1.3), moss-covered skin, weathered geological grooves, (ancient mountain spirit:1.2)",
+    "conflicts": ["Smooth Skin"]
+  },
+  "Fluid / Melting Expression": {
+    "prompt": "(facial features drooping like liquid:1.3), distorted anatomy, (dripping skin surface:1.3), surrealist Salvador Dali-inspired facial decay",
+    "conflicts": ["Realistic Anatomy"]
+  },
+  "Crying Mercury": {
+    "prompt": "(metallic liquid tears:1.3), chrome-textured skin, (reflective liquid metal surface:1.3), cold and surreal emotional output",
+    "conflicts": ["Matte Skin"]
+  },
+  "Whispering Wind (Mist-Face)": {
+    "prompt": "(face formed by swirling fog and smoke:1.3), hollow ocular sockets, ethereal and disappearing features, (atmospheric phantom aesthetic:1.2)",
+    "conflicts": ["Sharp Detail"]
+  },
+  "Floral Overgrowth": {
+    "prompt": "(flowers blooming from ocular sockets and mouth:1.3), vines integrated into skin, botanical facial fusion, (beautiful macabre nature-death:1.2)",
+    "conflicts": ["Realistic Skin"]
+  },
+  "Inferno-Scream": {
+    "prompt": "(face made of incandescent embers and flames:1.3), glowing volcanic skin cracks, (eyes as white-hot light sources:1.2), elemental rage",
+    "conflicts": ["Cold Colors", "Soft Focus / Dreamy"]
   }
 }

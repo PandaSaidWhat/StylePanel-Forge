@@ -1,95 +1,283 @@
 {
-  "--- SHOT SIZES ---": { "prompt": "", "conflicts": [] },
-  "Full Photo": {
-    "prompt": "(full body shot:1.3), (head to toe:1.2), wide shot, complete figure visible",
-    "conflicts": ["Macro Detail"]
+ "--- SHOT SIZES & RATIOS (THE CROP) ---": { "prompt": "", "conflicts": [] },
+  "Extreme Close-Up": {
+    "prompt": "(focus exclusively on eyes or mouth:1.3), clinical proximity, (high-detail textures:1.2), zero environment visibility, macro framing",
+    "conflicts": ["Vista-Wide", "Drone-Level", "Satellite View", "Aerial Drone View", "Satellite Survey Frame"]
   },
-  "Wide Shot": {
-    "prompt": "wide angle shot, environmental portrait, subject in landscape, distant view",
-    "conflicts": ["Macro Detail"]
+  "Face Portrait": {
+    "prompt": "(tight framing from top of head to chin:1.3), emphasis on facial expression, (skin texture:1.1), blurred background, headshot crop",
+    "conflicts": ["Vista-Wide", "Drone-Level", "Satellite View", "Ground-Level (Floor)", "Satellite Survey Frame"]
   },
-  "Medium Shot": {
-    "prompt": "medium shot, (waist up:1.1), professional framing",
+  "Bust Shot": {
+    "prompt": "framing from head to mid-chest, (standard portrait crop:1.2), stable shoulders, (professional headshot aesthetic:1.1)",
+    "conflicts": ["Vista-Wide", "Satellite View", "Satellite Survey Frame", "Ground-Level (Floor)"]
+  },
+  "Waist-Up (Medium Shot)": {
+    "prompt": "framing from head to waist, (capturing hand gestures and torso:1.2), balanced character-environment interaction, medium shot",
     "conflicts": []
   },
-  "Close-Up": {
-    "prompt": "close-up shot, (head and shoulders:1.2), detailed facial features",
-    "conflicts": ["Ground Level"]
+  "Knee-Up (Medium Long)": {
+    "prompt": "cinematic framing from head to just below knees, (showing clothing style and stance:1.2), classic storytelling crop",
+    "conflicts": []
   },
-  "--- STANDARD VIEWS ---": { "prompt": "", "conflicts": [] },
-  "Frontal View": {
-    "prompt": "direct frontal view, camera at eye-level, (subject facing camera:1.1), symmetrical composition",
-    "conflicts": ["Back View", "Profile Side-View", "Over-the-Shoulder"]
+  "Full Body Shot": {
+    "prompt": "(head-to-toe framing:1.3), clear view of feet and ground contact, (emphasizing posture and full attire:1.2), full length view",
+    "conflicts": ["Extreme Close-Up", "Face Portrait", "Bust Shot"]
   },
-  "Profile Side-View": {
-    "prompt": "side profile view, 90-degree angle, sharp silhouette",
-    "conflicts": ["Frontal View", "Back View", "Three-Quarter View"]
+  "Wide Full Body": {
+    "prompt": "(character is small in the frame:1.3), significant environment visibility on all sides, (35mm wide-angle aesthetic:1.2), distant subject",
+    "conflicts": ["8K Raw Photo", "Macro Detail", "Micro-Texture", "Iris & Pupil Geometry"]
   },
-  "Three-Quarter View": {
-    "prompt": "three-quarter view, 45-degree camera angle, dynamic depth",
-    "conflicts": ["Frontal View", "Back View", "Profile Side-View"]
+
+  "--- MACRO & MICROSCOPIC (THE HIDDEN WORLD) ---": { "prompt": "", "conflicts": [] },
+  "Micro-Texture": {
+    "prompt": "(extreme 1:1 macro focus:1.3) on surface material, visible fibers and pores, (hyper-realistic tactile detail:1.2), shallow depth of field",
+    "conflicts": ["Vista-Wide", "Drone-Level", "Satellite View", "Satellite Survey Frame"]
   },
-  "Back View": {
-    "prompt": "rear view from behind, (view of back:1.2), subject looking into the distance",
-    "conflicts": ["Frontal View", "Profile Side-View", "Three-Quarter View"]
+  "Circuitry & Tech Close-up": {
+    "prompt": "(microscopic view of electronic traces:1.3), solder points, (metallic reflections:1.2), technical industrial aesthetic, macro-lens precision",
+    "conflicts": ["Soft Focus / Dreamy"]
   },
-  "--- HEIGHT & DEPTH ---": { "prompt": "", "conflicts": [] },
-  "Bird's Eye View": {
-    "prompt": "extreme high angle, (looking straight down:1.3), 90-degree vertical downward angle",
-    "conflicts": ["Worm's Eye View", "Low Angle", "Ground Level"]
+  "Organic Cellular Pattern": {
+    "prompt": "abstract macro of natural growth patterns, (leaf veins or skin cell structures:1.2), soft organic lighting, (microscopic biological focus:1.3)",
+    "conflicts": ["Vista-Wide"]
   },
-  "Worm's Eye View": {
-    "prompt": "extreme low angle, (looking straight up from the ground:1.3), camera on floor",
-    "conflicts": ["Bird's Eye View", "High Angle", "Aerial Drone Shot"]
+  "Crystal & Mineral Lattice": {
+    "prompt": "(sharp macro focus on crystalline facets:1.3), internal light refractions, (geometric mineral structures:1.2), hyper-detailed geological aesthetic",
+    "conflicts": []
   },
-  "High Angle": {
-    "prompt": "high camera placement looking down at subject, (diminishing perspective:1.1)",
-    "conflicts": ["Low Angle", "Worm's Eye View", "Ground Level"]
+  "Fabric Weave Detail": {
+    "prompt": "(extreme close-up on textile interlacing:1.3), visible thread count and fuzz, (soft shadow depth between fibers:1.2), macro-fashion focus",
+    "conflicts": []
   },
-  "Low Angle": {
-    "prompt": "low camera placement looking up, heroic stature, (dominant perspective:1.2)",
-    "conflicts": ["High Angle", "Bird's Eye View", "Aerial Drone Shot"]
+  "Liquid Droplet Dynamics": {
+    "prompt": "(macro shot of water tension and droplets:1.3), distorted refractions through liquid, (high-speed shutter aesthetic:1.1), crystalline clarity",
+    "conflicts": []
   },
-  "Ground Level": {
-    "prompt": "camera placed directly on the ground, (low horizon line:1.2)",
-    "conflicts": ["Bird's Eye View", "High Angle", "Aerial Drone Shot"]
+  "Iris & Pupil Geometry": {
+    "prompt": "(microscopic focus on the human eye:1.4), intricate stromal patterns, (wet surface gloss:1.2), hyper-detailed eyelashes, medical-grade macro",
+    "conflicts": ["Rear View", "Ground-Level (Floor)", "Satellite View", "Satellite Survey Frame"]
   },
-  "--- CINEMATIC ---": { "prompt": "", "conflicts": [] },
-  "Over-the-Shoulder": {
-    "prompt": "cinematic over-the-shoulder shot, (blurred foreground shoulder:1.2)",
-    "conflicts": ["Frontal View"]
+  
+  "--- OPTICAL COMPRESSION & DEPTH (THE LENS) ---": { "prompt": "", "conflicts": [] },
+  "Extreme Telephoto Compression": {
+    "prompt": "(200mm telephoto lens:1.3), flattened spatial layers, (background appearing massive and close:1.2), narrow field of view, compressed distance",
+    "conflicts": ["Wide-Angle Spatial Expansion", "Fisheye Barrel Distortion"]
   },
-  "Dutch Angle": {
-    "prompt": "tilted camera axis, (slanted horizon line:1.2), cinematic tension",
-    "conflicts": ["Vanishing Point Perspective"]
+  "Wide-Angle Spatial Expansion": {
+    "prompt": "(14mm rectilinear lens:1.3), exaggerated distance, (deep environmental immersion:1.2), peripheral stretching, expanded spatial depth",
+    "conflicts": ["Extreme Telephoto Compression"]
   },
-  "Wide POV": {
-    "prompt": "first-person point of view, wide-angle field of vision, (subjective camera:1.2)",
-    "conflicts": ["Back View"]
+  "Fisheye Barrel Distortion": {
+    "prompt": "(180-degree fisheye lens:1.3), extreme curved horizon, (spherical barrel distortion:1.3), warped peripheral geometry, ultra-wide bubble effect",
+    "conflicts": ["Extreme Telephoto Compression", "Deep Focus (Infinite Depth)"]
   },
-  "Aerial Drone Shot": {
-    "prompt": "aerial photography, high altitude, sweeping landscape perspective",
-    "conflicts": ["Worm's Eye View", "Low Angle", "Ground Level"]
+  "Tilt-Shift (Miniature Effect)": {
+    "prompt": "(tilt-shift photography:1.4), selective focus blur, (simulating miniature toy scale:1.3), artificial depth-of-field, macro-like environment",
+    "conflicts": ["Deep Focus (Infinite Depth)"]
   },
-  "Extreme Close-Up": {
-    "prompt": "macro camera position, (extreme proximity:1.2), focus on specific detail",
-    "conflicts": ["Aerial Drone Shot"]
+  "Anamorphic Squeeze": {
+    "prompt": "(anamorphic 2.39:1 cinematic ratio:1.2), horizontal blue lens flares, (oval bokeh:1.2), professional film optics, cinematic lateral squeeze",
+    "conflicts": ["Vertical Format"]
   },
-  "--- CHAMPION PRO ---": { "prompt": "", "conflicts": [] },
-  "Low Profile (Crouching Cam)": {
-    "prompt": "camera height at 50cm, crouching perspective",
-    "conflicts": ["Bird's Eye View", "High Angle"]
+  "Soft-Focus Glow": {
+    "prompt": "intentional spherical aberration, (glowing highlights:1.2), dreamlike ethereal atmosphere, (vintage romantic lens aesthetic:1.2), soft-glow effect",
+    "conflicts": ["Extreme Sharpness", "Deep Focus (Infinite Depth)"]
   },
-  "Hero Shot (Chest Level)": {
-    "prompt": "camera at chest level, looking slightly up, powerful presence",
-    "conflicts": ["Bird's Eye View", "High Angle"]
+  "Deep Focus (Infinite Depth)": {
+    "prompt": "(high f-stop aesthetic:1.2), sharp clarity from foreground to horizon, (infinite depth of field:1.3), architectural precision",
+    "conflicts": ["Soft-Focus Glow", "Tilt-Shift (Miniature Effect)", "Bokeh"]
   },
-  "Intrusive Close-Up": {
-    "prompt": "camera inside personal space, wide-angle lens close to face",
-    "conflicts": ["Aerial Drone Shot"]
+
+  "--- SUBJECT-ENVIRONMENT BALANCE (THE SCALE) ---": { "prompt": "", "conflicts": [] },
+  "Environmental Portrait": {
+    "prompt": "(subject occupies 30% of frame:1.2), wide-prime lens, (storytelling through context:1.1), balanced character-environment interaction",
+    "conflicts": ["Extreme Close-Up", "Face Portrait"]
   },
-  "Vanishing Point Perspective": {
-    "prompt": "perfectly aligned horizon, strong leading lines",
-    "conflicts": ["Dutch Angle"]
+  "Tiny Subject (Ant-Scale)": {
+    "prompt": "(extreme wide vista:1.3), subject as a microscopic focal point, (emphasizing vastness and isolation:1.2), hyper-scale landscape",
+    "conflicts": ["Close-Up", "Bust Shot", "Face Portrait"]
+  },
+  "Centered Dominance": {
+    "prompt": "subject placed (dead-center:1.3), zero-offset composition, (high visual weight:1.1), commanding symmetrical presence",
+    "conflicts": ["Rule of Thirds", "Off-Center Perspective"]
+  },
+  "Leading Negative Space": {
+    "prompt": "subject on one edge (looking into vast empty space:1.3), minimalist composition, (emphasizing direction and anticipation:1.2)",
+    "conflicts": ["Centered Dominance", "Symmetry Shot"]
+  },
+  "Head-to-Toe Precision": {
+    "prompt": "(full-body framing:1.2), equal clearance above and below, 35mm lens, (natural anatomical proportions:1.1), stable ground-plane",
+    "conflicts": ["Extreme Close-Up", "Bust Shot"]
+  },
+  "Object-Centric Product Frame": {
+    "prompt": "(hero-shot for inanimate object:1.2), 45-degree downward angle, soft studio lighting, (focus on form and silhouette:1.1)",
+    "conflicts": ["Face Portrait"]
+  },
+  "Crowd Integration": {
+    "prompt": "subject partially obscured in dense group, (shallow depth of field to isolate one face:1.2), chaotic but focused framing",
+    "conflicts": ["Tiny Subject (Ant-Scale)"]
+  },
+
+  "--- ARCHITECTURAL & GEOMETRIC (THE STRUCTURE) ---": { "prompt": "", "conflicts": [] },
+  "One-Point Perspective": {
+    "prompt": "(perfectly centered vanishing point:1.3), symmetrical lines, (architectural hallway alignment:1.2), Kubrick-style precision",
+    "conflicts": ["Dutch Angle (Tilted)"]
+  },
+  "Diagonal Leading Lines": {
+    "prompt": "(dynamic diagonal leading lines:1.3), eye-leading structural edges, high-energy geometric arrangement",
+    "conflicts": ["Symmetry Shot"]
+  },
+  "Corner-to-Corner Depth": {
+    "prompt": "camera in high or low corner, (14mm wide-angle:1.2), maximizing spatial volume, (three-dimensional room geometry:1.2)",
+    "conflicts": ["Extreme Telephoto Compression"]
+  },
+  "Low-Angle Pillar Shot": {
+    "prompt": "(camera at floor level looking up:1.3), exaggerated vertical height, (converging vertical lines:1.2), massive architectural scale",
+    "conflicts": ["High-Angle (Overview)"]
+  },
+  "Orthographic Top-Down": {
+    "prompt": "(perfect 90-degree overhead view:1.3), zero perspective distortion, (flat geometric mapping aesthetic:1.2), floor plan view",
+    "conflicts": ["Worm's Eye View", "Low Angle"]
+  },
+  "Symmetrical Portal Framing": {
+    "prompt": "using arches or doorways as (secondary frame:1.2), centered alignment, (depth-within-depth composition:1.2)",
+    "conflicts": []
+  },
+  "Cantilever Perspective": {
+    "prompt": "framing from protruding edge, (looking out over a drop:1.2), structural overhang, (emphasizing vertical void:1.3)",
+    "conflicts": ["Indoor"]
+  },
+  
+  "--- OBSTRUCTED & LAYERED VIEWS (THE DEPTH) ---": { "prompt": "", "conflicts": [] },
+  "Through-the-Glass (Refracted)": {
+    "prompt": "shooting through (textured or wet glass:1.3), light distortions, (soft bokeh artifacts:1.2), layered transparent depth, intimate observation",
+    "conflicts": ["Macro Detail"]
+  },
+  "Framed by Architecture": {
+    "prompt": "using (archway or pillars:1.2) to border subject, (frame-within-a-frame effect:1.3), formal architectural framing, depth layers",
+    "conflicts": ["Vista-Wide"]
+  },
+  "Obscured View (Foliage)": {
+    "prompt": "camera behind (out-of-focus plants:1.3), natural elements in extreme foreground, (peek-a-boo depth:1.2), organic borders",
+    "conflicts": ["Studio Portrait"]
+  },
+  "Venetian Blind Shadow-Frame": {
+    "prompt": "subject framed by (rhythmic horizontal shadow patterns:1.3), high-contrast film noir, (graphic atmospheric layering:1.2)",
+    "conflicts": ["High-Key Lighting"]
+  },
+  "Reflection-Primary Framing": {
+    "prompt": "subject seen through (puddle or mirror:1.3), inverted composition, (double-image depth:1.2), artistic symmetry",
+    "conflicts": []
+  },
+  "Silhouetted Foreground Frame": {
+    "prompt": "dark (underexposed shapes in foreground:1.3), doorway or cave mouth frame, brightly lit subject in distance, high contrast",
+    "conflicts": ["Flat Lighting"]
+  },
+  "Bokeh-Wash Framing": {
+    "prompt": "(extreme out-of-focus foreground:1.3), colorful atmospheric border, (bokeh taking up 40% of frame:1.2), soft depth",
+    "conflicts": ["Deep Focus (Infinite Depth)"]
+  },
+  "Slot-View (Gap Reveal)": {
+    "prompt": "framing through (narrow vertical gap:1.3), restricted view, (voyeuristic gap reveal:1.2), high-tension framing",
+    "conflicts": ["Panoramic", "Vista-Wide"]
+  },
+
+  "--- CINEMATIC ASPECT RATIOS & CROPS (THE FORMAT) ---": { "prompt": "", "conflicts": [] },
+  "Anamorphic 2.39:1 Scope": {
+    "prompt": "(extreme cinematic widescreen 2.39:1:1.3), oval bokeh, (horizontal blue lens flares:1.2), professional movie-still framing",
+    "conflicts": ["Vertical Format", "Square Format"]
+  },
+  "Academy 4:3 Vintage": {
+    "prompt": "(boxy 4:3 ratio:1.3), 1950s film aesthetic, centered subject, (emphasizing vertical composition:1.1)",
+    "conflicts": ["Anamorphic 2.39:1 Scope", "Panoramic"]
+  },
+  "IMAX 1.43:1 Vertical Scale": {
+    "prompt": "(massive 1.43:1 field of view:1.3), expansive environmental detail, (immersive grand scale framing:1.2)",
+    "conflicts": ["Extreme Close-Up"]
+  },
+  "Letterboxed Vista": {
+    "prompt": "widescreen with (permanent black cinematic bars:1.4), top and bottom bars, wide-angle lens, post-production aesthetic",
+    "conflicts": []
+  },
+  "Golden Spiral Composition": {
+    "prompt": "(fibonacci spiral framing:1.3), organic visual flow, subject at curve focal point, (mathematical balance:1.1)",
+    "conflicts": ["Dutch Angle (Tilted)"]
+  },
+  "Centered Symmetry (Wes Anderson Style)": {
+    "prompt": "(perfectly balanced symmetry:1.3), Wes Anderson style, dead-center subject, (flat architectural perspective:1.2)",
+    "conflicts": ["Off-Center Perspective", "Dutch Angle (Tilted)"]
+  },
+  "Extreme Vignette / Pinhole": {
+    "prompt": "(heavy dark circular borders:1.3), pinhole camera aesthetic, (focused central clarity:1.2), primitive lens effect",
+    "conflicts": ["High-Key Lighting"]
+  },
+  "Canted Wide-Frame": {
+    "prompt": "(15-degree Dutch angle:1.2), 2.39:1 widescreen, (high-tension action framing:1.2), diagonal horizon energy",
+    "conflicts": ["Symmetry Shot"]
+  },
+
+  "--- HIGH-ALTITUDE & TOPOGRAPHICAL (THE MAP) ---": { "prompt": "", "conflicts": [] },
+  "Orthographic Map View": {
+    "prompt": "(perfect 90-degree downward perspective:1.4), flattened topographical aesthetic, (zero perspective distortion:1.3), map-blueprint feel",
+    "conflicts": ["Eye-Level", "Knee-Level (Hero Shot)", "Ankle-Level", "Hip-Level"]
+  },
+  "Nadir Point Perspective": {
+    "prompt": "(straight down-view from extreme height:1.3), urban grid layout, (geometric ground plane intersection:1.2)",
+    "conflicts": ["Horizon Line"]
+  },
+  "Satellite Survey Frame": {
+    "prompt": "(extreme high-altitude orbital view:1.4), atmospheric haze on edges, (surveillance sensor aesthetic:1.2), technical imagery",
+    "conflicts": ["8K Raw Photo", "Studio Portrait", "Studio Glamour", "High-End Boudoir"]
+  },
+  "Tilt-Shift Urban Miniature": {
+    "prompt": "(tilt-shift miniature effect:1.3), high-angle drone, (cityscape looking like toy models:1.3), artificial shallow depth of field",
+    "conflicts": ["Deep Focus (Infinite Depth)"]
+  },
+  "Top-Down Oblique": {
+    "prompt": "(high-altitude 45-degree angle:1.3), side elevations of structures, technical architectural survey, (top and side view:1.2)",
+    "conflicts": ["Ground-Level (Floor)"]
+  },
+  "Horizon-to-Horizon Panoramic": {
+    "prompt": "(ultra-wide 32:9 cinematic ratio:1.3), capturing the curve of the earth, (full expanse of landscape:1.2), panoramic sweep",
+    "conflicts": ["Extreme Close-Up", "Bust Shot"]
+  },
+  "Cloud-Level Glide": {
+    "prompt": "(framing from above cloud layer:1.3), subject partially obscured by mist, (ethereal expansive scale:1.2), aerial altitude",
+    "conflicts": ["Indoor"]
+  },
+
+  "--- ABSTRACT & NEGATIVE SPACE (THE ARTIST) ---": { "prompt": "", "conflicts": [] },
+  "Minimalist Negative Space": {
+    "prompt": "subject in (extreme corner of frame:1.3), 90% empty background, (atmospheric negative space:1.3), minimalist color field",
+    "conflicts": ["Centered Dominance", "Symmetry Shot"]
+  },
+  "Macro-Abstract Geometry": {
+    "prompt": "(extreme macro on lines and shadows:1.3), functionless object shape, (abstract geometric focus:1.2), artistic texture",
+    "conflicts": ["Vista-Wide"]
+  },
+  "Double Exposure Framing": {
+    "prompt": "(double exposure effect:1.4), subject silhouette containing secondary environment, (surreal dream-logic composition:1.2)",
+    "conflicts": ["8K Raw Photo"]
+  },
+  "Fragmented Mirror Mosaic": {
+    "prompt": "(shattered mirror perspective:1.3), multiple repeating reflections, (chaotic artistic depth:1.2), broken glass shards",
+    "conflicts": ["Symmetry Shot"]
+  },
+  "Light-Leaked Border": {
+    "prompt": "(intentional light-leak:1.3), orange and red light flares, (vintage analog film-burn aesthetic:1.2), edge bleeding",
+    "conflicts": ["Studio Lighting"]
+  },
+  "Motion-Blur Framing": {
+    "prompt": "sharp subject, (frame edges streaked with motion blur:1.3), warping through space, (long-exposure framing:1.2)",
+    "conflicts": ["Static Composition"]
+  },
+  "Shadow-Play Silhouette": {
+    "prompt": "(framing through cast shadow on wall:1.3), no direct view of subject, (conceptual and mysterious:1.2), silhouette focus",
+    "conflicts": ["Direct Lighting"]
+  },
+  "Prism Distortion": {
+    "prompt": "(rainbow-edged light refractions:1.3), prism ghost images, (psychedelic optical stunts:1.2), glass prism interference",
+    "conflicts": ["8K Raw Photo", "Deep Focus (Infinite Depth)"]
   }
 }

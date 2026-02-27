@@ -1,111 +1,287 @@
 {
-  "--- STANDARD VIEWS ---": { "prompt": "", "conflicts": [] },
+ "--- STANDARD & STUDIO (THE FOUNDATION) ---": { "prompt": "", "conflicts": [] },
   "Frontal View": {
-    "prompt": "direct frontal view, camera at eye-level, (subject facing camera:1.1), symmetrical composition, detailed facial features, centered framing",
-    "conflicts": []
-  },
-  "Profile Side-View": {
-    "prompt": "side profile view, 90-degree angle, sharp silhouette, (subject looking away:1.2), side-on perspective, ear-level camera",
+    "prompt": "direct eye-level engagement, 0-degree camera axis, perfectly centered subject, (symmetrical composition:1.2), head-on orientation, looking at lens",
     "conflicts": []
   },
   "Three-Quarter View": {
-    "prompt": "three-quarter view, 45-degree camera angle, dynamic depth, (angled perspective:1.1), professional portrait positioning",
+    "prompt": "45-degree camera angle, (three-quarter portrait perspective:1.2), creating facial depth and spatial volume, professional positioning",
     "conflicts": []
   },
-  "Back View": {
-    "prompt": "rear view from behind, (view of back:1.2), subject looking into the distance, camera behind subject, environmental storytelling",
-    "conflicts": ["Symmetry-Centered View"]
+  "Profile View": {
+    "prompt": "90-degree side profile, (linear subject alignment:1.2), sharp silhouette definition, strict lateral camera placement",
+    "conflicts": ["Iris & Pupil Geometry"]
   },
-  "Rear Three-Quarter View": {
-    "prompt": "(rear three-quarter view:1.2), subject viewed from behind at a 45-degree angle, showing back and side profile",
-    "conflicts": []
+  "Rear View": {
+    "prompt": "camera positioned directly behind the subject, (back-facing perspective:1.3), focus on trailing details and silhouette, (from behind:1.2)",
+    "conflicts": ["Face Portrait", "Iris & Pupil Geometry", "Close-Up Expression"]
   },
-  "--- HEIGHT & DEPTH ---": { "prompt": "", "conflicts": [] },
-  "Bird's Eye View": {
-    "prompt": "extreme high angle, (looking straight down:1.3), 90-degree vertical downward angle, map-like perspective, zenith viewpoint",
-    "conflicts": ["Full Photo", "Macro Detail"]
+  "Over-the-Shoulder": {
+    "prompt": "cinematic over-the-shoulder shot, (shallow focus on foreground element:1.2), depth-based interaction framing, partial shoulder in frame",
+    "conflicts": ["Extreme Close-Up", "Bird's Eye View"]
   },
-  "Worm's Eye View": {
-    "prompt": "extreme low angle, (looking straight up from the ground:1.3), camera on floor, towering perspective, floor-level camera axis",
-    "conflicts": []
+  "Symmetry Shot": {
+    "prompt": "(perfectly centered optical axis:1.3), balanced left and right composition, (geometric precision:1.2), architectural alignment",
+    "conflicts": ["Dutch Angle", "Off-Center Perspective"]
   },
-  "High Angle": {
-    "prompt": "high camera placement looking down at subject, (diminishing perspective:1.1), camera 2 meters above subject, overhead view",
-    "conflicts": []
+  "Rule of Thirds": {
+    "prompt": "(off-center composition:1.2), subject placed on the vertical third-line, dynamic negative space, balanced visual weight",
+    "conflicts": ["Symmetry Shot", "Symmetry-Centered View"]
   },
-  "Low Angle": {
-    "prompt": "low camera placement looking up, heroic stature, (dominant perspective:1.2), forced scale, camera at knee-level",
-    "conflicts": []
+  
+  "--- VERTICAL HEIGHTS (THE ELEVATION) ---": { "prompt": "", "conflicts": [] },
+  "Ground-Level (Floor)": {
+    "prompt": "camera placed directly on the floor surface, 0cm elevation, (extremely low horizon line:1.3), focus on ground-contact and textures, ant's eye perspective",
+    "conflicts": ["Face Portrait", "Bust Shot", "Iris & Pupil Geometry"]
   },
-  "Shoulder-Level": {
-    "prompt": "camera at shoulder height, natural eye-level perspective, realistic height alignment",
-    "conflicts": []
+  "Ankle-Level": {
+    "prompt": "(camera height at 15cm:1.2), looking slightly upward, (low-angle grounded perspective:1.2), emphasizing the base and feet of the subject",
+    "conflicts": ["Face Portrait", "Headshot"]
+  },
+  "Knee-Level (Hero Shot)": {
+    "prompt": "cinematic low-angle, (camera at 50cm height:1.3), looking up at the subject, (creating dominance and scale:1.2), heroic perspective",
+    "conflicts": ["Bird's Eye View", "Top-Down View"]
   },
   "Hip-Level": {
-    "prompt": "camera at hip height, street photography style, (grounded perspective:1.1)",
-    "conflicts": []
+    "prompt": "neutral low-angle from (90cm height:1.1), standard western-style framing, stable and balanced action perspective, waist-level camera",
+    "conflicts": ["Macro Detail"]
   },
-  "Ground Level": {
-    "prompt": "camera placed directly on the ground, (low horizon line:1.2), macro-level environment detail, horizontal floor-view",
-    "conflicts": []
+  "Eye-Level": {
+    "prompt": "natural human-eye perspective, 160cm elevation, (zero vertical tilt:1.2), stable horizon, standard conversational camera height",
+    "conflicts": ["Bird's Eye View", "Worm's Eye View"]
   },
-  "Overhead 45°": {
-    "prompt": "(overhead 45-degree camera angle:1.2), looking down from above at a diagonal, high-angle perspective",
-    "conflicts": []
+  "Shoulder-Level": {
+    "prompt": "elevated portrait height, (camera at 140cm:1.2), looking straight or slightly down, (intimate and personal framing:1.1)",
+    "conflicts": ["Ground-Level (Floor)"]
   },
-  "--- CINEMATIC & PERSPECTIVE ---": { "prompt": "", "conflicts": [] },
-  "Over-the-Shoulder": {
-    "prompt": "cinematic over-the-shoulder shot, (blurred foreground shoulder:1.2), focus on background subject, conversational depth",
-    "conflicts": ["Extreme Close-Up"]
+  "High-Angle (Overview)": {
+    "prompt": "elevated perspective from (250cm height:1.2), 30-degree downward tilt, providing environmental context and floor plane visibility, (looking down:1.2)",
+    "conflicts": ["Worm's Eye View", "Low Angle"]
   },
-  "Dutch Angle": {
-    "prompt": "tilted camera axis, (slanted horizon line:1.2), cinematic tension, (diagonal composition:1.1), off-kilter frame",
-    "conflicts": ["Geometric Precision", "Isometric Game Art"]
+  "Bird's Eye View": {
+    "prompt": "(zenith perspective:1.3), straight 90-degree top-down view, (geometric floor layout:1.2), zero horizon visibility, 5-meter elevation",
+    "conflicts": ["Extreme Close-Up", "Face Portrait", "Iris & Pupil Geometry", "Micro-Texture"]
   },
-  "Wide POV": {
-    "prompt": "first-person point of view, wide-angle field of vision, (subjective camera:1.2), immersive eye-level perspective",
-    "conflicts": ["Studio Portrait"]
+  "Drone-Level": {
+    "prompt": "high-altitude perspective from (20 meters height:1.3), wide-angle lens, (modern aerial photography aesthetic:1.2), capturing vast surroundings",
+    "conflicts": ["Extreme Close-Up", "Face Portrait", "Bust Shot", "Micro-Texture"]
   },
-  "Aerial Drone Shot": {
-    "prompt": "aerial photography, high altitude, sweeping landscape perspective, (expansive top view:1.1), extreme distance",
-    "conflicts": ["Extreme Close-Up", "Intrusive Close-Up", "Macro Detail"]
+  "Oblique Aerial": {
+    "prompt": "(high-altitude 45-degree downward perspective:1.3), showing both top and side of subjects, (drone-style survey framing:1.2), expansive scale",
+    "conflicts": ["Close-Up"]
   },
-  "--- DYNAMIC & CLOSE ---": { "prompt": "", "conflicts": [] },
-  "Extreme Close-Up": {
-    "prompt": "macro camera position, (extreme proximity:1.2), focus on specific detail, tight framing, intimate textures",
-    "conflicts": ["Full Photo", "Wide Shot", "Landscape", "Panoramic"]
+  "Satellite View": {
+    "prompt": "(extreme high-altitude orthographic perspective:1.4), flat topographical aesthetic, (map-like rendering:1.3), no perspective distortion, nadir view",
+    "conflicts": ["Extreme Close-Up", "Face Portrait", "Bust Shot", "Extreme Macro", "Studio Portrait"]
   },
-  "Dutch Tilt Action": {
-    "prompt": "dynamic tilted action shot, sense of motion, (diagonal camera alignment:1.2), high energy, cinematic blur",
-    "conflicts": ["Geometric Precision"]
+  "Sub-Level (Crawl Space)": {
+    "prompt": "(camera placed below the main floor plane:1.3), looking up through gaps or grates, (claustrophobic upward perspective:1.2), restricted low angle",
+    "conflicts": ["Wide Shot", "Landscape", "Panoramic"]
   },
-  "Intrusive Close-Up": {
-    "prompt": "camera inside personal space, wide-angle lens close to face, distorted intimacy, high intensity",
-    "conflicts": ["Wide Shot"]
+  
+  "--- ACTION & VEHICLE MOUNTS (THE SPEED HUNTER) ---": { "prompt": "", "conflicts": [] },
+  "Chase Cam": {
+    "prompt": "(low-angle tracking position from behind:1.3), wide-angle lens, (simulating a high-speed pursuit:1.2), sense of momentum, trailing subject, motion blur background",
+    "conflicts": ["Face Portrait", "Indoor", "Studio Lighting"]
   },
-  "--- CHAMPION PRO POSITIONS ---": { "prompt": "", "conflicts": [] },
-  "Low Profile (Crouching Cam)": {
-    "prompt": "camera height at 50cm, crouching perspective, intimate but grounded, focusing on body movement",
-    "conflicts": []
+  "Leading Shot": {
+    "prompt": "camera positioned directly in front of a moving subject, (moving backward at equal speed:1.2), focused on the (front of the vehicle:1.1), head-on action perspective",
+    "conflicts": ["Landscape", "Rear View Portrait"]
   },
-  "Hero Shot (Chest Level)": {
-    "prompt": "camera at chest level, looking slightly up, powerful presence, stable heroic composition",
-    "conflicts": []
+  "Side-Profile Tracking": {
+    "prompt": "(camera moving parallel to subject:1.3), high speed, blurred background, (sharp subject focus:1.2), dynamic lateral motion, side tracking shot",
+    "conflicts": ["Symmetry Shot", "Portrait"]
   },
-  "Vanishing Point Perspective": {
-    "prompt": "perfectly aligned horizon, strong leading lines, symmetry, camera centered in environment",
-    "conflicts": ["Handheld / Unstable"]
+  "Wheel-Well Cam": {
+    "prompt": "extreme low-angle mount (inside a wheel arch:1.3), focusing on (rotating tires and suspension:1.2), sparks and flying debris, mechanical action view",
+    "conflicts": ["Face Portrait", "Eye-Level", "High Angle"]
   },
-  "Symmetry-Centered View": {
-    "prompt": "(perfectly centered symmetry:1.3), balanced composition, subject in exact center of frame, geometric alignment",
-    "conflicts": ["Street & Candid"]
+  "Bumper / Grille Cam": {
+    "prompt": "(ultra-low camera mount on front bumper:1.3), looking inches above road surface, (emphasizing extreme speed:1.2), incoming terrain perspective",
+    "conflicts": ["Bird's Eye View", "High-Angle (Overview)"]
   },
-  "Off-Center Perspective": {
-    "prompt": "(off-center composition:1.2), rule of thirds, subject placed to the side, dynamic asymmetrical framing",
-    "conflicts": []
+  "Hood / Bonnet Mount": {
+    "prompt": "(camera fixed to vehicle hood:1.2), looking toward windshield, (capturing reflections and driver through glass:1.2), cinematic vehicle mount",
+    "conflicts": ["Interior", "Macro Detail"]
   },
-  "Handheld / Unstable": {
-    "prompt": "(handheld camera shake:1.1), slight motion blur, raw amateur photography style, authentic unstable framing",
-    "conflicts": ["Geometric Precision"]
+  "Dashcam POV": {
+    "prompt": "(fixed wide-angle dashboard perspective:1.2), digital timestamp aesthetic, (wide field of view:1.1), realistic road distortion, from inside car looking out",
+    "conflicts": ["Extreme Close-Up", "Bokeh"]
+  },
+  "Handlebar Cam": {
+    "prompt": "(shaky first-person perspective:1.2) from bike handlebar, capturing hands and path ahead, (extreme action feel:1.3), POV bicycle camera",
+    "conflicts": ["Static Composition", "Aerial Drone Shot"]
+  },
+  "Fender-Mount": {
+    "prompt": "(camera attached to side panel:1.2), looking along body lines toward wheels, (dynamic vehicle exterior perspective:1.1), low-profile mount",
+    "conflicts": ["Face Portrait", "Studio Shot"]
+  },
+  "Low-Level Chase": {
+    "prompt": "camera floating (10cm above asphalt:1.3), looking upward at a trailing vehicle, (emphasizing undercarriage and road textures:1.2), high-speed ground chase",
+    "conflicts": ["Eye-Level", "Bird's Eye View"]
+  },
+  
+  "--- CINEMATIC & OPTICAL STUNTS (THE DIRECTOR) ---": { "prompt": "", "conflicts": [] },
+  "Dutch Angle (Tilted)": {
+    "prompt": "canted camera frame, (15-degree tilted horizon:1.2), cinematic instability, (psychological tension:1.1), diagonal composition, tilted axis",
+    "conflicts": ["Symmetry Shot", "Symmetry-Centered View"]
+  },
+  "Telephoto Compression": {
+    "prompt": "(200mm long-lens perspective:1.3), flattened spatial depth, (background appearing much closer to subject:1.2), narrow field of view, compressed layers",
+    "conflicts": ["Wide-Angle Spatial Expansion", "Fisheye Barrel Distortion", "Wide-Angle Lens (14mm)", "Panoramic"]
+  },
+  "Fish-eye Distortion": {
+    "prompt": "(180-degree spherical field of view:1.3), extreme barrel distortion, (curved horizon:1.2), ultra-wide optical wrap-around effect, fisheye lens",
+    "conflicts": ["Extreme Telephoto Compression", "Deep Focus (Infinite Depth)", "Telephoto Compression"]
+  },
+  "Wide-Angle Lens (14mm)": {
+    "prompt": "rectilinear wide-angle perspective, (14mm lens:1.2), exaggerated depth, (immersive environmental framing:1.1), peripheral stretching",
+    "conflicts": ["Telephoto Compression", "Macro Detail"]
+  },
+  "Dolly Zoom (Vertigo Effect)": {
+    "prompt": "simulated focal length change, (distorted background perspective:1.2), subject remains static, background expanding or shrinking, vertigo effect",
+    "conflicts": ["Static Composition"]
+  },
+  "Split-Diopter Shot": {
+    "prompt": "experimental deep-focus, (foreground and background in sharp focus simultaneously:1.3), bifurcated depth of field, sharp detail at two distances",
+    "conflicts": ["Bokeh", "Shallow Depth of Field", "Soft Focus / Dreamy"]
+  },
+  "Snorricam (Body-Mount)": {
+    "prompt": "camera rig attached to torso, (subject remains perfectly still in frame:1.2), background shaking and rotating, body-mount camera, cinematic disorientation",
+    "conflicts": ["Handheld / Unstable", "Aerial Drone Shot"]
+  },
+  "Deep Focus": {
+    "prompt": "(high f-stop aesthetic:1.2), sharp clarity from foreground to background, (infinite depth of field:1.3), every layer in perfect focus",
+    "conflicts": ["Bokeh", "Shallow Depth of Field", "Soft Focus / Dreamy"]
+  },
+  "Soft Focus / Dreamy": {
+    "prompt": "(intentional optical blur on edges:1.2), glowing highlights, ethereal atmosphere, (vintage romantic lens aesthetic:1.2), soft-glow",
+    "conflicts": ["Deep Focus", "Extreme Sharpness", "8K Raw Photo"]
+  },
+  "Anamorphic Widescreen": {
+    "prompt": "cinematic 2.39:1 aspect ratio, (oval bokeh:1.2), subtle horizontal blue lens flares, (anamorphic lens squeeze:1.3), professional movie-still",
+    "conflicts": ["Vertical Format", "Square Format"]
+  },
+  
+  "--- ADULT & GLAMOUR (THE INTIMATE) ---": { "prompt": "", "conflicts": [] },
+  "Bed-Level (Supine)": {
+    "prompt": "(camera positioned at mattress height:1.2), looking across the surface, (focus on horizontal lines and proximity:1.1), intimate low-profile perspective",
+    "conflicts": ["Bird's Eye View", "Aerial Drone Shot"]
+  },
+  "Top-Down Bed": {
+    "prompt": "90-degree overhead view of bed surface, (symmetrical limb placement:1.1), capturing patterns on sheets and skin, (vertical down-shot:1.2)",
+    "conflicts": ["Ground-Level (Floor)", "Worm's Eye View"]
+  },
+  "Floor-Level Reclined": {
+    "prompt": "(ultra-low perspective looking up:1.3) at a seated or lying subject, emphasizing curves and spatial depth, (floor-level camera:1.2)",
+    "conflicts": ["High-Angle (Overview)", "Top-Down View"]
+  },
+  "Boudoir Close-Up": {
+    "prompt": "(soft-focus macro on skin textures:1.2), lace and subtle details, (narrow depth of field:1.3), warm intimate lighting, sensual bokeh",
+    "conflicts": ["Wide Shot", "Landscape", "Deep Focus"]
+  },
+  "Pillow-Talk POV": {
+    "prompt": "(first-person perspective from lying position:1.3), extreme proximity, slight upward tilt, (simulating eye contact from a pillow:1.2), intimate POV",
+    "conflicts": ["Wide Full Body", "Aerial Drone View", "Satellite Survey Frame", "Full Photo"]
+  },
+  "Curvature Highlight": {
+    "prompt": "side-angle lighting from (low-hip position:1.2), emphasizing anatomical contours and (silhouette:1.1) against a dark background, rim lighting",
+    "conflicts": ["Flat Lighting", "High-Key Lighting"]
+  },
+  "Vanity Mirror View": {
+    "prompt": "framed reflection through a (dressing table mirror:1.2), double-image composition, (soft vanity bulb lighting:1.1), reflective photography",
+    "conflicts": ["Back View"]
+  },
+  
+  "--- VOYEUR & SURVEILLANCE (THE OBSERVER) ---": { "prompt": "", "conflicts": [] },
+  "CCTV High-Corner": {
+    "prompt": "(extreme high-angle from room corner:1.2), wide-angle lens, (grainy digital noise:1.1), timestamp overlay, security camera aesthetic, surveillance footage",
+    "conflicts": ["Studio Lighting", "Bokeh", "Soft Focus / Dreamy"]
+  },
+  "Bodycam POV": {
+    "prompt": "(shaky chest-height perspective:1.2), ultra-wide field of view, (fisheye lens distortion:1.3), tactical lighting, body-worn camera aesthetic, POV action",
+    "conflicts": ["Static Composition", "Professional Portrait", "Symmetry Shot"]
+  },
+  "Through-the-Gap": {
+    "prompt": "(obstructed view through door crack:1.3), framing subject with dark foreground, voyeuristic perspective, hidden camera feel, spying aesthetic",
+    "conflicts": ["Full Photo", "Wide Shot"]
+  },
+  "Binocular View": {
+    "prompt": "(circular dual-lens mask:1.4), chromatic aberration on edges, (long-distance telephoto compression:1.2), spying through binoculars",
+    "conflicts": ["Wide-Angle Lens (14mm)", "Fisheye Distortion", "Full Photo"]
+  },
+  "Peephole Perspective": {
+    "prompt": "(extreme spherical fisheye distortion:1.3), dark vignette edges, looking through door peephole, hallway perspective, distorted center focus",
+    "conflicts": ["Telephoto Compression", "Panoramic"]
+  },
+  "Long-Lens Surveillance": {
+    "prompt": "(distant telephoto shot from hidden position:1.3), grainy texture, focus through foliage and urban obstacles, paparazzi style, long-range spying",
+    "conflicts": ["Close-Up", "Studio Portrait"]
+  },
+  "Hidden Nanny-Cam": {
+    "prompt": "(low-shelf perspective:1.2), slightly tilted or obscured, fixed static frame, (candid and unposed atmosphere:1.2), covert surveillance",
+    "conflicts": ["Professional Lighting", "Cinematic Widescreen"]
+  },
+
+  "--- ENVIRONMENT & SCALE (THE ARCHITECT) ---": { "prompt": "", "conflicts": [] },
+  "One-Point Perspective": {
+    "prompt": "(perfectly symmetrical corridor:1.3), vanishing point at center, (architectural precision:1.2), Kubrick-style framing, centered composition",
+    "conflicts": ["Dutch Angle (Tilted)", "Off-Center Perspective"]
+  },
+  "Corner-to-Corner": {
+    "prompt": "diagonal room perspective, (camera in high corner:1.2), maximizing spatial volume, (wide-angle interior aesthetic:1.2), room depth focus",
+    "conflicts": ["Telephoto Compression", "Extreme Close-Up"]
+  },
+  "Floor-to-Ceiling Vertical": {
+    "prompt": "(90-degree upward tilt from ground level:1.3), focusing on skyscraper heights, extreme vertical scale, (looking straight up:1.2)",
+    "conflicts": ["High-Angle (Overview)", "Bird's Eye View"]
+  },
+  "Horizon-Split": {
+    "prompt": "(perfect 50/50 balance between sky and ground:1.3), flat horizon line, minimalist landscape, (centered horizon:1.2)",
+    "conflicts": ["Worm's Eye View", "Bird's Eye View"]
+  },
+  "Vista-Wide": {
+    "prompt": "(extreme wide-angle from elevated vantage point:1.3), capturing miles of terrain, tiny subject for scale, expansive landscape photography",
+    "conflicts": ["Close-Up", "Macro Detail", "Bust Shot"]
+  },
+  "Framed-by-Nature": {
+    "prompt": "shooting through cave opening or foliage, (dark natural borders:1.2), bright centered subject, natural framing, depth layers",
+    "conflicts": ["Full Photo", "Studio Portrait"]
+  },
+  "Symmetrical Reflections": {
+    "prompt": "(camera at water level:1.3), perfect mirror image between top and bottom, (serene balanced composition:1.2), water reflection symmetry",
+    "conflicts": ["Dutch Angle (Tilted)", "Rough Sea"]
+  },
+  
+  "--- ABSTRACT & CREATIVE POV (THE EXPERIMENTAL) ---": { "prompt": "", "conflicts": [] },
+  "Through-the-Glass": {
+    "prompt": "camera shooting through (rainy window or textured glass:1.3), distorted light refractions, (soft bokeh overlays:1.2), water droplets on lens, cinematic glass aesthetic",
+    "conflicts": ["Macro Detail", "Deep Focus"]
+  },
+  "Weapon-Sight POV": {
+    "prompt": "(first-person view through scope:1.3), iron sights, tactical overlay, (focused target center:1.2), blurred peripheral vision, combat perspective",
+    "conflicts": ["Wide-Angle Lens (14mm)", "Bird's Eye View"]
+  },
+  "Insect-Perspective": {
+    "prompt": "(macro-level ground view:1.3), looking through (grass blades as giant pillars:1.2), extreme depth-of-field blur, bug's eye view, tiny scale",
+    "conflicts": ["Aerial Drone Shot", "Satellite View", "Eye-Level"]
+  },
+  "Keyhole-View": {
+    "prompt": "(classic keyhole-shaped frame:1.4), voyeuristic and restricted, dark vignette, (focused light on center subject:1.2), spy-hole perspective",
+    "conflicts": ["Full Photo", "Panoramic", "Vista-Wide"]
+  },
+  "Inside-the-Box": {
+    "prompt": "(low-angle perspective from inside object:1.3), looking out from drawer or trunk, tight framing, (subject looking into box:1.2), cramped perspective",
+    "conflicts": ["Landscape", "Wide Shot"]
+  },
+  "Mirror-Fragment": {
+    "prompt": "(shattered glass perspective:1.3), multiple angled reflections of same subject, (chaotic artistic composition:1.2), fractured mirror aesthetic",
+    "conflicts": ["Symmetry Shot", "One-Point Perspective"]
+  },
+  "X-Ray / Thermal Vision": {
+    "prompt": "(simulated thermal vision sensor:1.3), high-contrast heat map colors, (predator vision:1.2), infrared aesthetic, technical digital overlay",
+    "conflicts": ["Natural Lighting", "Soft Focus / Dreamy"]
   }
+  
+  
 }

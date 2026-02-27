@@ -1,151 +1,257 @@
 {
-  "--- PHOTOGRAPHY & REALISM ---": { "prompt": "", "conflicts": [] },
+  "--- PHOTOGRAPHY & OPTICAL REALISM (THE LENS) ---": { "prompt": "", "conflicts": [] },
   "8K Raw Photo": {
-    "prompt": "ultra high-resolution RAW photography, (full dynamic range:1.2), natural skin texture, realistic color science, 35mm full-frame sensor, sharp micro-contrast, DSLR realism",
-    "conflicts": []
+    "prompt": "(high-resolution raw photography:1.2), natural skin textures with visible pores, shot on 35mm lens, (neutral color balance:1.1), f/8 aperture, realistic light physics, highly detailed",
+    "conflicts": ["Wide Full Body", "Tiny Subject (Ant-Scale)", "Satellite View", "Drone-Level", "Satellite Survey Frame", "Soft Focus / Dreamy", "Soft-Focus Glow"]
   },
   "Studio Portrait": {
-    "prompt": "professional studio photography, (controlled lighting setup:1.2), full-frame camera, sharp eye detail, high-end commercial portrait realism",
-    "conflicts": []
+    "prompt": "(professional studio portrait:1.3), butterfly lighting setup, sharp focus on eyes, 85mm prime lens, clean minimalist background, editorial fashion quality",
+    "conflicts": ["Wide Full Body", "Tiny Subject (Ant-Scale)", "Satellite View", "Drone-Level", "CCTV High-Corner", "Bodycam POV"]
   },
   "Street & Candid": {
-    "prompt": "documentary street photography, natural light, (handheld realism:1.2), imperfect framing, authentic urban atmosphere",
-    "conflicts": []
+    "prompt": "unposed street photography, (natural ambient lighting:1.2), urban atmosphere, motion freeze, high shutter speed, (gritty realism:1.2), authentic textures",
+    "conflicts": ["Studio Portrait", "Renaissance Fresco"]
   },
   "Cinematic Movie Still": {
-    "prompt": "cinematic film still, (anamorphic lens rendering:1.2), realistic film color grading, shallow depth of field, theatrical production quality",
-    "conflicts": []
+    "prompt": "(cinematic film frame:1.3), anamorphic widescreen, (teal and orange color grading:1.2), dramatic depth of field, 35mm panavision aesthetic, movie still",
+    "conflicts": ["Polaroid Instant Photo", "Isometric Game Art"]
   },
   "Vintage Film": {
-    "prompt": "analog film photography, (soft halation:1.1), organic grain structure, realistic film emulsion response, Kodak-style color palette",
-    "conflicts": []
+    "prompt": "(authentic analog film stock:1.3), chemical color shift, (organic film grain:1.2), 1990s aesthetic, nostalgic atmosphere, kodak portra 400 feel, halation",
+    "conflicts": ["Unreal Engine 5 Render", "Octane Render", "8K Raw Photo"]
   },
   "Macro Detail": {
-    "prompt": "true macro photography, (1:1 magnification:1.3), shallow depth of field, high micro-detail, visible surface texture",
-    "conflicts": ["Wide Shot", "Full Photo", "Aerial Drone Shot"]
+    "prompt": "(extreme macro photography:1.3), microscopic detail, (hyper-focused textures:1.2), liquid droplets, shallow depth of field, 100mm macro lens",
+    "conflicts": ["Full Body Shot", "Wide Full Body", "Environmental Portrait", "Drone-Level", "Satellite View", "Satellite Survey Frame"]
   },
-  "Documentary Photojournalism": {
-    "prompt": "(real-world reportage photography:1.2), natural lighting conditions, unscripted realism, journalistic authenticity",
-    "conflicts": []
+  "GoPro Action Cam": {
+    "prompt": "(ultra-wide fish-eye perspective:1.3), high-dynamic range, (intense motion blur on edges:1.2), wearable camera aesthetic, rugged outdoor lighting, GoPro POV",
+    "conflicts": ["Studio Portrait", "Macro Detail"]
   },
-  "Black & White Film": {
-    "prompt": "monochrome photography, (high tonal contrast:1.2), analog grain structure, classic 35mm aesthetic",
-    "conflicts": []
+  "Polaroid Instant Photo": {
+    "prompt": "(distinct square white border:1.4), soft focus, chemical color bleeding, (high-contrast shadows:1.2), vintage lo-fi aesthetic, instant-film texture",
+    "conflicts": ["8K Raw Photo", "Unreal Engine 5 Render"]
   },
-  "Fashion Editorial": {
-    "prompt": "high-end fashion photography, (professional retouching:1.1), controlled lighting, magazine-quality output",
-    "conflicts": []
-  },
-  "Polaroid Instant": {
-    "prompt": "instant camera aesthetic, (soft focus:1.2), square frame, faded tones, light vignetting",
-    "conflicts": []
-  },
-  "--- DIGITAL ART & GAME ENGINE ---": { "prompt": "", "conflicts": [] },
-  "Digital Illustration": {
-    "prompt": "clean digital illustration, (layered brushwork:1.1), stylized shading, professional concept-art workflow",
-    "conflicts": []
-  },
+
+  "--- DIGITAL RENDERING & CGI (THE ENGINE) ---": { "prompt": "", "conflicts": [] },
   "Unreal Engine 5 Render": {
-    "prompt": "real-time engine render, (physically based rendering:1.2), ray-traced lighting, volumetric shadows, high-poly environment",
-    "conflicts": []
-  },
-  "Blender Cycles Render": {
-    "prompt": "physically accurate path-traced render, (global illumination:1.2), high-detail materials, realistic light bounce",
-    "conflicts": []
+    "prompt": "(physically based rendering:1.2), global illumination, (lumen and nanite technology:1.3), ray-traced reflections, high poly count, volumetric shadows",
+    "conflicts": ["Vintage Film", "Oil on Canvas"]
   },
   "Octane Render": {
-    "prompt": "cinematic path-traced 3D render, (subsurface scattering:1.2), studio HDRI lighting, hyper-real shading",
-    "conflicts": []
-  },
-  "Concept Art": {
-    "prompt": "(production concept art:1.2), painterly digital brush strokes, cinematic atmosphere design",
-    "conflicts": []
-  },
-  "Anime / Manga (Modern)": {
-    "prompt": "modern anime rendering, (clean cel shading:1.2), sharp lineart, vibrant color blocking",
-    "conflicts": []
-  },
-  "Semi-Realistic Anime": {
-    "prompt": "anime-inspired rendering with (semi-realistic shading:1.2), hybrid lighting, detailed hair highlights",
-    "conflicts": []
-  },
-  "Western Comic Style": {
-    "prompt": "western comic-book inking, (bold outlines:1.2), dynamic shadow blocks, halftone shading",
-    "conflicts": []
+    "prompt": "(hyper-realistic 3D visualization:1.3), advanced subsurface scattering, (crisp metallic reflections:1.2), professional product-shot aesthetic, Octane core",
+    "conflicts": ["Watercolor & Ink", "Charcoal / Pencil Sketch"]
   },
   "Isometric Game Art": {
-    "prompt": "isometric orthographic rendering, (game-asset clarity:1.2), stylized geometry, diorama-like composition",
-    "conflicts": ["Wide Shot", "Close-Up"]
+    "prompt": "(isometric orthographic projection:1.4), stylized 3d assets, (soft ambient occlusion:1.2), clean diorama aesthetic, vibrant game world",
+    "conflicts": ["Bird's Eye View", "Dutch Angle (Tilted)", "One-Point Perspective", "Rule of Thirds"]
   },
-  "Retro Pixel Art": {
-    "prompt": "pixel-perfect sprite art, (limited palette:1.2), dithering, retro 16-bit aesthetic",
-    "conflicts": []
+  "ZBrush Sculptural Detail": {
+    "prompt": "monochromatic grey clay render, (hyper-detailed anatomical mesh:1.3), sharp creases and folds, (digital sculpting aesthetic:1.2), high-resolution organic textures",
+    "conflicts": ["Anime / Manga (Modern)"]
   },
-  "Low-Poly 3D": {
-    "prompt": "low-poly 3D render, (flat shading:1.2), stylized geometry, simplified materials",
-    "conflicts": []
+  "Cybernetic HUD Interface": {
+    "prompt": "(augmented reality overlays:1.3), glowing holographic text, digital wireframes, (technical data visualization:1.2), sci-fi aesthetic, semi-transparent layers",
+    "conflicts": ["Renaissance Fresco", "Oil on Canvas"]
   },
-  "--- TRADITIONAL MEDIA ---": { "prompt": "", "conflicts": [] },
+  "Ray-Traced Interior": {
+    "prompt": "(perfect light bounces:1.2), realistic glass and mirror reflections, (architectural visualization:1.3), clean modern digital space, raytraced",
+    "conflicts": ["Vintage Film", "90s Retro Anime"]
+  },
+
+  "--- TRADITIONAL MEDIA & FINE ART (THE CANVAS) ---": { "prompt": "", "conflicts": [] },
   "Oil on Canvas": {
-    "prompt": "traditional oil painting, (visible brush strokes:1.2), heavy paint texture, classical museum lighting",
-    "conflicts": []
+    "prompt": "(traditional oil painting:1.3), heavy impasto texture, (visible palette knife strokes:1.2), linseed oil sheen, cracked paint details, rich pigments",
+    "conflicts": ["8K Raw Photo", "GoPro Action Cam"]
   },
   "Watercolor & Ink": {
-    "prompt": "watercolor wash, (soft pigment bleeding:1.2), paper texture, hand-drawn ink outlines",
-    "conflicts": []
+    "prompt": "(delicate watercolor wash:1.3), wet-on-dry technique, (pigment pooling:1.2), fine ink outlines, cold press paper texture",
+    "conflicts": ["8K Raw Photo", "Unreal Engine 5 Render"]
   },
   "Charcoal / Pencil Sketch": {
-    "prompt": "graphite sketch, (cross-hatching:1.2), visible paper grain, monochrome shading",
-    "conflicts": []
+    "prompt": "(hand-drawn graphite sketch:1.3), cross-hatching, (smudged charcoal shadows:1.2), toothy paper grain, artistic pencil pressure",
+    "conflicts": ["8K Raw Photo", "Octane Render"]
   },
-  "Acrylic Painting": {
-    "prompt": "bold acrylic brush strokes, (high pigment opacity:1.2), textured canvas",
-    "conflicts": []
+  "Renaissance Fresco": {
+    "prompt": "(pigment on wet plaster texture:1.3), clinical composition, (historical Italian mural aesthetic:1.2), earth tones, weathered antique surface",
+    "conflicts": ["Cybernetic HUD Interface", "GoPro Action Cam"]
   },
-  "Pastel Drawing": {
-    "prompt": "soft pastel strokes, (powdery texture:1.2), blended color gradients",
-    "conflicts": []
+  "Palette Knife Expressionism": {
+    "prompt": "(thick layers of paint:1.3), abstract bold strokes, (high-texture relief:1.2), vibrant clashing colors, emotional execution",
+    "conflicts": ["8K Raw Photo", "Anime / Manga (Modern)"]
   },
-  "--- ADULT & GLAMOUR ---": { "prompt": "", "conflicts": [] },
+  "Japanese Ukiyo-e Woodblock": {
+    "prompt": "(flat color planes:1.3), bold black outlines, traditional Japanese aesthetic, (stylized nature and figures:1.2), paper fiber texture",
+    "conflicts": ["Octane Render", "Ray-Traced Interior"]
+  },
+  "Art Nouveau Illustration": {
+    "prompt": "(ornate flowing lines:1.3), organic floral motifs, (elegant symmetrical framing:1.2), flat decorative colors, Mucha-style",
+    "conflicts": ["GoPro Action Cam", "CCTV High-Corner"]
+  },
+
+  "--- ANIMATION, MANGA & ILLUSTRATIVE (THE INK) ---": { "prompt": "", "conflicts": [] },
+  "Anime / Manga (Modern)": {
+    "prompt": "(contemporary high-budget anime style:1.3), clean cel-shading, (vibrant digital post-processing:1.2), expressive linework, detailed background art",
+    "conflicts": ["8K Raw Photo", "Vintage Film"]
+  },
+  "Studio Ghibli Aesthetic": {
+    "prompt": "(hand-painted gouache backgrounds:1.3), soft whimsical character designs, naturalistic lighting, (nostalgic rural atmosphere:1.2), Ghibli-style",
+    "conflicts": ["Octane Render", "Cybernetic HUD Interface"]
+  },
+  "90s Retro Anime": {
+    "prompt": "(saturated colors:1.2), chromatic aberration, (hand-drawn imperfections:1.2), cel-shaded depth, 1990s anime aesthetic, lo-fi quality",
+    "conflicts": ["8K Raw Photo", "Unreal Engine 5 Render"]
+  },
+  "Vector Pop Art": {
+    "prompt": "(bold flat colors:1.3), sharp geometric outlines, minimal shading, (clean commercial illustration style:1.2), high-contrast",
+    "conflicts": ["8K Raw Photo", "Oil on Canvas"]
+  },
+  "Graphic Novel Noir": {
+    "prompt": "(heavy black ink-wash:1.3), high-contrast monochrome, (dramatic hatching:1.2), gritty urban atmosphere, stylized comic book aesthetic",
+    "conflicts": ["Watercolor & Ink", "Studio Ghibli Aesthetic"]
+  },
+  "Golden Age Cartoon": {
+    "prompt": "(1930s rubber-hose animation:1.4), pie-cut eyes, monochromatic, (film grain and flicker:1.2), vintage cel-texture",
+    "conflicts": ["8K Raw Photo", "Unreal Engine 5 Render"]
+  },
+  
+  "--- HISTORICAL & ANALOG PROCESSES (THE ARCHIVE) ---": { "prompt": "", "conflicts": [] },
+  "Daguerreotype": {
+    "prompt": "(19th-century silver-plate photography:1.3), high-contrast monochrome, metallic sheen, (heavy scratches and dust:1.2), antique historical texture, long exposure stillness",
+    "conflicts": ["8K Raw Photo", "Unreal Engine 5 Render", "Color Palette"]
+  },
+  "Wet Plate Collodion": {
+    "prompt": "(liquid emulsion on glass texture:1.3), uneven chemical edges, (ethereal silver tones:1.2), haunting historical aesthetic, dark-room artifacts, ambrotype style",
+    "conflicts": ["High-Dynamic Range", "Vector Pop Art"]
+  },
+  "Autochrome Lumière": {
+    "prompt": "(early color photography 1907:1.3), pointillist dye-clumping, (soft painterly colors:1.2), heavy grain, vintage dreamlike atmosphere, Lumiere brothers aesthetic",
+    "conflicts": ["8K Raw Photo", "Neon-Lit Intimacy"]
+  },
+  "Cyanotype (Sun Print)": {
+    "prompt": "(monochromatic Prussian blue tones:1.4), high-contrast silhouettes, (white paper fiber highlights:1.2), chemical sun-print wash aesthetic",
+    "conflicts": ["Multicolor", "Realistic Skin Tones"]
+  },
+  "16mm Newsreel": {
+    "prompt": "(shaky handheld 16mm camera:1.3), heavy film grain, flickering light, (vintage documentary aesthetic:1.2), historical grit, faded black and white",
+    "conflicts": ["8K Raw Photo", "Octane Render"]
+  },
+  "Tintype Portrait": {
+    "prompt": "(dark metallic base:1.3), silver-grey highlights, shallow depth of field, (chemical staining on edges:1.2), authentic 1860s photographic feel",
+    "conflicts": ["Modern", "Digital Art"]
+  },
+
+  "--- RETRO & SPECIALIZED DIGITAL ART (THE CHIP) ---": { "prompt": "", "conflicts": [] },
+  "Retro Pixel Art": {
+    "prompt": "(meticulous pixel-perfect art:1.4), 16-bit console aesthetic, (clean sprite work:1.2), dithered shading, grid-based precision, low-res charm",
+    "conflicts": ["8K Raw Photo", "Soft-Focus Glow", "Soft Focus / Dreamy", "Bokeh"]
+  },
+  "Voxel Art": {
+    "prompt": "(3D volumetric pixels:1.4), cubic geometry, (toy-like diorama aesthetic:1.2), digital block-construction style, soft ambient occlusion",
+    "conflicts": ["Realistic Anatomy", "8K Raw Photo"]
+  },
+  "ASCII / Text Art": {
+    "prompt": "(images formed by alphanumeric characters:1.4), green phosphor terminal, (retro computing look:1.3), monochrome digital patterns, matrix style",
+    "conflicts": ["Realistic Texture", "Oil on Canvas"]
+  },
+  "Early 90s CGI (Low-Poly)": {
+    "prompt": "(flat-shaded polygons:1.3), primitive 3D shapes, (pixelated textures:1.2), early PlayStation N64 aesthetic, digital simplicity, low-poly",
+    "conflicts": ["8K Raw Photo", "Octane Render"]
+  },
+  "Demoscene Glitch Art": {
+    "prompt": "(intentional data corruption:1.3), neon color bleeding, flickering scanlines, (high-speed digital artifacts:1.2), abstract technological chaos",
+    "conflicts": ["8K Raw Photo", "Clean Background"]
+  },
+  "CGA Palette Graphics": {
+    "prompt": "(limited 4-color CGA palette:1.4), cyan magenta white black, (dithered shading:1.2), 1980s PC gaming aesthetic, harsh contrast",
+    "conflicts": ["Realistic Skin Tones", "Watercolor & Ink"]
+  },
+
+  "--- ADULT, GLAMOUR & STYLIZED REALISM (THE PRO) ---": { "prompt": "", "conflicts": [] },
   "High-End Boudoir": {
-    "prompt": "fine art boudoir photography, (soft diffused light:1.2), intimate framing, realistic skin texture",
-    "conflicts": []
+    "prompt": "(fine art boudoir photography:1.2), soft diffused rim lighting, (focus on lace and silk textures:1.3), elegant shadows, intimate editorial feel",
+    "conflicts": ["CCTV High-Corner", "Bodycam POV", "Satellite Survey Frame", "Drone-Level"]
   },
   "Studio Glamour": {
-    "prompt": "fashion glamour photography, (flawless retouching:1.2), high-key lighting, commercial aesthetic",
-    "conflicts": []
-  },
-  "3D Adult Render": {
-    "prompt": "high-detail 3D character render, (subsurface scattering skin:1.2), ray-traced shadows, physically accurate shading",
-    "conflicts": []
+    "prompt": "(fashion editorial photography:1.3), high-key lighting, (skin retouching aesthetic:1.2), magazine cover quality, glamorous pose",
+    "conflicts": ["CCTV High-Corner", "Bodycam POV", "Through-the-Gap", "Obscured View (Foliage)"]
   },
   "Hentai / Doujin (2D)": {
-    "prompt": "clean 2D anime lineart, (flat cel shading:1.2), sharp highlights, manga-style rendering",
-    "conflicts": []
+    "prompt": "(clean 2d vector art:1.3), flat shading with sharp highlights, (authentic doujinshi aesthetic:1.2), high-quality digital ink, anime features",
+    "conflicts": ["8K Raw Photo", "Unreal Engine 5 Render", "Oil on Canvas"]
   },
-  "--- CINEMATIC HYBRIDS ---": { "prompt": "", "conflicts": [] },
-  "CGI Cinematic Hybrid (Alita Style)": {
-    "prompt": "high-budget CGI film look, (stylized realism:1.2), subsurface skin shading, cinematic lighting",
-    "conflicts": []
+  "3D Adult Render": {
+    "prompt": "(advanced 3d character render:1.3), subsurface scattering skin, (ray-traced shadows:1.2), anatomical accuracy, Octane render, photorealistic",
+    "conflicts": ["Watercolor & Ink", "Charcoal / Pencil Sketch"]
   },
-  "Cyberpunk Glitch Art": {
-    "prompt": "digital glitch distortion, (chromatic aberration:1.2), neon saturation, cyberpunk aesthetic",
-    "conflicts": ["Natural Lighting"]
+  "Cyber-Erotica Aesthetic": {
+    "prompt": "(futuristic neon lighting:1.3), latex and metallic textures, (high-contrast digital polish:1.2), augmented reality overlays, sleek sci-fi mood",
+    "conflicts": ["Vintage Film", "Renaissance Fresco"]
   },
-  "Dark Fantasy Illustration": {
-    "prompt": "dark fantasy digital painting, (gothic atmosphere:1.2), high-detail armor, dramatic shadow rendering",
-    "conflicts": ["Bright Minimalist"]
+  "Vintage Pin-up Gouache": {
+    "prompt": "(1950s airbrushed illustration:1.3), vibrant gouache colors, (idealized smooth forms:1.2), classic calendar art aesthetic, nostalgic glamour",
+    "conflicts": ["8K Raw Photo", "CCTV High-Corner"]
   },
-  "Hyperreal CGI": {
-    "prompt": "ultra-detailed CGI realism, (near-photographic rendering:1.2), advanced light simulation",
-    "conflicts": []
+  "Latex & Shine Aesthetic": {
+    "prompt": "(high-gloss synthetic textures:1.3), sharp specular highlights, (reflective latex surfaces:1.3), dramatic rim lighting, form-fitting material",
+    "conflicts": ["Matte Skin", "Wool Texture"]
   },
-  "Matte Painting": {
-    "prompt": "cinematic matte painting style, (large-scale environment rendering:1.2), dramatic sky composition",
-    "conflicts": ["Close-Up"]
+  "Boudoir Noir": {
+    "prompt": "(dramatic chiaroscuro lighting:1.3), deep shadows, monochromatic, (lace textures:1.2), smoke and atmospheric depth, mysterious elegance",
+    "conflicts": ["High-Key Lighting", "Vibrant Colors"]
   },
-  "AI Surrealism": {
-    "prompt": "dreamlike surreal composition, (reality distortion:1.2), impossible geometry",
-    "conflicts": []
+  "Wet Look / Oil Sheen": {
+    "prompt": "(glistening skin textures:1.3), water droplets, (reflective oily surface:1.3), high-contrast lighting to emphasize muscle and curves",
+    "conflicts": ["Dry Skin", "Matte Texture"]
+  },
+  "Neon-Lit Intimacy": {
+    "prompt": "(vibrant pink and cyan backlighting:1.3), soft shadows, (futuristic boudoir mood:1.2), glowing skin tones, synthwave palette",
+    "conflicts": ["Natural Sunlight", "Vintage Film"]
+  },
+  "Selfie / Amateur Realism": {
+    "prompt": "(handheld smartphone camera aesthetic:1.3), slight motion blur, (natural unposed lighting:1.2), mirror reflection artifacts, casual atmosphere",
+    "conflicts": ["Studio Portrait", "Anamorphic Widescreen", "Cinematic Movie Still"]
+  },
+  "Lingerie Editorial": {
+    "prompt": "high-end fashion magazine style, (emphasis on silk and embroidery:1.2), elegant posing, (soft warm color grading:1.1), editorial lingerie",
+    "conflicts": ["GoPro Action Cam", "CCTV High-Corner"]
+  },
+  "Vintage 70s Erotica": {
+    "prompt": "(warm yellowish tint:1.3), heavy film grain, (soft lens glow:1.2), nostalgic hazy atmosphere, 1970s retro aesthetic",
+    "conflicts": ["8K Raw Photo", "Unreal Engine 5 Render"]
+  },
+  "Gilded / Gold Body Paint": {
+    "prompt": "(metallic skin texture:1.3), shimmering gold flakes, (high-contrast lighting to emphasize curves:1.2), luxurious gilded aesthetic",
+    "conflicts": ["Natural Skin Tones"]
+  },
+  
+  "--- EXPERIMENTAL & ABSTRACT MEDIA (THE VISIONARY) ---": { "prompt": "", "conflicts": [] },
+  "Infrared Photography": {
+    "prompt": "(infrared photography aesthetic:1.3), surreal color swap, (foliage appears white or pink:1.2), dark high-contrast skies, ethereal invisible light spectrum, heat-signature look",
+    "conflicts": ["Natural Colors", "Studio Portrait"]
+  },
+  "Double Exposure": {
+    "prompt": "(double exposure effect:1.4), translucent layers, conceptual merging of subjects, (artistic silhouettes:1.2), dream-logic composition, overlay",
+    "conflicts": ["8K Raw Photo", "Sharp Reality"]
+  },
+  "Long Exposure Light Painting": {
+    "prompt": "(long exposure light painting:1.3), streaks of glowing light, (ethereal light-trails:1.2), dark background, vibrant neon ribbons, motion blur energy",
+    "conflicts": ["High Shutter Speed", "Bright Sunlight"]
+  },
+  "Fractal Digital Art": {
+    "prompt": "(infinite geometric fractal patterns:1.3), mathematical complexity, (vibrant psychedelic colors:1.2), recursive structures, abstract digital depth",
+    "conflicts": ["Minimalist Landscape", "8K Raw Photo"]
+  },
+  "Liquid Marble / Pour Art": {
+    "prompt": "(liquid marble textures:1.3), swirling fluid colors, (high-gloss acrylic sheen:1.2), abstract marbled patterns, vibrant chaotic flow",
+    "conflicts": ["Skin Texture", "Sharp Focus"]
+  },
+  "X-Ray / Skeletal Aesthetic": {
+    "prompt": "(X-ray skeletal aesthetic:1.3), translucent layers, (monochromatic blue-white glow:1.2), clinical transparency, internal structure visibility",
+    "conflicts": ["Opaque Skin", "Natural Lighting"]
+  },
+  "Glitch-Art Datamosh": {
+    "prompt": "(datamosh glitch art:1.4), compressed digital artifacts, (smearing pixels:1.2), corrupted video frame, technological decay, color bleeding",
+    "conflicts": ["8K Raw Photo", "Clean Composition"]
   }
 }
