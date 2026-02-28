@@ -155,6 +155,8 @@ class UCP_Engine(scripts.Script):
 
         # 2. Comprehensive cross-category conflict detection
         found_conflicts = []
+        checked_pairs = set() # Track pairs we've already checked
+        
         for label, val, data in current_selections:
             if val == NONE or not val: 
                 continue
@@ -164,19 +166,21 @@ class UCP_Engine(scripts.Script):
                 conflict_list = item_data["conflicts"]
                 
                 for other_label, other_val, _ in current_selections:
-                    # Prevent self-comparison and validate 'other' value
                     if other_val != NONE and other_val != "" and other_val != val:
                         if other_val in conflict_list:
-                            # Construct color-coded warning message
-                            # Choice = Orange (#ff9a33), Label = Silver (#e0e0e0), Operator = Yellow (#ffdb58)
-                            msg = (f"<span style='color: #ff9a33;'><b>{val}</b></span> "
-                                   f"<span style='color: #e0e0e0;'>({label})</span> "
-                                   f"<span style='color: #ffdb58;'>conflicts with</span> "
-                                   f"<span style='color: #ff9a33;'><b>{other_val}</b></span> "
-                                   f"<span style='color: #e0e0e0;'>({other_label})</span>")
+                            # Create a unique key for this pair regardless of order
+                            pair = tuple(sorted([val, other_val]))
                             
-                            if msg not in found_conflicts:
+                            if pair not in checked_pairs:
+                                # Choice = Orange (#ff9a33), Label = Silver (#e0e0e0), Operator = Yellow (#ffdb58)
+                                msg = (f"<span style='color: #ff9a33;'><b>{val}</b></span> "
+                                       f"<span style='color: #e0e0e0;'>({label})</span> "
+                                       f"<span style='color: #ffdb58;'>conflicts with</span> "
+                                       f"<span style='color: #ff9a33;'><b>{other_val}</b></span> "
+                                       f"<span style='color: #e0e0e0;'>({other_label})</span>")
+                                
                                 found_conflicts.append(msg)
+                                checked_pairs.add(pair) # Mark this pair as handled
 
         # Finalize warning box UI
         warning_html = ""
