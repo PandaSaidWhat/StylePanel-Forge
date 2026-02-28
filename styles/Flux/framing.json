@@ -2,28 +2,53 @@
   "--- SHOT SIZES & RATIOS (THE CROP) ---": "",
   "Extreme Close-Up": {
     "prompt": "focus exclusively on eyes or mouth, clinical proximity, high-detail textures, zero environment visibility",
-    "conflicts": ["Vista-Wide", "Drone-Level", "Satellite View", "Aerial Drone View", "Satellite Survey Frame"]
+    "conflicts": [
+      "Vista-Wide",
+      "Drone-Level",
+      "Satellite View",
+      "Satellite Survey Frame"
+    ]
   },
   "Face Portrait": {
     "prompt": "tight framing from top of head to chin, emphasis on facial expression and skin texture, blurred background",
-    "conflicts": ["Vista-Wide", "Drone-Level", "Satellite View", "Ground-Level (Floor)", "Satellite Survey Frame"]
+    "conflicts": [
+      "Vista-Wide",
+      "Drone-Level",
+      "Satellite View",
+      "Ground-Level (Floor)",
+      "Satellite Survey Frame"
+    ]
   },
   "Bust Shot": {
     "prompt": "framing from head to mid-chest, standard portrait crop, stable shoulders, professional headshot aesthetic",
-    "conflicts": ["Vista-Wide", "Satellite View", "Satellite Survey Frame", "Ground-Level (Floor)"]
+    "conflicts": [
+      "Vista-Wide",
+      "Satellite View",
+      "Satellite Survey Frame",
+      "Ground-Level (Floor)"
+    ]
   },
   "Waist-Up (Medium Shot)": "framing from head to waist, capturing hand gestures and torso, balanced character-environment interaction",
   "Knee-Up (Medium Long)": "cinematic framing from head to just below knees, showing clothing style and stance, classic storytelling crop",
   "Full Body Shot": "head-to-toe framing, clear view of feet and ground contact, emphasizing posture and full attire",
   "Wide Full Body": {
     "prompt": "character is small in the frame, significant environment visibility on all sides, 35mm wide-angle aesthetic",
-    "conflicts": ["8K Raw Photo", "Macro Detail", "Micro-Texture", "Iris & Pupil Geometry"]
+    "conflicts": [
+      "8K Raw Photo",
+      "Macro Detail",
+      "Micro-Texture",
+      "Iris & Pupil Geometry"
+    ]
   },
-  
   "--- MACRO & MICROSCOPIC (THE HIDDEN WORLD) ---": "",
   "Micro-Texture": {
     "prompt": "extreme 1:1 macro focus on surface material, visible fibers and pores, hyper-realistic tactile detail, shallow depth of field",
-    "conflicts": ["Vista-Wide", "Drone-Level", "Satellite View", "Satellite Survey Frame"]
+    "conflicts": [
+      "Vista-Wide",
+      "Drone-Level",
+      "Satellite View",
+      "Satellite Survey Frame"
+    ]
   },
   "Circuitry & Tech Close-up": "microscopic view of electronic traces and solder points, metallic reflections, technical industrial aesthetic, macro-lens precision",
   "Organic Cellular Pattern": "abstract macro of natural growth patterns, leaf veins or skin cell structures, soft organic lighting, microscopic biological focus",
@@ -32,9 +57,13 @@
   "Liquid Droplet Dynamics": "macro shot of water tension and droplets, distorted refractions through liquid, high-speed shutter aesthetic, crystalline clarity",
   "Iris & Pupil Geometry": {
     "prompt": "microscopic focus on the human eye, intricate stromal patterns, wet surface gloss, hyper-detailed eyelashes, medical-grade macro",
-    "conflicts": ["Rear View", "Ground-Level (Floor)", "Satellite View", "Satellite Survey Frame"]
+    "conflicts": [
+      "Rear View",
+      "Ground-Level (Floor)",
+      "Satellite View",
+      "Satellite Survey Frame"
+    ]
   },
-
   "--- OPTICAL COMPRESSION & DEPTH (THE LENS) ---": "",
   "Extreme Telephoto Compression": "200mm+ lens effect, flattened spatial layers, background elements appearing massive and close to the subject, narrow field of view",
   "Wide-Angle Spatial Expansion": "14mm rectilinear lens, exaggerated distance between foreground and background, deep environmental immersion, peripheral stretching",
@@ -43,7 +72,6 @@
   "Anamorphic Squeeze": "2.39:1 cinematic ratio, subtle horizontal lens flares, oval-shaped bokeh, wide lateral field of view with professional film optics",
   "Soft-Focus Glow": "intentional spherical aberration, glowing highlights, dreamlike ethereal atmosphere, vintage romantic lens aesthetic",
   "Deep Focus (Infinite Depth)": "high f-stop aesthetic, maximum clarity from immediate foreground to distant horizon, sharp architectural and landscape layers",
-
   "--- SUBJECT-ENVIRONMENT BALANCE (THE SCALE) ---": "",
   "Environmental Portrait": "subject occupies 30% of the frame, balanced interaction with surroundings, wide-prime lens, storytelling through context and background detail",
   "Tiny Subject (Ant-Scale)": "extreme wide vista, subject as a microscopic focal point in a massive environment, emphasizing isolation and vastness, hyper-scale landscape",
@@ -52,7 +80,6 @@
   "Head-to-Toe Precision": "full-body framing with equal clearance above head and below feet, 35mm lens, natural anatomical proportions, stable ground-plane visibility",
   "Object-Centric Product Frame": "hero-shot positioning for inanimate objects, 45-degree downward angle, soft studio lighting, focus on form and silhouette over environment",
   "Crowd Integration": "subject partially obscured or blended into a dense group, shallow depth of field to isolate one face among many, chaotic but focused framing",
-
   "--- ARCHITECTURAL & GEOMETRIC (THE STRUCTURE) ---": "",
   "One-Point Perspective": "perfectly centered vanishing point, symmetrical lines receding toward the middle, architectural hallway or street alignment, Kubrick-style precision",
   "Diagonal Leading Lines": "dynamic composition using structural edges to lead the eye from corners toward the subject, high-energy geometric arrangement",
@@ -61,7 +88,6 @@
   "Orthographic Top-Down": "perfect 90-degree overhead view of architectural floor plans or furniture, zero perspective distortion, flat geometric mapping aesthetic",
   "Symmetrical Portal Framing": "using arches, doorways, or windows as a secondary frame, centered alignment, depth-within-depth composition",
   "Cantilever Perspective": "framing from a protruding edge or balcony, looking out over a drop, emphasizing structural overhang and vertical void",
-
   "--- OBSTRUCTED & LAYERED VIEWS (THE DEPTH) ---": "",
   "Through-the-Glass (Refracted)": "shooting through textured, frosted, or wet glass, light distortions and soft bokeh artifacts, layered transparent depth, intimate observation",
   "Framed by Architecture": "using a physical structure like an archway, window, or pillars to border the main subject, creating a formal frame-within-a-frame effect",
@@ -71,7 +97,6 @@
   "Silhouetted Foreground Frame": "using dark, underexposed shapes in the foreground (like a doorway or cave mouth) to frame a brightly lit subject in the distance",
   "Bokeh-Wash Framing": "extreme out-of-focus foreground elements (like city lights or flowers) taking up 40% of the frame, creating a soft, colorful atmospheric border",
   "Slot-View (Gap Reveal)": "framing through a narrow horizontal or vertical gap, restricting the view to a specific slice of the scene, high-tension voyeuristic feel",
-
   "--- CINEMATIC ASPECT RATIOS & CROPS (THE FORMAT) ---": "",
   "Anamorphic 2.39:1 Scope": "extreme cinematic widescreen, oval bokeh, horizontal blue lens flares, professional movie-still framing with massive lateral space",
   "Academy 4:3 Vintage": "boxy classical framing, centered subject focus, emphasizing height and vertical composition, 1940s-1950s film aesthetic",
@@ -81,22 +106,30 @@
   "Centered Symmetry (Wes Anderson Style)": "perfectly balanced left-and-right elements, dead-center subject, flat perspective, meticulous and quirky architectural framing",
   "Extreme Vignette / Pinhole": "heavy dark circular borders, focused central clarity, primitive camera aesthetic, high psychological focal intensity",
   "Canted Wide-Frame": "15-degree Dutch angle combined with 2.39:1 widescreen, high-tension cinematic action framing, diagonal horizon energy",
-
   "--- HIGH-ALTITUDE & TOPOGRAPHICAL (THE MAP) ---": "",
   "Orthographic Map View": {
     "prompt": "perfect 90-degree downward perspective, flattened topographical aesthetic, zero perspective distortion, world-map or blueprint feel",
-    "conflicts": ["Eye-Level", "Knee-Level (Hero Shot)", "Ankle-Level", "Hip-Level"]
+    "conflicts": [
+      "Eye-Level",
+      "Knee-Level (Hero Shot)",
+      "Ankle-Level",
+      "Hip-Level"
+    ]
   },
   "Nadir Point Perspective": "straight down-view from extreme height, focusing on the intersection of ground planes and textures, geometric urban grid layout",
   "Satellite Survey Frame": {
     "prompt": "extreme high-altitude, atmospheric haze on edges, narrow field of view to simulate orbital sensor, high-tech surveillance aesthetic",
-    "conflicts": ["8K Raw Photo", "Studio Portrait", "Studio Glamour", "High-End Boudoir"]
+    "conflicts": [
+      "8K Raw Photo",
+      "Studio Portrait",
+      "Studio Glamour",
+      "High-End Boudoir"
+    ]
   },
   "Tilt-Shift Urban Miniature": "high-angle drone framing with artificial shallow depth of field, making cityscapes or crowds look like tiny toy models",
   "Top-Down Oblique": "high-altitude 45-degree angle, showing both the top surfaces and side elevations of structures, technical architectural survey",
   "Horizon-to-Horizon Panoramic": "ultra-wide horizontal sweep, capturing the curve of the earth or the full expanse of a landscape, 32:9 extreme cinematic ratio",
   "Cloud-Level Glide": "framing from within or just above a cloud layer, subject partially obscured by mist, ethereal and expansive scale",
-
   "--- ABSTRACT & NEGATIVE SPACE (THE ARTIST) ---": "",
   "Minimalist Negative Space": "subject pushed to the extreme corner of the frame, 90% empty background, focusing on color fields and atmospheric weight",
   "Macro-Abstract Geometry": "extreme close-up on an object where its function is lost, focusing only on lines, shadows, and textures to create a new shape",

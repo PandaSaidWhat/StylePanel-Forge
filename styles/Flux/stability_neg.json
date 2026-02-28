@@ -1,0 +1,13 @@
+{
+  "--- ANATOMICAL CORRECTION ---": "",
+  "Perfect Anatomy": "extra fingers, mutated hands, deformed limbs, fused fingers, missing limbs, extra legs, disjointed body, bad anatomy, malformed, gross proportions",
+  "Symmetrical Face": "asymmetric eyes, wandering eye, deformed face, melting features, crossed eyes, drooping face, distorted mouth",
+  "Detailed Extremities": "six fingers, four fingers, webbed hands, claw hands, missing toes, distorted feet, blurry hands",
+  "Stable Pose": "floating limbs, impossible body twist, broken neck, unnatural pose, hovering subject",
+  "--- STRUCTURAL CORRECTION ---": "",
+  "Geometric Precision": "warped walls, melting architecture, liquid metal, distorted perspective, broken geometry, shaky lines",
+  "Clean Lines": "blurry edges, ghosting, double outlines, chromatic aberration, smudged details, artifacts",
+  "Consistent Textures": "muddled textures, repetitive patterns, noise, grain, flat skin, plastic look",
+  "--- ANTI-HALLUCINATION ---": "",
+  "Anti-Hallucination": "floating objects, extra heads, duplicated subjects, fused people, gibberish, messy composition, lowres, text, watermark"
+}

@@ -4,11 +4,17 @@
   "Three-Quarter View": "45-degree camera angle, three-quarter portrait perspective, creating facial depth and spatial volume, professional positioning",
   "Profile View": {
     "prompt": "90-degree side profile, linear subject alignment, sharp silhouette definition, strict lateral camera placement",
-    "conflicts": ["suggestive ocular focus", "high-tension flirtatious expression"]
+    "conflicts": [
+      "Lip-Bite / Tease"
+    ]
   },
   "Rear View": {
     "prompt": "camera positioned directly behind the subject, back-facing perspective, focus on trailing details and silhouette",
-    "conflicts": ["Face Portrait", "suggestive ocular focus", "Iris & Pupil Geometry"]
+    "conflicts": [
+      "Face Portrait",
+      "Lip-Bite / Tease",
+      "Iris & Pupil Geometry"
+    ]
   },
   "Over-the-Shoulder": "cinematic over-the-shoulder shot, shallow focus on foreground element, depth-based interaction framing",
   "Symmetry Shot": "perfectly centered optical axis, balanced left and right composition, geometric precision, architectural alignment",
@@ -17,7 +23,11 @@
   "--- VERTICAL HEIGHTS (THE ELEVATION) ---": "",
   "Ground-Level (Floor)": {
     "prompt": "camera placed directly on the floor surface, 0cm elevation, extremely low horizon line, focus on ground-contact and textures",
-    "conflicts": ["Face Portrait", "Bust Shot", "Iris & Pupil Geometry"]
+    "conflicts": [
+      "Face Portrait",
+      "Bust Shot",
+      "Iris & Pupil Geometry"
+    ]
   },
   "Ankle-Level": "low-angle perspective from 15cm height, looking slightly upward, emphasizing the base and feet of the subject",
   "Knee-Level (Hero Shot)": "cinematic low-angle, camera at 50cm height, looking up at the subject, creating a sense of dominance and scale",
@@ -27,16 +37,33 @@
   "High-Angle (Overview)": "elevated perspective from 250cm height, 30-degree downward tilt, providing environmental context and floor plane visibility",
   "Bird's Eye View": {
     "prompt": "zenith perspective, straight 90-degree top-down view, geometric floor layout, zero horizon visibility, 5-meter elevation",
-    "conflicts": ["Extreme Close-Up", "Face Portrait", "Iris & Pupil Geometry", "Micro-Texture"]
+    "conflicts": [
+      "Extreme Close-Up",
+      "Face Portrait",
+      "Iris & Pupil Geometry",
+      "Micro-Texture"
+    ]
   },
   "Drone-Level": {
     "prompt": "high-altitude perspective from 20 meters, wide-angle lens, capturing vast surroundings, modern aerial photography aesthetic",
-    "conflicts": ["Extreme Close-Up", "Face Portrait", "Bust Shot", "Micro-Texture", "8K Raw Photo"]
+    "conflicts": [
+      "Extreme Close-Up",
+      "Face Portrait",
+      "Bust Shot",
+      "Micro-Texture",
+      "8K Raw Photo"
+    ]
   },
   "Oblique Aerial": "high-altitude 45-degree downward perspective, showing both top and side of subjects, drone-style survey framing, expansive scale",
   "Satellite View": {
     "prompt": "extreme high-altitude orthographic perspective, flat topographical aesthetic, map-like rendering, no perspective distortion",
-    "conflicts": ["Extreme Close-Up", "Face Portrait", "Bust Shot", "Extreme Macro", "Studio Portrait"]
+    "conflicts": [
+      "Extreme Close-Up",
+      "Face Portrait",
+      "Bust Shot",
+      "Macro Detail",
+      "Studio Portrait"
+    ]
   },
   "Sub-Level (Crawl Space)": "camera placed below the main floor plane, looking up through gaps or grates, claustrophobic upward perspective",
 
@@ -56,11 +83,18 @@
   "Dutch Angle (Tilted)": "canted camera frame, 15-degree tilted horizon, cinematic instability, psychological tension, diagonal composition",
   "Telephoto Compression": {
     "prompt": "200mm+ long-lens perspective, flattened spatial depth, background appearing much closer to the subject, narrow field of view",
-    "conflicts": ["Wide-Angle Spatial Expansion", "Fisheye Barrel Distortion", "Wide-Angle Lens (14mm)"]
+    "conflicts": [
+      "Wide-Angle Spatial Expansion",
+      "Fisheye Barrel Distortion",
+      "Wide-Angle Lens (14mm)"
+    ]
   },
   "Fish-eye Distortion": {
     "prompt": "180-degree spherical field of view, extreme barrel distortion, curved horizon, ultra-wide optical wrap-around effect",
-    "conflicts": ["Extreme Telephoto Compression", "Deep Focus (Infinite Depth)"]
+    "conflicts": [
+      "Extreme Telephoto Compression",
+      "Deep Focus (Infinite Depth)"
+    ]
   },
   "Wide-Angle Lens (14mm)": "rectilinear wide-angle perspective, exaggerated depth, immersive environmental framing, peripheral stretching",
   "Dolly Zoom (Vertigo Effect)": "simulated focal length change while moving, distorted perspective where the subject stays still while the background expands or shrinks",
@@ -77,7 +111,11 @@
   "Boudoir Close-Up": "soft-focus macro on skin textures, lace, and subtle details, narrow depth of field, warm intimate lighting",
   "Pillow-Talk POV": {
     "prompt": "first-person perspective from a lying position, extreme proximity, slight upward tilt, simulating eye contact from a pillow",
-    "conflicts": ["Wide Full Body", "Aerial Drone View", "Satellite Survey Frame"]
+    "conflicts": [
+      "Wide Full Body",
+      "Orthographic Map View",
+      "Satellite Survey Frame"
+    ]
   },
   "Curvature Highlight": "side-angle lighting from a low-hip position, emphasizing anatomical contours and silhouette against a dark background",
   "Vanity Mirror View": "framed reflection through a dressing table mirror, double-image composition, soft vanity bulb lighting",

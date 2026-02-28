@@ -131,15 +131,58 @@ class UCP_Engine(scripts.Script):
         l_v = cur_l if cur_l in data_l else NONE
         s_v = [x for x in cur_s if x in data_s]
 
-        found_conflicts = []
-        cp_item = data_cp.get(cp_v, {})
-        if isinstance(cp_item, dict) and "conflicts" in cp_item:
-            if it_v in cp_item["conflicts"]: found_conflicts.append(f"<b>{cp_v}</b> conflicts with <b>Image Type: {it_v}</b>")
-            if f_v in cp_item["conflicts"]: found_conflicts.append(f"<b>{cp_v}</b> conflicts with <b>Framing: {f_v}</b>")
+                # --- Global conflict check (all categories vs all categories) ---
+        selected = {
+            "ImageType": it_v,
+            "Framing": f_v,
+            "CameraPosition": cp_v,
+            "Atmosphere": a_v,
+            "Expression": ex_v,
+            "Lighting": l_v,
+        }
 
-        f_item = data_f.get(f_v, {})
-        if isinstance(f_item, dict) and "conflicts" in f_item:
-            if it_v in f_item["conflicts"]: found_conflicts.append(f"<b>{f_v}</b> conflicts with <b>Image Type: {it_v}</b>")
+        selected_stability = list(s_v)
+
+        # All selected keys (fast membership checks)
+        selected_keys = set(v for v in selected.values() if v and v != NONE)
+        selected_keys.update(x for x in selected_stability if x and x != NONE)
+
+        data_map = {
+            "ImageType": data_it,
+            "Framing": data_f,
+            "CameraPosition": data_cp,
+            "Atmosphere": data_a,
+            "Expression": data_ex,
+            "Lighting": data_l,
+            "Stability": data_s,
+        }
+
+        found_conflicts = []
+
+        def check_item_conflicts(cat_name: str, key_name: str):
+            if not key_name or key_name == NONE:
+                return
+            item = data_map.get(cat_name, {}).get(key_name, {})
+            if not isinstance(item, dict) or "conflicts" not in item:
+                return
+
+            conflicts = item.get("conflicts", [])
+            if isinstance(conflicts, str):
+                conflicts = [conflicts]
+            elif not isinstance(conflicts, list):
+                conflicts = []
+
+            for c in conflicts:
+                if c in selected_keys:
+                    found_conflicts.append(
+                        f"<b>{cat_name}: {key_name}</b> conflicts with <b>{c}</b>"
+                    )
+
+        for cat, key in selected.items():
+            check_item_conflicts(cat, key)
+
+        for st_key in selected_stability:
+            check_item_conflicts("Stability", st_key)
 
         warning_html = ""
         if found_conflicts:

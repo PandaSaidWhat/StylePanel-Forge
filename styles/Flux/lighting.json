@@ -11,14 +11,14 @@
   "--- NATURAL LIGHT & SOLAR STATES (THE SUN) ---": "",
   "Golden Hour": {
     "prompt": "low-angle sun at 2500K, long shadows, warm amber photon scattering, soft directional light, atmospheric glow, horizontal light rays",
-    "conflicts": ["Blue Hour / Twilight", "Moonlit / Nocturnal", "Fluorescent / Neon", "Harsh Noon"]
+    "conflicts": ["Blue Hour (Twilight)", "Dim Night-light", "Fluorescent / Neon", "Harsh Noon"]
   },
-  "Blue Hour / Twilight": "diffused 10000K skylight, deep blue ambient illumination, zero direct sunlight, soft shadows, cool temperature aesthetic, quiet atmosphere",
+  "Blue Hour (Twilight)": "diffused 10000K skylight, deep blue ambient illumination, zero direct sunlight, soft shadows, cool temperature aesthetic, quiet atmosphere",
   "Harsh Noon": {
     "prompt": "zenith sun position, vertical 90-degree shadows, high-contrast 5500K light, obliterated midtones, realistic outdoor heat, punishing sunlight",
-    "conflicts": ["Candlelight / Fire", "Moonlit / Nocturnal", "Blue Hour / Twilight", "Cinematic Rim"]
+    "conflicts": ["Candlelight / Fire", "Dim Night-light", "Blue Hour (Twilight)", "Cinematic Rim"]
   },
-  "Volumetric Godrays": "Tyndall effect, visible light beams through atmospheric haze, 3200K warm dust particles, high-intensity point source, heavenly light shafts",
+  "Volumetric God Rays": "Tyndall effect, visible light beams through atmospheric haze, 3200K warm dust particles, high-intensity point source, heavenly light shafts",
   "Dappled Sunlight": "light filtered through tree canopy, rhythmic leaf shadows (gobos), organic light patterns, soft forest-floor illumination",
   "Overcast / Flat Light": "thick cloud cover acting as a massive diffuser, zero visible shadows, 6500K cool grey light, neutral and clinical outdoor mood",
   "Alpenglow": "indirect pink and purple light hitting high peaks or structures before sunrise, soft mountain-top radiance, ethereal high-altitude light",
@@ -31,7 +31,7 @@
   "Chiaroscuro / Caravaggio": "extreme transition from brilliant light to deep obsidian black, painterly theatricality, spotlight on central action, hidden backgrounds",
   "Top-Down God-Light": "single intense point source directly above the subject, heavy shadows in eye sockets, dramatic isolation, religious or interrogative mood",
   "Anamorphic Lens Flare": "horizontal blue or gold light streaks, cinematic optical artifacts, wide-screen sci-fi aesthetic, high-intensity light hits",
-  
+
   "--- INTERIOR & PRACTICAL AMBIANCE (THE ROOM) ---": "",
   "Candlelight / Fire": {
     "prompt": "flickering 1800K orange point source, extreme proximity falloff, deep warm shadows, organic light movement, intimate heat",
@@ -58,7 +58,7 @@
   "Night Vision (Green Phosphor)": "monochromatic green illumination, digital sensor noise, brightened shadows, military or surveillance nocturnal aesthetic",
   "Police Siren Flash": "rapidly alternating red and blue light pulses, high-tension atmosphere, emergency response mood, sharp rhythmic color shifts",
   "UV / Blacklight Glow": "fluorescent purple and violet ambient light, glowing white surfaces, psychedelic party mood, high-contrast neon reactive textures",
-  
+
   "--- ABSTRACT & OPTICAL PHENOMENA (THE LENS) ---": "",
   "Prism Refraction": "white light split into spectral colors, rainbow edges on surfaces, crystalline light-bending, sharp geometric color shifts, optical beauty",
   "Vintage Lens Flare": "warm circular artifacts, orange and red light-rings, organic optical flaws, nostalgic anamorphic flares, soft contrast reduction aesthetic",

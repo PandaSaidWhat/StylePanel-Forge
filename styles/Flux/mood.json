@@ -1,5 +1,5 @@
 {
-"--- LIGHT DYNAMICS & PHOTON PLAY (THE ILLUMINATOR) ---": "",
+  "--- LIGHT DYNAMICS & PHOTON PLAY (THE ILLUMINATOR) ---": "",
   "Volumetric God Rays": "intense light shafts breaking through dust or haze, visible photon beams, high-contrast crepuscular rays, dramatic atmospheric lighting",
   "Subsurface Scattering Glow": "light penetrating translucent surfaces, organic skin glow, wax-like material illumination, soft internal radiance, realistic light physics",
   "Harsh Fluorescent Flickering": "clinical cold lighting, slight green-tinted shadows, high-frequency flicker aesthetic, industrial sterile atmosphere, depressing overhead light",
@@ -8,7 +8,7 @@
   "Bioluminescent Radiance": "internal glowing light sources from within plants or creatures, neon organic pulses, deep sea or forest night-magic, ethereal blue/green glow",
   "Golden Hour Flare": {
     "prompt": "warm horizontal sunlight, low-angle lens flares, soft orange haze, long stretching shadows, nostalgic and peaceful atmosphere",
-    "conflicts": ["Midnight Inky Stillness", "Clinical Sterility", "Blizzard / White-out"]
+    "conflicts": ["Midnight Inky Stillness", "Clinical & Sterile", "Blizzard / White-out"]
   },
 
   "--- WEATHER, ELEMENTS & PARTICLES (THE NATURE) ---": "",
@@ -68,7 +68,7 @@
   "Noir Black & White": "zero color, deep obsidian blacks, bright silver highlights, classic 1940s film noir grading, dramatic light/shadow",
   "Cyberpunk Neon": "intense pink, cyan, and purple color spill, high-contrast night aesthetic, futuristic glow, saturated artificial light",
   "Cross-Processed": "unnatural color shifts, green-tinted shadows, yellow highlights, experimental film aesthetic, high-contrast chemical look",
-  
+
   "--- HISTORICAL, CULTURAL & GLOBAL (THE ERA) ---": "",
   "Victorian Gothic": "heavy dark wood textures, candlelight, deep crimson and black color palette, ornate architectural shadows, melancholic 19th-century elegance",
   "Mid-Century Modern Optimism": "saturated pastel colors, clean geometric lighting, 1950s hopeful aesthetic, soft film grain, bright and organized composition",
@@ -83,7 +83,7 @@
   "Thermal Vision": "heat-map color palette (blue, yellow, red), high-contrast thermal signatures, digital HUD overlays, surveillance sensor mood",
   "Data-Stream Glitch": "fragmented image slices, digital artifacting, neon green and purple pixel-bleeds, corrupted file aesthetic, high-speed technological chaos",
   "Low-Poly Digital Void": "flat-shaded geometric surfaces, wireframe visible in shadows, artificial neon grid-light, minimalist early-3D aesthetic",
-  "Night-Vision (Green Phosphor)": "monochromatic green glow, high digital noise, brightened shadows, surveillance aesthetic, military-grade nocturnal mood",
+  "Night Vision (Green Phosphor)": "monochromatic green glow, high digital noise, brightened shadows, surveillance aesthetic, military-grade nocturnal mood",
   "Holographic Flicker": "semi-transparent flickering surfaces, scan-lines, light-blue spectral glow, ethereal technological projection, unstable digital presence",
   "Simulation Breakdown": "surfaces dissolving into cubes, reality-tearing artifacts, unnatural light-leaks from 'outside' the frame, high-concept digital horror"
 }

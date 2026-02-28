@@ -1,114 +1,161 @@
 {
- "--- IDEALIZED ANATOMICAL INTEGRITY (THE POLISHED) ---": { "prompt": "", "conflicts": [] },
+  "--- IDEALIZED ANATOMICAL INTEGRITY (THE POLISHED) ---": "",
   "Perfect Anatomy": {
     "prompt": "(perfect human anatomy:1.3), correct bone structure, (five fingers on each hand:1.4), accurately proportioned limbs, natural joint positions, symmetrical build",
-    "conflicts": ["Eldritch Distortion", "Fluid / Melting Expression", "Simulation Breakdown"]
+    "conflicts": [
+      "Eldritch Distortion",
+      "Fluid / Melting Expression",
+      "Simulation Breakdown"
+    ]
   },
   "Symmetrical Face": {
     "prompt": "(highly symmetrical facial features:1.3), perfectly aligned eyes, balanced facial proportions, (idealized beauty standards:1.1)",
-    "conflicts": ["Unpolished Realism", "Feverish Delirium", "Glitch-Face / Digital Corruption"]
+    "conflicts": [
+      "Unpolished Realism",
+      "Feverish Delirium",
+      "Glitch-Face / Digital Corruption"
+    ]
   },
   "Detailed Extremities": {
     "prompt": "(highly detailed hands and feet:1.4), individual fingers and toes, (realistic nails:1.2), correct limb placement, clean digital definition",
-    "conflicts": ["CCTV High-Corner", "Satellite Survey Frame"]
+    "conflicts": [
+      "CCTV High-Corner",
+      "Satellite Survey Frame"
+    ]
   },
   "Stable Pose": {
     "prompt": "stable and natural posture, (realistic weight distribution:1.2), grounded stance, (anatomically plausible positioning:1.3), zero limb clipping",
-    "conflicts": ["Drunken / Blurred", "High-G Force Strain"]
+    "conflicts": [
+      "Drunken / Blurred",
+      "High-G Force Strain"
+    ]
   },
-
-  "--- BIOLOGICAL REALISM & IMPERFECTIONS (THE NATURAL) ---": { "prompt": "", "conflicts": [] },
+  "--- BIOLOGICAL REALISM & IMPERFECTIONS (THE NATURAL) ---": "",
   "Hyper-Realistic Skin Texture": {
     "prompt": "(visible skin pores:1.3), natural skin micro-relief, (vellus hair:1.2), realistic epidermal layering, high-fidelity dermis detail",
-    "conflicts": ["Porcelain Doll Vacancy", "Vector Pop Art", "ZBrush Sculptural Detail"]
+    "conflicts": [
+      "Porcelain Doll Vacancy",
+      "Vector Pop Art",
+      "ZBrush Sculptural Detail"
+    ]
   },
   "Natural Skin Imperfections": {
     "prompt": "subtle moles, (faint freckles:1.2), minor skin redness, (non-uniform pigmentation:1.2), authentic human dermis",
-    "conflicts": ["Studio Glamour", "Clinical & Sterile"]
+    "conflicts": [
+      "Studio Glamour",
+      "Clinical & Sterile"
+    ]
   },
   "Ocular Realism / Catchlights": {
     "prompt": "(realistic moisture on cornea:1.3), complex iris patterns, (wetness on lower eyelid:1.2), sharp catchlights from environment",
-    "conflicts": ["Dull Ocular Reflection"]
+    "conflicts": []
   },
   "Subsurface Scattering (Skin)": {
     "prompt": "(subsurface scattering skin:1.3), realistic light penetration through tissue, (soft red-pink glow in ears and fingers:1.2), biological translucency",
-    "conflicts": ["Marble-Carved Stoicism", "Ancient Deity Wrath"]
+    "conflicts": [
+      "Marble-Carved Stoicism",
+      "Ancient Deity Wrath"
+    ]
   },
   "Micro-Expression Wrinkles": {
     "prompt": "(fine lines around eyes:1.2), crow's feet, (forehead creases:1.2), skin folding at joints, natural movement lines",
-    "conflicts": ["High-Key Brilliance"]
+    "conflicts": [
+      "High-Key Brilliance"
+    ]
   },
   "Unpolished Realism": {
     "prompt": "(non-symmetrical features:1.2), uneven eyelids, natural dental imperfections, (realistic skin shine and oil:1.3), raw unretouched look",
-    "conflicts": ["Symmetrical Face", "Perfect Anatomy", "Studio Glamour"]
+    "conflicts": [
+      "Symmetrical Face",
+      "Perfect Anatomy",
+      "Studio Glamour"
+    ]
   },
-
-  "--- PHYSICAL INTERACTION & WEIGHT (THE GROUNDED) ---": { "prompt": "", "conflicts": [] },
+  "--- PHYSICAL INTERACTION & WEIGHT (THE GROUNDED) ---": "",
   "Physics-Based Weight Distribution": {
     "prompt": "(realistic muscle compression:1.2), fat displacement when sitting, (skin contact deformation:1.3), natural gravity effects",
-    "conflicts": ["Zero Gravity"]
+    "conflicts": []
   },
   "Grounded Surface Contact": {
     "prompt": "(perfect foot-to-ground contact:1.4), weight-based footprint, (ambient occlusion at contact points:1.3), zero floating",
-    "conflicts": ["Levitation"]
+    "conflicts": []
   },
   "Fabric Dynamics": {
     "prompt": "(realistic cloth folding:1.3), tension lines at joints, (gravitational pull on fabrics:1.2), material-specific wrinkle patterns",
-    "conflicts": ["Zero Gravity"]
+    "conflicts": []
   },
   "Environmental Interaction": {
     "prompt": "hair reacting to wind, (clothes getting wet or dirty based on environment:1.2), (realistic interaction with held objects:1.3)",
-    "conflicts": ["Clinical & Sterile"]
+    "conflicts": [
+      "Clinical & Sterile"
+    ]
   },
   "Muscular Tension / Definition": {
     "prompt": "(anatomically correct muscle activation:1.3), tensed tendons, (realistic veins under skin:1.2), athletic structural integrity",
-    "conflicts": ["Complete Physical Burnout", "Deep Narcotic Sleep"]
+    "conflicts": [
+      "Complete Physical Burnout",
+      "Deep Narcotic Sleep"
+    ]
   },
-
-  "--- OPTICAL FIDELITY & LENS LOGIC (THE CAMERA) ---": { "prompt": "", "conflicts": [] },
+  "--- OPTICAL FIDELITY & LENS LOGIC (THE CAMERA) ---": "",
   "Realistic Depth of Field": {
     "prompt": "(physically accurate bokeh:1.3), natural focus fall-off, (progressive background blur:1.2), sharp subject isolation",
-    "conflicts": ["Deep Focus (Infinite Depth)", "Orthographic Map View"]
+    "conflicts": [
+      "Deep Focus (Infinite Depth)",
+      "Orthographic Map View"
+    ]
   },
   "Chromatic Aberration (Natural)": {
     "prompt": "(subtle optical fringing:1.2), realistic lens refraction, (non-perfect digital edges:1.2), authentic lens artifacting",
-    "conflicts": ["Clean & Noise-Free"]
+    "conflicts": []
   },
   "Lens Grain & Texture": {
     "prompt": "(organic film grain:1.3), (consistent texture in shadows:1.2), zero smooth plastic surfaces, photographic grit",
-    "conflicts": ["Clean & Noise-Free", "Unreal Engine 5 Render"]
+    "conflicts": [
+      "Unreal Engine 5 Render"
+    ]
   },
   "Anamorphic Distortion": {
     "prompt": "(subtle horizontal lens squeeze:1.3), cinematic edge warping, (realistic optical artifacts:1.2), anamorphic widescreen aesthetic",
-    "conflicts": ["Square Format"]
+    "conflicts": []
   },
   "Accurate Motion Blur": {
     "prompt": "(physically plausible movement streaks:1.3), shutter-speed based blur, directional consistency, sharp core",
-    "conflicts": ["Extreme Sharpness", "Static Composition"]
+    "conflicts": []
   },
-
-  "--- STRUCTURAL LOGIC & PERSPECTIVE (THE BUILD) ---": { "prompt": "", "conflicts": [] },
+  "--- STRUCTURAL LOGIC & PERSPECTIVE (THE BUILD) ---": "",
   "Vanishing Point Accuracy": {
     "prompt": "(perfect linear perspective:1.3), all architectural lines converging, (zero warped geometry:1.2), structural stability",
-    "conflicts": ["Fisheye Barrel Distortion", "Drunken / Blurred"]
+    "conflicts": [
+      "Fisheye Barrel Distortion",
+      "Drunken / Blurred"
+    ]
   },
   "Scale & Proportional Consistency": {
     "prompt": "(realistic size relationships:1.3), accurate spatial volume, (consistent depth cues:1.2), believable environment scale",
-    "conflicts": ["Eldritch Distortion", "Fluid / Melting Expression"]
+    "conflicts": [
+      "Eldritch Distortion",
+      "Fluid / Melting Expression"
+    ]
   },
   "Architectural Alignment": {
     "prompt": "(perfectly vertical pillars:1.3), straight horizontal levels, (zero structural sagging:1.2), realistic construction physics",
-    "conflicts": ["Dutch Angle (Tilted)", "Cantilever Perspective"]
+    "conflicts": [
+      "Dutch Angle (Tilted)",
+      "Cantilever Perspective"
+    ]
   },
   "Geometric Rigidity": {
     "prompt": "(sharp well-defined corners:1.3), non-wobbly edges, (stable industrial shapes:1.2), zero hallucinated curves",
-    "conflicts": ["Fluid / Melting Expression", "Organic & Mossy"]
+    "conflicts": [
+      "Fluid / Melting Expression",
+      "Organic & Mossy"
+    ]
   },
-
-  "--- MATERIAL SCIENCE & SURFACE LOGIC (THE TEXTURE) ---": { "prompt": "", "conflicts": [] },
+  "--- MATERIAL SCIENCE & SURFACE LOGIC (THE TEXTURE) ---": "",
   "Refractive Material Physics": {
     "prompt": "(accurate light bending through glass:1.3), realistic caustics, (physically based transparency:1.2), consistent distortion",
-    "conflicts": ["Opaque"]
+    "conflicts": []
   },
   "Specular Highlight Consistency": {
     "prompt": "(accurate light reflections:1.3), highlights dictated by light source, (zero ghost-lights:1.2), realistic specular hits",
@@ -116,7 +163,7 @@
   },
   "Material-Specific Friction": {
     "prompt": "(tactile surface textures:1.2), realistic roughness maps, (non-uniform reflections on worn materials:1.2), leather grain",
-    "conflicts": ["Clean & Noise-Free"]
+    "conflicts": []
   },
   "Fresnel Effect": {
     "prompt": "(Fresnel effect:1.3), reflectivity increasing at glancing angles, (realistic surface sheen:1.2), accurate material-light interaction",
@@ -124,17 +171,23 @@
   },
   "Weathering & Surface Wear": {
     "prompt": "(subtle scratches on metal:1.2), dust in crevices, (realistic edge-wear:1.3), signs of use and age, non-perfect surfaces",
-    "conflicts": ["High-Gloss Luxury", "Clinical & Sterile"]
+    "conflicts": [
+      "High-Gloss Luxury",
+      "Clinical & Sterile"
+    ]
   },
-
-  "--- LIGHTING CONSISTENCY & PHOTON PHYSICS (THE LIGHT) ---": { "prompt": "", "conflicts": [] },
+  "--- LIGHTING CONSISTENCY & PHOTON PHYSICS (THE LIGHT) ---": "",
   "Global Illumination Logic": {
     "prompt": "(consistent light bounce:1.3), physically accurate light distribution, (zero isolated glowing areas:1.2), unified scene lighting",
-    "conflicts": ["Dark Energy Pulse"]
+    "conflicts": [
+      "Dark Energy Pulse"
+    ]
   },
   "Shadow Integrity & Penumbra": {
     "prompt": "(realistic shadow softness:1.3), accurate contact shadows, (ambient occlusion:1.3), zero detached shadows, physically plausible direction",
-    "conflicts": ["Zero Shadows", "High-Key Brilliance"]
+    "conflicts": [
+      "High-Key Brilliance"
+    ]
   },
   "Accurate Light Fall-off": {
     "prompt": "(inverse-square law light decay:1.3), realistic illumination intensity, (natural dark-to-light transitions:1.2)",
@@ -148,19 +201,23 @@
     "prompt": "(light reacting to air density:1.2), volumetric scattering, (consistent color temperature:1.3) across scene",
     "conflicts": []
   },
-
-  "--- DIGITAL DE-NOISING & ANTI-ARTIFACT (THE POLISH) ---": { "prompt": "", "conflicts": [] },
+  "--- DIGITAL DE-NOISING & ANTI-ARTIFACT (THE POLISH) ---": "",
   "Anti-Hallucination Structure": {
     "prompt": "(coherent image logic:1.3), zero floating objects, (stable background elements:1.3), elimination of repeating patterns",
-    "conflicts": ["Glitch-Art Datamosh", "Simulation Breakdown"]
+    "conflicts": [
+      "Glitch-Art Datamosh",
+      "Simulation Breakdown"
+    ]
   },
   "High-Fidelity Edge Definition": {
     "prompt": "(clean stable borders:1.3), zero pixel-smearing, (sharp transition between foreground and background:1.2), zero ghosting",
-    "conflicts": ["Motion Blur", "Soft Focus / Dreamy"]
+    "conflicts": [
+      "Soft Focus / Dreamy"
+    ]
   },
   "Neural Noise Suppression": {
     "prompt": "(neural noise suppression:1.2), zero checkerboard artifacts, (smooth color gradients:1.3), clean highlight roll-off",
-    "conflicts": ["Digital Sensor Noise", "Organic Film Grain"]
+    "conflicts": []
   },
   "Temporal & Spatial Stability": {
     "prompt": "(consistent detail density:1.3), no localized blurring, (unified render quality:1.2), zero AI artifacts",

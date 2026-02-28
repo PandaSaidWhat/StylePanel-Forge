@@ -1,0 +1,19 @@
+{
+  "--- STUDIO & TECHNICAL ---": "",
+  "Cinematic Rim": "flat lighting, front lit, no shadows, dull, low contrast",
+  "Three-Point Lighting": "uneven lighting, harsh shadows, flat face, amateur setup",
+  "Butterfly / Paramount": "bottom-up light, flat cheeks, no nose shadow",
+  "Rembrandt Lighting": "flat lighting, symmetrical light, no shadows, bright face",
+  "Volumetric Godrays": "clear air, no beams, flat light, dark, indoor",
+  "--- TEMPERATURE & ENVIRONMENT ---": "",
+  "Golden Hour": "midday, blue light, cool tones, short shadows, indoor",
+  "Blue Hour / Twilight": "sunlight, warm light, orange, bright day, harsh shadows",
+  "Fluorescent / Neon": "natural light, sunlight, warm, organic, soft",
+  "Candlelight / Fire": "daylight, blue light, cool, flat, electric light",
+  "--- ARTISTIC & VOYEUR ---": "",
+  "Harsh Noon": "soft light, long shadows, evening, golden hour",
+  "Strobe / Flash": "natural light, soft shadows, sunset, ambient light",
+  "Softbox Diffused": "harsh light, direct sun, deep shadows, high contrast",
+  "Moonlit / Nocturnal": "daytime, sunlight, bright colors, warm tones",
+  "Searchlight / CCTV": "cinematic, soft, warm, professional, balanced"
+}

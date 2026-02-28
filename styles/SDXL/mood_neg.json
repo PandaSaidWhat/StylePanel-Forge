@@ -1,5 +1,5 @@
 {
- "Volumetric God Rays": "clear air, (no haze:1.2), flat light, no beams, dark, overcast",
+  "Volumetric God Rays": "clear air, (no haze:1.2), flat light, no beams, dark, overcast",
   "Subsurface Scattering Glow": "opaque, (solid:1.2), flat light, matte texture, clinical, cold",
   "Harsh Fluorescent Flickering": "(warm light:1.3), natural sunlight, sunset, cozy, golden hour, organic shadows",
   "Chiaroscuro / High Contrast": "flat lighting, (low contrast:1.2), bright shadows, even exposure, softbox",

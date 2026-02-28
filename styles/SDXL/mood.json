@@ -1,257 +1,426 @@
 {
- "--- LIGHT DYNAMICS & PHOTON PLAY (THE ILLUMINATOR) ---": { "prompt": "", "conflicts": [] },
+  "--- LIGHT DYNAMICS & PHOTON PLAY (THE ILLUMINATOR) ---": "",
   "Volumetric God Rays": {
     "prompt": "(volumetric god rays:1.4), intense light shafts, crepuscular rays breaking through (dust and haze:1.2), visible photon beams, Tyndall effect",
-    "conflicts": ["Overcast / Flat Light", "Indoor"]
+    "conflicts": [
+      "Overcast / Flat Light"
+    ]
   },
   "Subsurface Scattering Glow": {
     "prompt": "(subsurface scattering glow:1.3), light penetrating translucent surfaces, (organic skin glow:1.2), soft internal radiance, wax-like illumination",
-    "conflicts": ["Clinical & Sterile"]
+    "conflicts": [
+      "Clinical & Sterile"
+    ]
   },
   "Harsh Fluorescent Flickering": {
     "prompt": "clinical cold lighting, (slight green-tinted shadows:1.2), high-frequency flicker aesthetic, (industrial sterile atmosphere:1.2), depressing overhead light",
-    "conflicts": ["Golden Hour Flare", "Ethereal Dawn"]
+    "conflicts": [
+      "Golden Hour Flare",
+      "Ethereal Dawn"
+    ]
   },
   "Chiaroscuro / High Contrast": {
     "prompt": "(chiaroscuro high contrast:1.3), intense interplay of light and (obsidian shadows:1.3), dramatic Caravaggio-style, theatrical mood",
-    "conflicts": ["Softbox Diffused", "Overcast / Flat Light"]
+    "conflicts": [
+      "Softbox Diffused",
+      "Overcast / Flat Light"
+    ]
   },
   "Soft-Box Studio Wrap": {
     "prompt": "(soft-box diffused light:1.3), zero harsh shadows, (professional editorial look:1.2), flattering wrap-around illumination, clean aesthetic",
-    "conflicts": ["Harsh Noon", "Chiaroscuro / High Contrast"]
+    "conflicts": [
+      "Harsh Noon",
+      "Chiaroscuro / High Contrast"
+    ]
   },
   "Bioluminescent Radiance": {
     "prompt": "(bioluminescent glow:1.4), internal light sources from within, (neon organic pulses:1.2), ethereal blue-green light, forest night-magic",
-    "conflicts": ["High Noon Harshness", "Warm & Sunny"]
+    "conflicts": [
+      "High Noon Harshness"
+    ]
   },
   "Golden Hour Flare": {
     "prompt": "(golden hour:1.3), warm horizontal sunlight, (low-angle lens flares:1.2), soft orange haze, stretching shadows, nostalgic peaceful atmosphere",
-    "conflicts": ["Midnight Inky Stillness", "Clinical Sterility", "Blizzard / White-out", "Blue Hour (Twilight)"]
+    "conflicts": [
+      "Midnight Inky Stillness",
+      "Blizzard / White-out",
+      "Blue Hour (Twilight)"
+    ]
   },
-
-  "--- WEATHER, ELEMENTS & PARTICLES (THE NATURE) ---": { "prompt": "", "conflicts": [] },
+  "--- WEATHER, ELEMENTS & PARTICLES (THE NATURE) ---": "",
   "Heavy Atmospheric Haze": {
     "prompt": "(thick atmospheric haze:1.3), suspended moisture, (reduced distant visibility:1.2), depth-based desaturation, mysterious quiet mood",
-    "conflicts": ["High Noon Harshness"]
+    "conflicts": [
+      "High Noon Harshness"
+    ]
   },
   "Dust-Choked / Arid": {
     "prompt": "suspended sand and dust particles, (sepia-toned air:1.2), dry heat aesthetic, (gritty surface texture:1.2), post-apocalyptic wind",
-    "conflicts": ["Rain-Slicked High Contrast", "Tropical Humidity / Steam"]
+    "conflicts": [
+      "Rain-Slicked High Contrast",
+      "Tropical Humidity / Steam"
+    ]
   },
   "Electric Pre-Storm Tension": {
     "prompt": "(electric pre-storm tension:1.2), ionized air, (dark purple-grey clouds:1.3), ominous stillness, static electricity atmosphere",
-    "conflicts": ["Warm & Sunny", "Ethereal Dawn"]
+    "conflicts": [
+      "Ethereal Dawn"
+    ]
   },
   "Blizzard / White-out": {
     "prompt": "(extreme swirling snow:1.3), near-zero visibility, (frozen air particles:1.2), white-out atmosphere, numbing cold aesthetic",
-    "conflicts": ["Warm & Sunny", "Golden Hour Flare", "Dust-Choked / Arid", "Tropical Humidity / Steam"]
+    "conflicts": [
+      "Golden Hour Flare",
+      "Dust-Choked / Arid",
+      "Tropical Humidity / Steam"
+    ]
   },
   "Tropical Humidity / Steam": {
     "prompt": "(visible humidity and steam:1.3), rising heat-waves, thick heavy air, (saturated lush colors:1.2), rainforest aesthetic",
-    "conflicts": ["Blizzard / White-out", "Dust-Choked / Arid"]
+    "conflicts": [
+      "Blizzard / White-out",
+      "Dust-Choked / Arid"
+    ]
   },
   "Ash-Fall / Volcanic": {
     "prompt": "(grey ash flakes drifting:1.3), volcanic winter, (dim red-tinted light:1.2), suffocating atmosphere, eerie burnt textures",
-    "conflicts": ["Ethereal Dawn", "Peaceful / Zen"]
+    "conflicts": [
+      "Ethereal Dawn",
+      "Peaceful / Zen"
+    ]
   },
   "Rain-Slicked High Contrast": {
     "prompt": "(rain-slicked surfaces:1.3), falling raindrops, (moody reflections in puddles:1.2), saturated color spill, melancholy cinematic rain",
-    "conflicts": ["Dust-Choked / Arid", "High Noon Harshness"]
+    "conflicts": [
+      "Dust-Choked / Arid",
+      "High Noon Harshness"
+    ]
   },
-
-  "--- CHRONOLOGICAL & TIME-OF-DAY (THE CLOCK) ---": { "prompt": "", "conflicts": [] },
+  "--- CHRONOLOGICAL & TIME-OF-DAY (THE CLOCK) ---": "",
   "Blue Hour (Twilight)": {
     "prompt": "(blue hour twilight:1.3), deep indigo sky, (zero direct sun:1.2), soft ambient illumination, cool emotional weight, urban serenity",
-    "conflicts": ["High Noon Harshness", "Golden Hour Flare", "Ethereal Dawn"]
+    "conflicts": [
+      "High Noon Harshness",
+      "Golden Hour Flare",
+      "Ethereal Dawn"
+    ]
   },
   "High Noon Harshness": {
     "prompt": "(harsh noon sunlight:1.3), sun directly overhead, (extreme vertical light:1.2), shortest shadows, punishing heat, clinical clarity",
-    "conflicts": ["Blue Hour (Twilight)", "Golden Hour Flare", "Midnight Inky Stillness", "Nautical Twilight"]
+    "conflicts": [
+      "Blue Hour (Twilight)",
+      "Golden Hour Flare",
+      "Midnight Inky Stillness",
+      "Nautical Twilight"
+    ]
   },
   "Nautical Twilight": {
     "prompt": "(nautical twilight:1.3), deepest blue pre-sunrise, faint horizon glow, heavy shadows, cold quiet morning atmosphere",
-    "conflicts": ["High Noon Harshness", "Warm & Sunny"]
+    "conflicts": [
+      "High Noon Harshness"
+    ]
   },
   "Midnight Inky Stillness": {
     "prompt": "(midnight inky darkness:1.3), moonlight-only, deep black voids, (cold nocturnal atmosphere:1.2), secretive and quiet",
-    "conflicts": ["Warm & Sunny", "High Noon Harshness", "Golden Hour Flare", "Ethereal Dawn"]
+    "conflicts": [
+      "High Noon Harshness",
+      "Golden Hour Flare",
+      "Ethereal Dawn"
+    ]
   },
   "Cyberpunk Night (Rainy)": {
     "prompt": "(perpetual cyberpunk night:1.2), neon reflection on wet asphalt, (pink and cyan color spill:1.3), futuristic urban tension",
-    "conflicts": ["Natural Sunlight", "Ethereal Dawn"]
+    "conflicts": [
+      "Ethereal Dawn"
+    ]
   },
   "Ethereal Dawn": {
     "prompt": "(ethereal dawn:1.3), soft pink and gold horizon, (rising morning mist:1.2), waking world aesthetic, optimistic atmosphere",
-    "conflicts": ["Midnight Inky Stillness", "High Noon Harshness", "Cyberpunk Night (Rainy)"]
+    "conflicts": [
+      "Midnight Inky Stillness",
+      "High Noon Harshness",
+      "Cyberpunk Night (Rainy)"
+    ]
   },
   "Stellar Nebula Night": {
     "prompt": "(stellar nebula sky:1.3), visible Milky Way, (cosmic purple and blue dust clouds:1.2), vast astronomical scale, starlight environment",
-    "conflicts": ["Overcast / Flat Light", "High Noon Harshness"]
+    "conflicts": [
+      "Overcast / Flat Light",
+      "High Noon Harshness"
+    ]
   },
-
-  "--- PSYCHOLOGICAL & ABSTRACT AURA (THE VIBE) ---": { "prompt": "", "conflicts": [] },
+  "--- PSYCHOLOGICAL & ABSTRACT AURA (THE VIBE) ---": "",
   "Clinical & Sterile": {
     "prompt": "pure white lighting, sharp shadows, (laboratory aesthetic:1.2), emotional coldness, (zero dust or clutter:1.3), medical cleanliness",
-    "conflicts": ["Dust-Choked / Arid", "Ash-Fall / Volcanic", "Romantic / Intimate"]
+    "conflicts": [
+      "Dust-Choked / Arid",
+      "Ash-Fall / Volcanic",
+      "Romantic / Intimate"
+    ]
   },
   "Claustrophobic & Oppressive": {
     "prompt": "(claustrophobic spatial feel:1.3), heavy low ceilings, (encroaching shadows:1.2), dense atmosphere, high psychological tension",
-    "conflicts": ["Vista-Wide", "Epic / Grandiose"]
+    "conflicts": [
+      "Vista-Wide",
+      "Epic / Grandiose"
+    ]
   },
   "Dreamy & Ethereal": {
     "prompt": "(soft focus dreamy aesthetic:1.2), glowing highlights, (pastel color palette:1.2), misty air, surreal peacefulness, light-leak artifacts",
-    "conflicts": ["Clinical & Sterile", "Gritty Realism"]
+    "conflicts": [
+      "Clinical & Sterile"
+    ]
   },
   "Ominous & Foreboding": {
     "prompt": "(ominous foreboding atmosphere:1.3), heavy fog, unsettling silence, (cold blue and grey tones:1.2), impending danger",
-    "conflicts": ["Happy / Radiant", "Peaceful / Zen"]
+    "conflicts": [
+      "Happy / Radiant",
+      "Peaceful / Zen"
+    ]
   },
   "Peaceful / Zen": {
     "prompt": "minimalist composition, (soft natural colors:1.2), quiet balanced mood, (meditative look:1.1), symmetrical stillness",
-    "conflicts": ["Manic Euphoria", "Chaotic"]
+    "conflicts": [
+      "Manic Euphoria"
+    ]
   },
   "Romantic / Intimate": {
     "prompt": "(warm soft intimate lighting:1.3), cozy atmosphere, shallow depth of field, (gentle color grading:1.1), inviting candle-light glow",
-    "conflicts": ["Clinical & Sterile", "Horror / Macabre"]
+    "conflicts": [
+      "Clinical & Sterile",
+      "Horror / Macabre"
+    ]
   },
   "Suspenseful / Noir": {
     "prompt": "(high-contrast chiaroscuro:1.3), mysterious shadows, (dramatic tension:1.2), smoky noir room aesthetic, cinematic mystery",
-    "conflicts": ["High-Key Brilliance"]
+    "conflicts": [
+      "High-Key Brilliance"
+    ]
   },
   "Melancholic / Somber": {
     "prompt": "(somber melancholic mood:1.3), dominant blue and teal tones, (cold emotional weight:1.2), quiet lonely atmosphere, muted textures",
-    "conflicts": ["Happy / Radiant", "Manic Euphoria"]
+    "conflicts": [
+      "Happy / Radiant",
+      "Manic Euphoria"
+    ]
   },
   "Epic / Grandiose": {
     "prompt": "(epic grandiose scale:1.3), cinematic grandeur, sweeping atmosphere, (heroic lighting:1.2), majestic feel, dramatic sky",
-    "conflicts": ["Claustrophobic & Oppressive", "Extreme Close-Up"]
+    "conflicts": [
+      "Claustrophobic & Oppressive",
+      "Extreme Close-Up"
+    ]
   },
   "Horror / Macabre": {
     "prompt": "(horror macabre aesthetic:1.3), terrifying atmosphere, (deep unsettling shadows:1.2), haunting mood, visceral details",
-    "conflicts": ["Happy / Radiant", "Peaceful / Zen"]
+    "conflicts": [
+      "Happy / Radiant",
+      "Peaceful / Zen"
+    ]
   },
   "Magical / Fantasy": {
     "prompt": "(enchanted magical atmosphere:1.3), sparkling particles, (vivid dreamlike colors:1.2), sense of wonder, floating wisps",
-    "conflicts": ["Clinical & Sterile", "Gritty Realism"]
+    "conflicts": [
+      "Clinical & Sterile"
+    ]
   },
-  
-  "--- MATERIAL & SURFACE MOODS (THE TEXTURE) ---": { "prompt": "", "conflicts": [] },
+  "--- MATERIAL & SURFACE MOODS (THE TEXTURE) ---": "",
   "High-Gloss Luxury": {
     "prompt": "(highly reflective surfaces:1.3), polished marble and gold, (pristine textures:1.2), sharp specular highlights, expensive aesthetic",
-    "conflicts": ["Rusty & Decayed", "Gritty & Harsh"]
+    "conflicts": [
+      "Rusty & Decayed",
+      "Gritty & Harsh"
+    ]
   },
   "Rusty & Decayed": {
     "prompt": "(oxidized metal and flaking paint:1.3), grime and soot, (industrial decay textures:1.2), abandoned aesthetic, post-apocalyptic",
-    "conflicts": ["High-Gloss Luxury", "Polished & Futuristic", "Clinical & Sterile"]
+    "conflicts": [
+      "High-Gloss Luxury",
+      "Polished & Futuristic",
+      "Clinical & Sterile"
+    ]
   },
   "Polished & Futuristic": {
     "prompt": "anodized aluminum, (glowing light-strips:1.2), seamless surfaces, (high-tech polished aesthetic:1.3), clean geometric textures",
-    "conflicts": ["Organic & Mossy", "Rusty & Decayed"]
+    "conflicts": [
+      "Organic & Mossy",
+      "Rusty & Decayed"
+    ]
   },
   "Organic & Mossy": {
     "prompt": "(damp earth and soft green moss:1.3), weathered wood, forest floor textures, (natural overgrowth:1.2), tactile biological depth",
-    "conflicts": ["Clinical & Sterile", "Cyberpunk Night (Rainy)"]
+    "conflicts": [
+      "Clinical & Sterile",
+      "Cyberpunk Night (Rainy)"
+    ]
   },
   "Gritty & Harsh": {
     "prompt": "(rough concrete and abrasive surfaces:1.3), industrial dirt, (high-contrast gritty textures:1.2), urban decay realism",
-    "conflicts": ["High-Gloss Luxury", "Velvety & Soft"]
+    "conflicts": [
+      "High-Gloss Luxury",
+      "Velvety & Soft"
+    ]
   },
   "Velvety & Soft": {
     "prompt": "(light-absorbing fabrics:1.3), deep shadows in folds, (matte velvety surfaces:1.2), tactile warmth, luxurious soft-touch",
-    "conflicts": ["High-Gloss Luxury", "Rain-Slicked High Contrast"]
+    "conflicts": [
+      "High-Gloss Luxury",
+      "Rain-Slicked High Contrast"
+    ]
   },
   "Drunken / Blurred": {
     "prompt": "(disoriented hazy vision:1.3), motion blur, distorted colors, (dizzying perspective:1.2), chaotic atmospheric instability",
-    "conflicts": ["8K Raw Photo", "Deep Focus (Infinite Depth)"]
+    "conflicts": [
+      "8K Raw Photo",
+      "Deep Focus (Infinite Depth)"
+    ]
   },
-
-  "--- CINEMATIC COLOR SCIENCE & GRADING (THE COLORIST) ---": { "prompt": "", "conflicts": [] },
+  "--- CINEMATIC COLOR SCIENCE & GRADING (THE COLORIST) ---": "",
   "Teal & Orange": {
     "prompt": "(Hollywood teal and orange color grade:1.3), warm skin tones, (cool blue background:1.2), high color contrast, modern cinematic look",
-    "conflicts": ["Vintage Sepia", "Noir Black & White"]
+    "conflicts": [
+      "Vintage Sepia",
+      "Noir Black & White"
+    ]
   },
   "Technicolor Vibrancy": {
     "prompt": "(hyper-saturated primary colors:1.3), 1950s film aesthetic, (vivid nostalgic color palette:1.2), high dynamic range",
-    "conflicts": ["Bleach Bypass", "Noir Black & White", "Melancholic / Somber"]
+    "conflicts": [
+      "Bleach Bypass",
+      "Noir Black & White",
+      "Melancholic / Somber"
+    ]
   },
   "Bleach Bypass": {
     "prompt": "(bleach bypass color grade:1.3), high contrast, (low saturation gritty look:1.2), hard industrial aesthetic, silver-halide look",
-    "conflicts": ["Technicolor Vibrancy", "Romantic / Intimate"]
+    "conflicts": [
+      "Technicolor Vibrancy",
+      "Romantic / Intimate"
+    ]
   },
   "Vintage Sepia": {
     "prompt": "(monochromatic brown tones:1.3), faded paper texture, (aged historical aesthetic:1.2), warm vintage film look",
-    "conflicts": ["Cyberpunk Neon", "Teal & Orange", "Neon-Lit Intimacy"]
+    "conflicts": [
+      "Cyberpunk Neon",
+      "Teal & Orange",
+      "Neon-Lit Intimacy"
+    ]
   },
   "Noir Black & White": {
     "prompt": "(noir black and white:1.4), zero color, (deep obsidian blacks:1.3), bright silver highlights, dramatic light and shadow",
-    "conflicts": ["Cyberpunk Neon", "Teal & Orange", "Technicolor Vibrancy", "Neon-Lit Intimacy"]
+    "conflicts": [
+      "Cyberpunk Neon",
+      "Teal & Orange",
+      "Technicolor Vibrancy",
+      "Neon-Lit Intimacy"
+    ]
   },
   "Cyberpunk Neon": {
     "prompt": "(intense pink and cyan color spill:1.3), high-contrast night, (vibrant purple neon glow:1.2), saturated artificial light",
-    "conflicts": ["Vintage Sepia", "Noir Black & White", "Ethereal Dawn"]
+    "conflicts": [
+      "Vintage Sepia",
+      "Noir Black & White",
+      "Ethereal Dawn"
+    ]
   },
   "Cross-Processed": {
     "prompt": "(cross-processed film look:1.3), unnatural color shifts, (green-tinted shadows:1.2), yellow highlights, chemical aesthetic",
-    "conflicts": ["8K Raw Photo"]
+    "conflicts": [
+      "8K Raw Photo"
+    ]
   },
-
-  "--- HISTORICAL, CULTURAL & GLOBAL (THE ERA) ---": { "prompt": "", "conflicts": [] },
+  "--- HISTORICAL, CULTURAL & GLOBAL (THE ERA) ---": "",
   "Victorian Gothic": {
     "prompt": "(Victorian Gothic aesthetic:1.3), heavy dark wood, candlelight, (crimson and black palette:1.2), ornate architectural shadows",
-    "conflicts": ["Mid-Century Modern Optimism", "Cyberpunk Night (Rainy)"]
+    "conflicts": [
+      "Mid-Century Modern Optimism",
+      "Cyberpunk Night (Rainy)"
+    ]
   },
   "Mid-Century Modern Optimism": {
     "prompt": "saturated pastel colors, (clean geometric lighting:1.2), 1950s hopeful aesthetic, (soft film grain:1.1), bright organized composition",
-    "conflicts": ["Victorian Gothic", "Soviet Era Brutalism", "Ominous & Foreboding"]
+    "conflicts": [
+      "Victorian Gothic",
+      "Soviet Era Brutalism",
+      "Ominous & Foreboding"
+    ]
   },
   "Soviet Era Brutalism": {
     "prompt": "(grey concrete brutalist architecture:1.3), harsh overcast light, (utilitarian atmosphere:1.2), desaturated oppressive urban mood",
-    "conflicts": ["High-Gloss Luxury", "Art Deco Opulence", "Romantic / Intimate"]
+    "conflicts": [
+      "High-Gloss Luxury",
+      "Art Deco Opulence",
+      "Romantic / Intimate"
+    ]
   },
   "Ancient Mythical Mist": {
     "prompt": "(ancient primordial atmosphere:1.3), ethereal low-hanging fog, (torchlight flickering:1.2), stone-hewn textures, magical mist",
-    "conflicts": ["Clinical & Sterile", "Cyberpunk Night (Rainy)"]
+    "conflicts": [
+      "Clinical & Sterile",
+      "Cyberpunk Night (Rainy)"
+    ]
   },
   "Art Deco Opulence": {
     "prompt": "(gold and chrome accents:1.3), sharp symmetrical light, (high-gloss surfaces:1.2), 1920s jazz-age glamour",
-    "conflicts": ["Soviet Era Brutalism", "Organic & Mossy"]
+    "conflicts": [
+      "Soviet Era Brutalism",
+      "Organic & Mossy"
+    ]
   },
   "Cyber-Folk Fusion": {
     "prompt": "(traditional organic textures mixed with neon:1.3), high-contrast cultural clash, (vibrant busy atmosphere:1.2), neon folk",
-    "conflicts": ["Clinical & Sterile", "Peaceful / Zen"]
+    "conflicts": [
+      "Clinical & Sterile",
+      "Peaceful / Zen"
+    ]
   },
   "Desert Nomad Stillness": {
     "prompt": "(heat-haze horizon:1.2), sun-bleached fabrics, (sand-dusted surfaces:1.2), warm earth tones, vast nomadic stillness",
-    "conflicts": ["Blizzard / White-out", "Tropical Humidity / Steam"]
+    "conflicts": [
+      "Blizzard / White-out",
+      "Tropical Humidity / Steam"
+    ]
   },
-
-  "--- DIGITAL, TECHNOLOGICAL & GLITCH (THE MACHINE) ---": { "prompt": "", "conflicts": [] },
+  "--- DIGITAL, TECHNOLOGICAL & GLITCH (THE MACHINE) ---": "",
   "VHS Tape Decay": {
     "prompt": "(analog VHS tracking errors:1.3), chromatic aberration, (magnetic tape noise:1.2), washed-out 1980s home-video aesthetic",
-    "conflicts": ["8K Raw Photo", "Deep Focus (Infinite Depth)"]
+    "conflicts": [
+      "8K Raw Photo",
+      "Deep Focus (Infinite Depth)"
+    ]
   },
   "Thermal Vision": {
     "prompt": "(thermal vision heat-map:1.3), blue yellow red palette, (digital HUD overlays:1.2), surveillance sensor signature",
-    "conflicts": ["Realistic Skin Tones", "Oil on Canvas"]
+    "conflicts": [
+      "Oil on Canvas"
+    ]
   },
   "Data-Stream Glitch": {
     "prompt": "(fragmented digital glitch:1.3), pixel-bleeds, (corrupted file aesthetic:1.2), technological chaos, data artifacts",
-    "conflicts": ["8K Raw Photo", "Studio Portrait"]
+    "conflicts": [
+      "8K Raw Photo",
+      "Studio Portrait"
+    ]
   },
   "Low-Poly Digital Void": {
     "prompt": "(flat-shaded low-poly surfaces:1.3), wireframe shadows, (neon grid-light:1.2), minimalist early-3D digital void",
-    "conflicts": ["8K Raw Photo", "Realistic Anatomy"]
+    "conflicts": [
+      "8K Raw Photo"
+    ]
   },
   "Night-Vision (Green Phosphor)": {
     "prompt": "(monochromatic green night-vision:1.4), high digital noise, (phosphor glow:1.2), military surveillance aesthetic",
-    "conflicts": ["Realistic Skin Tones", "Vibrant Colors"]
+    "conflicts": []
   },
   "Holographic Flicker": {
     "prompt": "(semi-transparent holographic flicker:1.3), scan-lines, (light-blue spectral glow:1.2), ethereal technological projection",
-    "conflicts": ["Solid Surface"]
+    "conflicts": []
   },
   "Simulation Breakdown": {
     "prompt": "(reality-tearing simulation breakdown:1.4), surfaces dissolving into cubes, (unnatural light-leaks:1.2), digital horror",
-    "conflicts": ["8K Raw Photo", "Peaceful / Zen"]
+    "conflicts": [
+      "8K Raw Photo",
+      "Peaceful / Zen"
+    ]
   }
 }

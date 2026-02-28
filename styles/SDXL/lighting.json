@@ -1,24 +1,32 @@
 {
- "--- STUDIO & PROFESSIONAL RIGGING (THE SETUP) ---": { "prompt": "", "conflicts": [] },
+  "--- STUDIO & PROFESSIONAL RIGGING (THE SETUP) ---": "",
   "Three-Point Lighting": {
     "prompt": "(professional three-point lighting:1.3), key light 45-degrees, fill light 50% intensity, (back light for depth:1.2), balanced facial shadows",
-    "conflicts": ["Natural Sunlight", "Overcast / Flat Light"]
+    "conflicts": [
+      "Overcast / Flat Light"
+    ]
   },
   "Butterfly / Paramount": {
     "prompt": "(butterfly lighting setup:1.3), paramount lighting, top-down key light above lens, (symmetrical sub-nasal shadow:1.2), high-fashion cheekbones",
-    "conflicts": ["Hard Lighting"]
+    "conflicts": []
   },
   "Rembrandt Lighting": {
     "prompt": "(Rembrandt lighting:1.3), side-angled key light, (triangular light patch on shaded cheek:1.3), cinematic chiaroscuro, 45-degree rotation",
-    "conflicts": ["Softbox Diffused"]
+    "conflicts": [
+      "Softbox Diffused"
+    ]
   },
   "Softbox Diffused": {
     "prompt": "(large softbox light:1.3), 4000K neutral white, wrap-around illumination, (near-zero shadow density:1.2), commercial skin glow",
-    "conflicts": ["Harsh Noon", "Hard Lighting"]
+    "conflicts": [
+      "Harsh Noon"
+    ]
   },
   "Split / Side Lighting": {
     "prompt": "(split lighting:1.3), key light at 90-degrees, (one half of face in total shadow:1.3), dramatic texture emphasis, high-contrast",
-    "conflicts": ["High-Key Brilliance"]
+    "conflicts": [
+      "High-Key Brilliance"
+    ]
   },
   "Clamshell Lighting": {
     "prompt": "(clamshell lighting:1.3), beauty lighting, light from above and below, (zero neck shadow:1.2), hyper-smooth skin texture",
@@ -28,49 +36,72 @@
     "prompt": "(broad lighting:1.2), key light on camera-side cheek, (bright open commercial look:1.2), widening facial features",
     "conflicts": []
   },
-
-  "--- NATURAL LIGHT & SOLAR STATES (THE SUN) ---": { "prompt": "", "conflicts": [] },
+  "--- NATURAL LIGHT & SOLAR STATES (THE SUN) ---": "",
   "Golden Hour": {
     "prompt": "(golden hour:1.3), low-angle sun 2500K, (long amber shadows:1.2), warm photon scattering, atmospheric glow, horizontal rays",
-    "conflicts": ["Blue Hour / Twilight", "Moonlit / Nocturnal", "Fluorescent / Neon", "Harsh Noon"]
+    "conflicts": [
+      "Blue Hour / Twilight",
+      "Fluorescent / Neon",
+      "Harsh Noon"
+    ]
   },
   "Blue Hour / Twilight": {
     "prompt": "(blue hour:1.3), twilight 10000K, (deep blue ambient illumination:1.2), zero direct sun, soft shadows, cool temperature aesthetic",
-    "conflicts": ["Golden Hour", "Harsh Noon"]
+    "conflicts": [
+      "Golden Hour",
+      "Harsh Noon"
+    ]
   },
   "Harsh Noon": {
     "prompt": "(harsh noon sunlight:1.3), zenith sun, (vertical 90-degree shadows:1.3), 5500K high-contrast, obliterated midtones, outdoor heat",
-    "conflicts": ["Candlelight / Fire", "Moonlit / Nocturnal", "Blue Hour / Twilight"]
+    "conflicts": [
+      "Candlelight / Fire",
+      "Blue Hour / Twilight"
+    ]
   },
   "Volumetric Godrays": {
     "prompt": "(volumetric godrays:1.4), Tyndall effect, (visible light beams through haze:1.2), 3200K dust particles, heavenly light shafts",
-    "conflicts": ["Overcast / Flat Light"]
+    "conflicts": [
+      "Overcast / Flat Light"
+    ]
   },
   "Dappled Sunlight": {
     "prompt": "(dappled sunlight:1.3), filtered through tree canopy, (rhythmic leaf shadows gobos:1.2), organic forest floor illumination",
-    "conflicts": ["Studio Portrait"]
+    "conflicts": [
+      "Studio Portrait"
+    ]
   },
   "Overcast / Flat Light": {
     "prompt": "(overcast flat lighting:1.3), thick cloud cover, 6500K cool grey, (zero visible shadows:1.2), neutral clinical mood",
-    "conflicts": ["Volumetric Godrays", "Golden Hour"]
+    "conflicts": [
+      "Volumetric Godrays",
+      "Golden Hour"
+    ]
   },
   "Alpenglow": {
     "prompt": "(alpenglow radiance:1.3), indirect pink and purple light, (ethereal high-altitude light:1.2), soft mountain-top glow",
-    "conflicts": ["Harsh Noon"]
+    "conflicts": [
+      "Harsh Noon"
+    ]
   },
-
-  "--- CINEMATIC & NARRATIVE DRAMA (THE STAGE) ---": { "prompt": "", "conflicts": [] },
+  "--- CINEMATIC & NARRATIVE DRAMA (THE STAGE) ---": "",
   "Cinematic Rim": {
     "prompt": "(cinematic rim lighting:1.4), extreme backlighting, (glowing subject silhouette:1.2), 5500K, sharp edge separation, heroic aura",
-    "conflicts": ["Overcast / Flat Light"]
+    "conflicts": [
+      "Overcast / Flat Light"
+    ]
   },
   "Low-Key Drama": {
     "prompt": "(low-key lighting:1.3), dominant deep shadows, (minimal light:1.2), high-contrast ratio, noir-inspired psychological atmosphere",
-    "conflicts": ["High-Key Brilliance"]
+    "conflicts": [
+      "High-Key Brilliance"
+    ]
   },
   "High-Key Brilliance": {
     "prompt": "(high-key lighting:1.3), white-on-white aesthetic, (minimal shadows:1.2), overwhelmingly bright, optimistic clean sequence",
-    "conflicts": ["Low-Key Drama"]
+    "conflicts": [
+      "Low-Key Drama"
+    ]
   },
   "Motivated Light": {
     "prompt": "(motivated light source:1.2), light from visible prop, directional consistency, (realistic light fall-off:1.2), storytelling light",
@@ -78,7 +109,10 @@
   },
   "Chiaroscuro / Caravaggio": {
     "prompt": "(chiaroscuro Caravaggio style:1.4), transition from brilliant light to (obsidian black shadows:1.3), painterly theatricality",
-    "conflicts": ["High-Key Brilliance", "Overcast / Flat Light"]
+    "conflicts": [
+      "High-Key Brilliance",
+      "Overcast / Flat Light"
+    ]
   },
   "Top-Down God-Light": {
     "prompt": "(top-down god-light:1.3), intense point source above, (heavy shadows in eye sockets:1.2), dramatic isolation, interrogative",
@@ -86,43 +120,58 @@
   },
   "Anamorphic Lens Flare": {
     "prompt": "(horizontal anamorphic lens flare:1.3), blue or gold light streaks, cinematic optical artifacts, (sci-fi light hits:1.2)",
-    "conflicts": ["Vintage Film"]
+    "conflicts": [
+      "Vintage Film"
+    ]
   },
-
-  "--- INTERIOR & PRACTICAL AMBIANCE (THE ROOM) ---": { "prompt": "", "conflicts": [] },
+  "--- INTERIOR & PRACTICAL AMBIANCE (THE ROOM) ---": "",
   "Candlelight / Fire": {
     "prompt": "(flickering 1800K candlelight:1.4), orange point source, (subsurface scattering skin:1.2), intimate warm shadows, heat glow",
-    "conflicts": ["Harsh Noon", "Strobe / Flash", "Searchlight / CCTV"]
+    "conflicts": [
+      "Harsh Noon",
+      "Strobe / Flash",
+      "Searchlight / CCTV"
+    ]
   },
   "Warm Incandescent Lamp": {
     "prompt": "(3000K tungsten incandescent light:1.3), soft localized glow, (warm orange-tinted shadows:1.2), cozy interior mood",
-    "conflicts": ["Fluorescent / Neon"]
+    "conflicts": [
+      "Fluorescent / Neon"
+    ]
   },
   "Computer Monitor Glow": {
     "prompt": "(cool blue screen light 6500K:1.3), sharp facial highlights, (dark ambient room:1.2), digital atmosphere, tech glow",
-    "conflicts": ["Golden Hour"]
+    "conflicts": [
+      "Golden Hour"
+    ]
   },
   "Fireplace Hearth Light": {
     "prompt": "(fireplace hearth light:1.3), low-angle orange flickering, (dancing shadows:1.2), intense warm glow from side",
-    "conflicts": ["Blue Hour / Twilight"]
+    "conflicts": [
+      "Blue Hour / Twilight"
+    ]
   },
   "TV Static Flicker": {
     "prompt": "(unstable TV static flicker:1.3), blue and grey shifting light, (high-frequency shadow movement:1.2), eerie tension",
-    "conflicts": ["Professional Studio"]
+    "conflicts": []
   },
   "Dim Night-light": {
     "prompt": "(dim minimal night-light:1.3), deep shadows, soft localized visibility, (low-photon environment:1.2), quiet atmosphere",
-    "conflicts": ["High-Key Brilliance"]
+    "conflicts": [
+      "High-Key Brilliance"
+    ]
   },
-
-  "--- URBAN & ARTIFICIAL GLOW (THE CITY) ---": { "prompt": "", "conflicts": [] },
+  "--- URBAN & ARTIFICIAL GLOW (THE CITY) ---": "",
   "Fluorescent / Neon": {
     "prompt": "(flickering 6500K fluorescent light:1.3), cyan and magenta color cast, (cyberpunk nocturnal aesthetic:1.2), harsh digital shadows",
-    "conflicts": ["Golden Hour", "Candlelight / Fire"]
+    "conflicts": [
+      "Golden Hour",
+      "Candlelight / Fire"
+    ]
   },
   "Sodium Vapor Streetlights": {
     "prompt": "(sodium vapor 2000K orange glow:1.4), monochromatic yellow-orange, (deep obsidian shadows:1.2), urban nighttime grit",
-    "conflicts": ["Daylight"]
+    "conflicts": []
   },
   "Traffic Light Spill": {
     "prompt": "(saturated red or green traffic light spill:1.3), color wash on wet surfaces, (rhythmic urban transition:1.1)",
@@ -130,33 +179,43 @@
   },
   "Wet Asphalt Neon Reflection": {
     "prompt": "(wet asphalt neon reflections:1.3), high-gloss ground reflections, (vibrant light-blooms on dark pavement:1.2), rain night",
-    "conflicts": ["Dry Interior"]
+    "conflicts": []
   },
   "Distant City Glow": {
     "prompt": "(distant city glow horizon:1.2), light pollution haze, (amber silhouetted foreground:1.2), suburban night atmosphere",
-    "conflicts": ["High-Key Brilliance"]
+    "conflicts": [
+      "High-Key Brilliance"
+    ]
   },
   "Construction Site Floodlights": {
     "prompt": "(intense halogen floodlights:1.3), massive shadow casting, industrial grit, (overexposed highlights:1.2), work zone",
-    "conflicts": ["Candlelight / Fire"]
+    "conflicts": [
+      "Candlelight / Fire"
+    ]
   },
-
-  "--- TECHNICAL, SURVEILLANCE & OPTICS (THE SENSOR) ---": { "prompt": "", "conflicts": [] },
+  "--- TECHNICAL, SURVEILLANCE & OPTICS (THE SENSOR) ---": "",
   "Strobe / Flash": {
     "prompt": "(xenon strobe flash 6000K:1.3), instantaneous light, (harsh drop shadow on background:1.3), flattened features, paparazzi",
-    "conflicts": ["Softbox Diffused", "Candlelight / Fire"]
+    "conflicts": [
+      "Softbox Diffused",
+      "Candlelight / Fire"
+    ]
   },
   "Searchlight / CCTV": {
     "prompt": "(harsh overhead searchlight beam:1.3), circular projection, (high-contrast digital noise:1.2), overexposed, clinical surveillance",
-    "conflicts": ["Soft-Focus Glow"]
+    "conflicts": [
+      "Soft-Focus Glow"
+    ]
   },
   "Laser Beam Projection": {
     "prompt": "(concentrated laser beam lines:1.3), vibrant red or green streaks, (volumetric geometric patterns:1.2), haze, high-tech",
-    "conflicts": ["Vintage Film"]
+    "conflicts": [
+      "Vintage Film"
+    ]
   },
   "Night Vision (Green Phosphor)": {
     "prompt": "(monochromatic green night vision:1.4), digital sensor noise, phosphor glow, (military surveillance nocturnal aesthetic:1.2)",
-    "conflicts": ["Realistic Skin Tones", "Full Color"]
+    "conflicts": []
   },
   "Police Siren Flash": {
     "prompt": "(rapid alternating red and blue siren flash:1.3), high-tension atmosphere, (emergency response mood:1.2), rhythmic color shifts",
@@ -164,66 +223,91 @@
   },
   "UV / Blacklight Glow": {
     "prompt": "(UV blacklight glow:1.4), fluorescent purple and violet ambient, (glowing white surfaces:1.2), neon reactive textures",
-    "conflicts": ["Natural Sunlight"]
+    "conflicts": []
   },
-
-  "--- ABSTRACT & OPTICAL PHENOMENA (THE LENS) ---": { "prompt": "", "conflicts": [] },
+  "--- ABSTRACT & OPTICAL PHENOMENA (THE LENS) ---": "",
   "Prism Refraction": {
     "prompt": "(prism refraction spectral colors:1.3), rainbow edges, crystalline light-bending, (sharp geometric color shifts:1.2)",
-    "conflicts": ["Overcast / Flat Light"]
+    "conflicts": [
+      "Overcast / Flat Light"
+    ]
   },
   "Vintage Lens Flare": {
     "prompt": "(warm circular lens flare artifacts:1.3), orange and red light-rings, (organic optical flaws:1.2), nostalgic lens aesthetic",
-    "conflicts": ["Studio Portrait"]
+    "conflicts": [
+      "Studio Portrait"
+    ]
   },
   "Analog Light Leaks": {
     "prompt": "(soft analog light leaks:1.4), orange or red frame-edge bleeding, (vintage film-burn aesthetic:1.2), unintentional exposure",
-    "conflicts": ["8K Raw Photo"]
+    "conflicts": [
+      "8K Raw Photo"
+    ]
   },
   "Rainbow Caustics": {
     "prompt": "(rainbow caustics:1.3), shimmering light-patterns through glass or water, (dancing prismatic highlights:1.2), fluid light physics",
-    "conflicts": ["Dry Surface"]
+    "conflicts": []
   },
   "Chromatic Aberration Halo": {
     "prompt": "(chromatic aberration halo:1.3), red cyan offset color fringing, high-tech visual distortion, (optical imperfection:1.2)",
-    "conflicts": ["8K Raw Photo"]
+    "conflicts": [
+      "8K Raw Photo"
+    ]
   },
   "Soft Bokeh Highlights": {
     "prompt": "(soft bokeh highlights:1.3), out-of-focus light circles, (creamy background blur:1.3), high-quality lens aesthetic",
-    "conflicts": ["Deep Focus (Infinite Depth)"]
+    "conflicts": [
+      "Deep Focus (Infinite Depth)"
+    ]
   },
   "Motion Streak Light": {
     "prompt": "(long-exposure motion streak light:1.3), vibrant light-trails, dynamic energy, (light painting effect:1.2)",
-    "conflicts": ["Static Composition"]
+    "conflicts": []
   },
-  
-  "--- ETHEREAL & SUPERNATURAL LIGHT (THE BEYOND) ---": { "prompt": "", "conflicts": [] },
+  "--- ETHEREAL & SUPERNATURAL LIGHT (THE BEYOND) ---": "",
   "Divine Golden Aura": {
     "prompt": "(soft glowing radiance emanating from subject:1.3), heavenly golden light, (zero harsh shadows:1.2), transcendent and holy atmosphere, divine presence glow",
-    "conflicts": ["Low-Key Drama", "Gritty Realism"]
+    "conflicts": [
+      "Low-Key Drama"
+    ]
   },
   "Ghostly Ectoplasm Glow": {
     "prompt": "(spectral green or white light:1.3), semi-transparent illumination, (ethereal and cold:1.2), unsettling supernatural presence, phantom aesthetic",
-    "conflicts": ["Golden Hour", "Warm Incandescent Lamp"]
+    "conflicts": [
+      "Golden Hour",
+      "Warm Incandescent Lamp"
+    ]
   },
   "Magical Wisp Light": {
     "prompt": "(floating points of concentrated light:1.3), dancing particles, enchanted atmosphere, (soft bluish-white glow:1.2), mystical fantasy mood",
-    "conflicts": ["Harsh Noon"]
+    "conflicts": [
+      "Harsh Noon"
+    ]
   },
   "Cosmic Stardust Radiance": {
     "prompt": "(multicolored shimmering particles:1.3), nebula-like light clouds, stellar background glow, (purple and indigo light-pools:1.2), astronomical scale",
-    "conflicts": ["Overcast / Flat Light"]
+    "conflicts": [
+      "Overcast / Flat Light"
+    ]
   },
   "Underworld Ember Glow": {
     "prompt": "(low-angle red and orange light from below:1.3), smoldering heat, (volcanic sparks:1.2), dark oppressive supernatural heat, hellish illumination",
-    "conflicts": ["Blue Hour / Twilight", "High-Key Brilliance"]
+    "conflicts": [
+      "Blue Hour / Twilight",
+      "High-Key Brilliance"
+    ]
   },
   "Holy Celestial Beam": {
     "prompt": "(single pillar of brilliant white light from above:1.4), piercing darkness, divine intervention aesthetic, (high-contrast spiritual focus:1.2), majestic rays",
-    "conflicts": ["Overcast / Flat Light", "Softbox Diffused"]
+    "conflicts": [
+      "Overcast / Flat Light",
+      "Softbox Diffused"
+    ]
   },
   "Dark Energy Pulse": {
     "prompt": "(void-like black light with magenta edges:1.3), negative-space illumination, (chaotic supernatural power:1.2), unstable reality-tearing light",
-    "conflicts": ["Studio Portrait", "Natural Sunlight"]
+    "conflicts": [
+      "Studio Portrait"
+    ]
   }
 }
