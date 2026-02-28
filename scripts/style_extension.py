@@ -121,6 +121,7 @@ class UCP_Engine(scripts.Script):
 
     def update_ui_state(self, arch, cur_it, cur_f, cur_cp, cur_a, cur_ex, cur_l, cur_s, use_neg):
         """Updates the UI components based on the selected architecture and values."""
+        # Load data for all categories
         data_it = _get_full_data(arch, "ImageType")
         data_f = _get_full_data(arch, "Framing")
         data_cp = _get_full_data(arch, "CameraPosition")
@@ -129,6 +130,7 @@ class UCP_Engine(scripts.Script):
         data_l = _get_full_data(arch, "Lighting")
         data_s = _get_full_data(arch, "Stability")
 
+        # Validate current selections against loaded data
         it_v = cur_it if cur_it in data_it else NONE
         f_v = cur_f if cur_f in data_f else NONE
         cp_v = cur_cp if cur_cp in data_cp else NONE
@@ -137,44 +139,74 @@ class UCP_Engine(scripts.Script):
         l_v = cur_l if cur_l in data_l else NONE
         s_v = [x for x in cur_s if x in data_s]
 
-        # Logic for conflict warnings
+        # 1. Collect all active selections for cross-referencing conflicts
+        current_selections = [
+            ("Image Type", it_v, data_it),
+            ("Framing", f_v, data_f),
+            ("Camera Position", cp_v, data_cp),
+            ("Atmosphere", a_v, data_a),
+            ("Expression", ex_v, data_ex),
+            ("Lighting", l_v, data_l)
+        ]
+        
+        # Add Stability selections individually (handling multi-select)
+        for val in s_v:
+            current_selections.append(("Stability", val, data_s))
+
+        # 2. Comprehensive conflict detection loop
         found_conflicts = []
-        cp_item = data_cp.get(cp_v, {})
-        if isinstance(cp_item, dict) and "conflicts" in cp_item:
-            if it_v in cp_item["conflicts"]: found_conflicts.append(f"<b>{cp_v}</b> conflicts with <b>Image Type: {it_v}</b>")
-            if f_v in cp_item["conflicts"]: found_conflicts.append(f"<b>{cp_v}</b> conflicts with <b>Framing: {f_v}</b>")
+        for label, val, data in current_selections:
+            if val == NONE or not val: 
+                continue
+            
+            item_data = data.get(val, {})
+            if isinstance(item_data, dict) and "conflicts" in item_data:
+                conflict_list = item_data["conflicts"]
+                
+                for other_label, other_val, _ in current_selections:
+                    if other_val != NONE and other_val != "" and other_val != val:
+                        if other_val in conflict_list:
+                            # Color logic:
+                            # Choice = Orange (#ff9a33)
+                            # Label = White/Silver (#e0e0e0)
+                            # "conflicts with" = Yellow (#ffdb58)
+                            msg = (f"<span style='color: #ff9a33;'><b>{val}</b></span> "
+                                   f"<span style='color: #e0e0e0;'>({label})</span> "
+                                   f"<span style='color: #ffdb58;'>conflicts with</span> "
+                                   f"<span style='color: #ff9a33;'><b>{other_val}</b></span> "
+                                   f"<span style='color: #e0e0e0;'>({other_label})</span>")
+                            
+                            if msg not in found_conflicts:
+                                found_conflicts.append(msg)
 
-        f_item = data_f.get(f_v, {})
-        if isinstance(f_item, dict) and "conflicts" in f_item:
-            if it_v in f_item["conflicts"]: found_conflicts.append(f"<b>{f_v}</b> conflicts with <b>Image Type: {it_v}</b>")
-
+        # Generate warning HTML with a slightly darker border for better contrast
         warning_html = ""
         if found_conflicts:
-            warning_html = f'<div style="color: #d97706; background: rgba(245, 158, 11, 0.1); padding: 12px; border-radius: 8px; border: 1px solid #f59e0b;"><b>Logic Warning:</b><br>{"<br>".join(found_conflicts)}</div>'
+            warning_html = (
+                f'<div style="color: #e0e0e0; background: rgba(245, 158, 11, 0.1); '
+                f'padding: 12px; border-radius: 8px; border: 1px solid #d97706; line-height: 1.6;">'
+                f'<b style="color: #ffdb58; font-size: 1.1em;">⚠️ Logic Warning:</b><br>'
+                f'{"<br>".join(found_conflicts)}</div>'
+            )
 
         # Build positive prompt preview
-        pos_parts = [get_value(data_it, it_v), get_value(data_f, f_v), get_value(data_cp, cp_v), get_value(data_a, a_v), get_value(data_ex, ex_v), get_value(data_l, l_v)]
-        for key in s_v: pos_parts.append(get_value(data_s, key))
+        pos_parts = [get_value(data_it, it_v), get_value(data_f, f_v), get_value(data_cp, cp_v), 
+                     get_value(data_a, a_v), get_value(data_ex, ex_v), get_value(data_l, l_v)]
+        for key in s_v: 
+            pos_parts.append(get_value(data_s, key))
         pos = ", ".join(filter(None, pos_parts))
         
         # Build negative prompt preview (disabled for Flux)
         neg = ""
         if use_neg and arch != "Flux":
             neg_parts = []
-
             # Single-select categories
-            for cat, cur_val in [
-                ("ImageType", it_v),
-                ("Framing", f_v),
-                ("CameraPosition", cp_v),
-                ("Atmosphere", a_v),
-                ("Expression", ex_v),
-                ("Lighting", l_v),
-            ]:
+            for cat, cur_val in [("ImageType", it_v), ("Framing", f_v), ("CameraPosition", cp_v),
+                                ("Atmosphere", a_v), ("Expression", ex_v), ("Lighting", l_v)]:
                 neg_data = _get_full_data(arch, cat, is_neg=True)
                 neg_parts.append(get_value(neg_data, cur_val))
 
-            # Multi-select: Stability
+            # Multi-select category: Stability
             neg_data_s = _get_full_data(arch, "Stability", is_neg=True)
             for key in s_v:
                 neg_parts.append(get_value(neg_data_s, key))
