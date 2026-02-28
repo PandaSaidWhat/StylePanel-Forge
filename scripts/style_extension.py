@@ -20,6 +20,7 @@ def on_ui_settings():
     ))
 
 def _get_full_data(arch: str, category: str, is_neg: bool = False):
+    """Retrieves style data from JSON files based on architecture and category."""
     cat_map = {
         "ImageType": "imagetype", "Framing": "framing", "CameraPosition": "camera_position", 
         "Atmosphere": "mood", "Expression": "expression", "Lighting": "lighting", "Stability": "stability"
@@ -36,10 +37,12 @@ def _get_full_data(arch: str, category: str, is_neg: bool = False):
     except: return {}
 
 def get_choices(arch: str, category: str):
+    """Returns a list of available keys for a given category."""
     data = _get_full_data(arch, category)
     return [NONE] + [k for k in data.keys() if k]
 
 def get_value(data, key):
+    """Extracts the prompt string from the style data."""
     if not key or key == NONE or key.startswith("---"): return ""
     val = data.get(key, "")
     if isinstance(val, dict): return val.get("prompt", "").strip()
@@ -56,8 +59,8 @@ class UCP_Engine(scripts.Script):
         with gr.Accordion("🚀 UNIVERSE CONTROL PANEL", open=True):
             with gr.Column():
                 with gr.Row():
-                    arch = gr.Radio(choices=["SD", "SDXL", "Flux"], value="Flux", label="Architecture Mode")
-                    reload_btn = gr.Button("🔄 Reload JSON Files", variant="secondary")
+                    arch = gr.Radio(choices=["SD", "SDXL", "Flux"], value="Flux", label="Architecture Mode") 
+                    reload_btn = gr.Button("🔄 Reload JSON files", variant="secondary")
                 
                 with gr.Row():
                     it = gr.Dropdown(label="Image Type", choices=get_choices("Flux", "ImageType"), value=NONE)
@@ -68,12 +71,13 @@ class UCP_Engine(scripts.Script):
                     a = gr.Dropdown(label="Atmosphere", choices=get_choices("Flux", "Atmosphere"), value=NONE)
                     ex = gr.Dropdown(label="Expression", choices=get_choices("Flux", "Expression"), value=NONE)
                     l = gr.Dropdown(label="Lighting", choices=get_choices("Flux", "Lighting"), value=NONE)
-                
+                                
                 with gr.Row():
                     s = gr.Dropdown(label="Stability", choices=get_choices("Flux", "Stability"), value=[], multiselect=True)
-                    nt = gr.Checkbox(label="Enable Negative Tags", value=False)
+                    
 
                 pp = gr.Textbox(label="Positive Preview", lines=2, elem_id="ucp_positive_preview")
+                nt = gr.Checkbox(label="Enable Negative Tags", value=False)
                 np = gr.Textbox(label="Negative Preview", lines=2, visible=False, elem_id="ucp_negative_preview")
 
                 warning_box = gr.HTML("", elem_id="ucp_warning_box")
@@ -87,34 +91,36 @@ class UCP_Engine(scripts.Script):
         
         reload_btn.click(fn=self.update_ui_state, inputs=input_list, outputs=output_list)
 
+        # Handle tag injection (Manual mode) and trigger generate
         action_btn.click(None, None, None, _js=r"""
         () => {
-            const posContent = document.querySelector('#ucp_positive_preview textarea').value;
-            const negContent = document.querySelector('#ucp_negative_preview textarea').value;
-            const mainPos = document.querySelector('#txt2img_prompt textarea');
-            const mainNeg = document.querySelector('#txt2img_neg_prompt textarea');
+            const btn = document.getElementById('ucp_action_btn');
+            const isManual = btn && btn.innerText.includes("Manual");
             
-            if (mainPos && posContent) {
-                mainPos.value = (mainPos.value.trim() ? mainPos.value.trim() + ", " : "") + posContent;
-                mainPos.dispatchEvent(new Event('input', {bubbles:true}));
-            }
-            if (mainNeg && negContent) {
-                mainNeg.value = (mainNeg.value.trim() ? mainNeg.value.trim() + ", " : "") + negContent;
-                mainNeg.dispatchEvent(new Event('input', {bubbles:true}));
+            if (isManual) {
+                const posContent = document.querySelector('#ucp_positive_preview textarea').value;
+                const negContent = document.querySelector('#ucp_negative_preview textarea').value;
+                const mainPos = document.querySelector('#txt2img_prompt textarea');
+                const mainNeg = document.querySelector('#txt2img_neg_prompt textarea');
+                
+                if (mainPos && posContent) {
+                    mainPos.value = (mainPos.value.trim() ? mainPos.value.trim() + ", " : "") + posContent;
+                    mainPos.dispatchEvent(new Event('input', {bubbles:true}));
+                }
+                if (mainNeg && negContent && mainNeg.offsetParent !== null) {
+                    mainNeg.value = (mainNeg.value.trim() ? mainNeg.value.trim() + ", " : "") + negContent;
+                    mainNeg.dispatchEvent(new Event('input', {bubbles:true}));
+                }
             }
 
-            const btn = document.getElementById('ucp_action_btn');
-            if (btn && btn.innerText.includes("GENERATE")) {
-                setTimeout(() => {
-                    const genBtn = document.getElementById('txt2img_generate');
-                    if (genBtn) genBtn.click();
-                }, 100);
-            }
+            const genBtn = document.getElementById('txt2img_generate');
+            if (genBtn) genBtn.click();
         }""")
 
         return [arch, it, f, cp, a, ex, l, s, nt, pp, np]
 
     def update_ui_state(self, arch, cur_it, cur_f, cur_cp, cur_a, cur_ex, cur_l, cur_s, use_neg):
+        """Updates the UI components based on the selected architecture and values."""
         data_it = _get_full_data(arch, "ImageType")
         data_f = _get_full_data(arch, "Framing")
         data_cp = _get_full_data(arch, "CameraPosition")
@@ -131,73 +137,48 @@ class UCP_Engine(scripts.Script):
         l_v = cur_l if cur_l in data_l else NONE
         s_v = [x for x in cur_s if x in data_s]
 
-                # --- Global conflict check (all categories vs all categories) ---
-        selected = {
-            "ImageType": it_v,
-            "Framing": f_v,
-            "CameraPosition": cp_v,
-            "Atmosphere": a_v,
-            "Expression": ex_v,
-            "Lighting": l_v,
-        }
-
-        selected_stability = list(s_v)
-
-        # All selected keys (fast membership checks)
-        selected_keys = set(v for v in selected.values() if v and v != NONE)
-        selected_keys.update(x for x in selected_stability if x and x != NONE)
-
-        data_map = {
-            "ImageType": data_it,
-            "Framing": data_f,
-            "CameraPosition": data_cp,
-            "Atmosphere": data_a,
-            "Expression": data_ex,
-            "Lighting": data_l,
-            "Stability": data_s,
-        }
-
+        # Logic for conflict warnings
         found_conflicts = []
+        cp_item = data_cp.get(cp_v, {})
+        if isinstance(cp_item, dict) and "conflicts" in cp_item:
+            if it_v in cp_item["conflicts"]: found_conflicts.append(f"<b>{cp_v}</b> conflicts with <b>Image Type: {it_v}</b>")
+            if f_v in cp_item["conflicts"]: found_conflicts.append(f"<b>{cp_v}</b> conflicts with <b>Framing: {f_v}</b>")
 
-        def check_item_conflicts(cat_name: str, key_name: str):
-            if not key_name or key_name == NONE:
-                return
-            item = data_map.get(cat_name, {}).get(key_name, {})
-            if not isinstance(item, dict) or "conflicts" not in item:
-                return
-
-            conflicts = item.get("conflicts", [])
-            if isinstance(conflicts, str):
-                conflicts = [conflicts]
-            elif not isinstance(conflicts, list):
-                conflicts = []
-
-            for c in conflicts:
-                if c in selected_keys:
-                    found_conflicts.append(
-                        f"<b>{cat_name}: {key_name}</b> conflicts with <b>{c}</b>"
-                    )
-
-        for cat, key in selected.items():
-            check_item_conflicts(cat, key)
-
-        for st_key in selected_stability:
-            check_item_conflicts("Stability", st_key)
+        f_item = data_f.get(f_v, {})
+        if isinstance(f_item, dict) and "conflicts" in f_item:
+            if it_v in f_item["conflicts"]: found_conflicts.append(f"<b>{f_v}</b> conflicts with <b>Image Type: {it_v}</b>")
 
         warning_html = ""
         if found_conflicts:
             warning_html = f'<div style="color: #d97706; background: rgba(245, 158, 11, 0.1); padding: 12px; border-radius: 8px; border: 1px solid #f59e0b;"><b>Logic Warning:</b><br>{"<br>".join(found_conflicts)}</div>'
 
+        # Build positive prompt preview
         pos_parts = [get_value(data_it, it_v), get_value(data_f, f_v), get_value(data_cp, cp_v), get_value(data_a, a_v), get_value(data_ex, ex_v), get_value(data_l, l_v)]
         for key in s_v: pos_parts.append(get_value(data_s, key))
         pos = ", ".join(filter(None, pos_parts))
         
+        # Build negative prompt preview (disabled for Flux)
         neg = ""
         if use_neg and arch != "Flux":
             neg_parts = []
-            for cat, cur_val in [("ImageType", it_v), ("Framing", f_v), ("CameraPosition", cp_v)]:
+
+            # Single-select categories
+            for cat, cur_val in [
+                ("ImageType", it_v),
+                ("Framing", f_v),
+                ("CameraPosition", cp_v),
+                ("Atmosphere", a_v),
+                ("Expression", ex_v),
+                ("Lighting", l_v),
+            ]:
                 neg_data = _get_full_data(arch, cat, is_neg=True)
                 neg_parts.append(get_value(neg_data, cur_val))
+
+            # Multi-select: Stability
+            neg_data_s = _get_full_data(arch, "Stability", is_neg=True)
+            for key in s_v:
+                neg_parts.append(get_value(neg_data_s, key))
+
             neg = ", ".join(filter(None, neg_parts))
 
         mode = shared.opts.data.get("ucp_operation_mode", "Manual")
@@ -213,21 +194,34 @@ class UCP_Engine(scripts.Script):
             gr.update(choices=[NONE] + list(data_s.keys()), value=s_v),
             gr.update(interactive=(arch != "Flux"), value=use_neg if arch != "Flux" else False),
             gr.update(value=pos, interactive=(mode == "Semi-Automatic")),
-            gr.update(value=neg, visible=use_neg),
+            gr.update(value=neg, visible=(use_neg and arch != "Flux")),
             gr.update(value=btn_label),
             gr.update(value=warning_html)
         )
 
     def process(self, p, arch, it, f, cp, a, ex, l, s, nt, pp, np):
+        """Main processing function to inject tags into the prompt list."""
         mode = shared.opts.data.get("ucp_operation_mode", "Manual")
+        
         if mode in ["Semi-Automatic", "Automatic"]:
-            # HER ER LOGGINGEN TIL CMD-VINDUET:
-            if pp.strip():
-                print(f"[UCP] Active Prompt: {pp.strip()}")
-                p.prompt = f"{p.prompt}, {pp.strip()}" if p.prompt.strip() else pp.strip()
-            
-            if nt and arch != "Flux" and np.strip():
-                p.negative_prompt = f"{p.negative_prompt}, {np.strip()}" if p.negative_prompt.strip() else np.strip()
+            active_tags = pp.strip()
+            if active_tags:
+                print(f"\n--- [UCP ACTIVE] ---")
+                print(f"Injecting into {arch}: {active_tags}")
+                
+                # Update main prompt (for metadata)
+                p.prompt = f"{p.prompt}, {active_tags}" if p.prompt.strip() else active_tags
+                
+                # Update batch prompts for Forge Neo
+                if hasattr(p, 'all_prompts'):
+                    p.all_prompts = [f"{prompt}, {active_tags}" if prompt.strip() else active_tags for prompt in p.all_prompts]
+                print(f"--- [UCP INJECTED] ---\n")
 
+            # Handle negative tag injection for non-Flux architectures
+            if nt and arch != "Flux" and np.strip():
+                active_neg = np.strip()
+                p.negative_prompt = f"{p.negative_prompt}, {active_neg}" if p.negative_prompt.strip() else active_neg
+                if hasattr(p, 'all_neg_prompts'):
+                    p.all_neg_prompts = [f"{neg}, {active_neg}" if neg.strip() else active_neg for neg in p.all_neg_prompts]
 
 script_callbacks.on_ui_settings(on_ui_settings)
